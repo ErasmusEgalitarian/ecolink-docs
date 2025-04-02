@@ -4,7 +4,7 @@
 
 ## Guide to Reviewing This Documentation
 
-This document outlines the **functional and non-functional requirements** for the **Data Management System**, which integrates **a hardware-connected scale, an API, and a mobile application**. The documentation follows a structured approach to ensure clarity and completeness.
+This document outlines the **functional and non-functional requirements** for the **Ecolink**, which integrates **a hardware-connected scale, an API, and a mobile application**. The documentation follows a structured approach to ensure clarity and completeness.
 
 ### **How to Use This Documentation**
 
