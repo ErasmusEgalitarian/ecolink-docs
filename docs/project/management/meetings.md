@@ -4,47 +4,50 @@
 
 ---
 
-## **Schedule**
-Aqui está a tabela completa com todas as reuniões até o final do projeto em **25 de agosto de 2025**, seguindo a cadência que você definiu.  
+# 📅 Planejamento de Sprints — Ecolink
 
-## **Table**  
+| Sprint     | Goals | Entregáveis | Start Date | End Date |
+|------------|--------|-------------|------------|----------|
+| **SPRINT 0** | - Separar funções da equipe (frontend e backend) <br> - Definir ferramentas de comunicação <br> - Estudar o repositório atual e mapear infraestrutura existente <br> - Levantar dependências técnicas iniciais | Documento de alinhamento da equipe e stack <br> Mapeamento técnico inicial | 24/03/2025 | 06/04/2025 |
+| **SPRINT 1** | - **Dupla EcoPoints**: Levantar requisitos da funcionalidade de mapa, critérios de exibição de EcoPoints, integração com geolocalização e filtros <br> - **Dupla CMS**: Levantar requisitos do CMS, papéis de usuário e fluxo de conteúdo <br> - Analisar as APIs do backend para identificar dependências técnicas | Documento de requisitos iniciais (EcoPoints e CMS) <br> Levantamento de dependências e gaps de API | 07/04/2025 | 20/04/2025 |
+| **SPRINT 2** | - Especificar requisitos completos com casos de uso, critérios de aceitação e regras de negócio <br> - Consolidar backlog priorizado (modelo SAFe) | Documentos finais de requisitos validados <br> Backlog priorizado para desenvolvimento | 21/04/2025 | 04/05/2025 |
+| **SPRINT 3** | - Início do desenvolvimento da funcionalidade de mapa com EcoPoints <br> - Criar visualização inicial, exibir pontos no mapa e base de geolocalização <br> - Estruturação da API e banco de dados | Mapa funcional com exibição estática dos EcoPoints <br> Protótipo funcional da API de EcoPoints | 05/05/2025 | 18/05/2025 |
+| **SPRINT 4** | - Implementar filtros, busca e integração completa com geolocalização <br> - Testar fluxo da funcionalidade com dados reais | Módulo de EcoPoints completo (filtros + localização) <br> API de EcoPoints integrada e testada | 19/05/2025 | 01/06/2025 |
+| **SPRINT 5** | - Início do desenvolvimento do CMS <br> - Implementar permissões básicas e estrutura de publicação de conteúdo | Protótipo funcional do CMS (CRUD básico) <br> Estrutura inicial de roles de usuários | 02/06/2025 | 15/06/2025 |
+| **SPRINT 6** | - Finalizar funcionalidades do CMS: edição, validação e tempo real <br> - Melhorias na experiência de usuário | CMS completo e funcional com permissões <br> Integração com banco e testes finais | 16/06/2025 | 29/06/2025 |
+| **SPRINT 7** | - Testes finais e correções de bugs <br> - Documentação técnica e de uso | Aplicação estabilizada <br> Documentação técnica (dev + usuário) | 30/06/2025 | 05/07/2025 |
+| **SPRINT 8** | - Validação com stakeholders <br> - Publicação e monitoramento pós-go-live | Funcionalidades publicadas <br> Feedbacks e plano de ajustes pós-lançamento | 06/07/2025 | 19/07/2025 |
 
-| **Meeting**                                  | **Date**       | **Participants**                                                 | **Objective**                                                      |
-| -------------------------------------------- | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
-| **1. Weekly Software Team Alignment**       | 02/04/2025     | Software Development Team                                        | Align ongoing tasks, discuss blockers, and share updates.          |
-| **2. Monthly Alignment – Engineering & Marketing** | 09/04/2025     | Production Engineering Teams, Content Team, Marketing Team (Netherlands) | Discuss cross-team collaboration, content creation, and marketing. |
-| **3. Sprint Planning**                       | 11/04/2025     | Software Development Team, Product Owner                         | Plan tasks and priorities for the upcoming sprint.                 |
-| **4. Sprint Control Point – Scrum Master**   | 16/04/2025     | Software Development Team, Scrum Master                         | Weekly review of sprint progress, impediments, and adjustments.    |
-| **5. Sprint Control Point – Product Manager** | 23/04/2025     | Software Development Team, Product Manager                      | Biweekly review of sprint outcomes and strategic alignment.        |
-| **6. Weekly Software Team Alignment**       | 09/04/2025     | Software Development Team                                        | Align ongoing tasks, discuss blockers, and share updates.          |
-| **7. Sprint Control Point – Scrum Master**   | 16/04/2025     | Software Development Team, Scrum Master                         | Weekly review of sprint progress, impediments, and adjustments.    |
-| **8. Sprint Planning**                       | 25/04/2025     | Software Development Team, Product Owner                         | Plan tasks and priorities for the upcoming sprint.                 |
-| **9. Sprint Control Point – Product Manager** | 07/05/2025     | Software Development Team, Product Manager                      | Biweekly review of sprint outcomes and strategic alignment.        |
-| **10. Weekly Software Team Alignment**      | 14/05/2025     | Software Development Team                                        | Align ongoing tasks, discuss blockers, and share updates.          |
-| **11. Monthly Alignment – Engineering & Marketing** | 16/05/2025     | Production Engineering Teams, Content Team, Marketing Team (Netherlands) | Discuss cross-team collaboration, content creation, and marketing. |
-| **12. Sprint Control Point – Scrum Master**  | 21/05/2025     | Software Development Team, Scrum Master                         | Weekly review of sprint progress, impediments, and adjustments.    |
-| **13. Sprint Planning**                      | 30/05/2025     | Software Development Team, Product Owner                         | Plan tasks and priorities for the upcoming sprint.                 |
-| **14. Sprint Control Point – Product Manager** | 04/06/2025     | Software Development Team, Product Manager                      | Biweekly review of sprint outcomes and strategic alignment.        |
-| **15. Weekly Software Team Alignment**      | 11/06/2025     | Software Development Team                                        | Align ongoing tasks, discuss blockers, and share updates.          |
-| **16. Monthly Alignment – Engineering & Marketing** | 13/06/2025     | Production Engineering Teams, Content Team, Marketing Team (Netherlands) | Discuss cross-team collaboration, content creation, and marketing. |
-| **17. Sprint Control Point – Scrum Master**  | 18/06/2025     | Software Development Team, Scrum Master                         | Weekly review of sprint progress, impediments, and adjustments.    |
-| **18. Sprint Planning**                      | 27/06/2025     | Software Development Team, Product Owner                         | Plan tasks and priorities for the upcoming sprint.                 |
-| **19. Sprint Control Point – Product Manager** | 02/07/2025     | Software Development Team, Product Manager                      | Biweekly review of sprint outcomes and strategic alignment.        |
-| **20. Weekly Software Team Alignment**      | 09/07/2025     | Software Development Team                                        | Align ongoing tasks, discuss blockers, and share updates.          |
-| **21. Monthly Alignment – Engineering & Marketing** | 11/07/2025     | Production Engineering Teams, Content Team, Marketing Team (Netherlands) | Discuss cross-team collaboration, content creation, and marketing. |
-| **22. Sprint Control Point – Scrum Master**  | 16/07/2025     | Software Development Team, Scrum Master                         | Weekly review of sprint progress, impediments, and adjustments.    |
-| **23. Sprint Planning**                      | 25/07/2025     | Software Development Team, Product Owner                         | Plan tasks and priorities for the upcoming sprint.                 |
-| **24. Sprint Control Point – Product Manager** | 30/07/2025     | Software Development Team, Product Manager                      | Biweekly review of sprint outcomes and strategic alignment.        |
-| **25. Weekly Software Team Alignment**      | 06/08/2025     | Software Development Team                                        | Align ongoing tasks, discuss blockers, and share updates.          |
-| **26. Monthly Alignment – Engineering & Marketing** | 08/08/2025     | Production Engineering Teams, Content Team, Marketing Team (Netherlands) | Discuss cross-team collaboration, content creation, and marketing. |
-| **27. Sprint Control Point – Scrum Master**  | 13/08/2025     | Software Development Team, Scrum Master                         | Weekly review of sprint progress, impediments, and adjustments.    |
-| **28. Sprint Planning**                      | 22/08/2025     | Software Development Team, Product Owner                         | Final sprint planning before project conclusion.                    |
-| **29. Final Sprint Control Point – Product Manager** | 25/08/2025     | Software Development Team, Product Manager                      | Last review of sprint outcomes before project completion.          |
+---
+
+## 📆 Reuniões Planejadas
+
+| **Reunião**                               | **Data**    | **Participantes**                        | **Objetivo**                                                                 |
+|-------------------------------------------|-------------|------------------------------------------|------------------------------------------------------------------------------|
+| **Sprint 0 – Início**                     | 24/03/2025  | Equipe de Desenvolvimento                | Alinhar organização da equipe, stack e ferramentas.                         |
+| **Sprint 0 – Acompanhamento**             | 31/03/2025  | Equipe de Desenvolvimento                | Verificar progresso e dependências iniciais.                                |
+| **Sprint 1 – Planejamento**               | 07/04/2025  | Equipe de Desenvolvimento, PO            | Iniciar levantamento de requisitos de EcoPoints e CMS.                      |
+| **Sprint 1 – Acompanhamento**             | 14/04/2025  | Equipe de Desenvolvimento                | Acompanhar evolução do levantamento de requisitos.                          |
+| **Sprint 2 – Planejamento**               | 21/04/2025  | Equipe de Desenvolvimento, PO            | Validar requisitos e consolidar backlog.                                    |
+| **Sprint 2 – Acompanhamento**             | 28/04/2025  | Equipe de Desenvolvimento                | Acompanhar refinamento do backlog.                                          |
+| **Sprint 3 – Início do Dev (EcoPoints)**  | 05/05/2025  | Frontend e Backend                        | Iniciar desenvolvimento do módulo de EcoPoints.                            |
+| **Sprint 3 – Acompanhamento**             | 12/05/2025  | Frontend e Backend                        | Validar integração e progresso inicial.                                     |
+| **Sprint 4 – Continuação EcoPoints**      | 19/05/2025  | Frontend e Backend                        | Desenvolver filtros e geolocalização.                                       |
+| **Sprint 4 – Acompanhamento**             | 26/05/2025  | Frontend e Backend                        | Validar testes com dados reais.                                             |
+| **Sprint 5 – Início do CMS**              | 02/06/2025  | Frontend e Backend                        | Iniciar desenvolvimento do CMS.                                             |
+| **Sprint 5 – Acompanhamento**             | 09/06/2025  | Frontend e Backend                        | Avaliar evolução do CRUD e roles.                                           |
+| **Sprint 6 – Finalização CMS**            | 16/06/2025  | Frontend e Backend                        | Finalizar funcionalidades do CMS.                                           |
+| **Sprint 6 – Acompanhamento**             | 23/06/2025  | Frontend e Backend                        | Testar integração final.                                                    |
+| **Sprint 7 – Estabilização**              | 30/06/2025  | Equipe de Desenvolvimento                | Corrigir bugs e documentar sistema.                                         |
+| **Sprint 8 – Validação e Go-Live**        | 07/07/2025  | Equipe de Desenvolvimento, Stakeholders  | Validar solução final e preparar publicação.                                |
+| **Sprint 8 – Encerramento e Feedback**    | 14/07/2025  | Equipe de Desenvolvimento, PO            | Recolher feedbacks e planejar ajustes pós-go-live.                          |
+
 
 ## **Revision History**
 
 | Date       | Version | Changes                           | Authors |
 | ---------- | ------- | --------------------------------- | ------- |
 | 03/28/2024 | 0.1     | Document creation                 |  [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes)  |
+| 03/28/2024 | 0.2     | Update document with ecolink information and datas                |  [Mateus Vieira](https://github.com/matix0)|
 
 [← Back to Main Page](../../index.md)
