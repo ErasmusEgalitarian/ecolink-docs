@@ -48,6 +48,6 @@
 | Date       | Version | Changes                           | Authors |
 | ---------- | ------- | --------------------------------- | ------- |
 | 03/28/2024 | 0.1     | Document creation                 |  [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes)  |
-| 03/28/2024 | 0.2     | Update document with ecolink information and datas                |  [Mateus Vieira](https://github.com/matix0)|
+| 04/06/2025 | 0.2     | Update document with ecolink information and datas                |  [Mateus Vieira](https://github.com/matix0)|
 
 [← Back to Main Page](../../index.md)
