@@ -6,28 +6,6 @@ This documentation provides a comprehensive overview of the API for managing use
 
 ---
 
-## Base URL
-
-The base URL for all API requests is:
-
-```
-https://api.carbonprint.com
-```
-
----
-
-## Authentication
-
-All requests that require authentication must include a **Bearer token** in the `Authorization` header. The token is obtained after a successful login.
-
-**Example:**
-
-```plaintext
-Authorization: Bearer <your-jwt-token>
-```
-
----
-
 ## Endpoints
 
 ### 1. **User Management**
