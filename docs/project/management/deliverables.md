@@ -1,26 +1,26 @@
-
-# **Deliverables**
+# Deliverables
 
 [← Back to Main Page](../../index.md)
 
-| Deliverable                                     | Description                                                                  | Associated Task                                                   | Delivery Date | Format                                                  | Acceptance Criteria                                                                                               |
-| ----------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Doctor and Administrator Registration** | Allows registration of doctors and administrators in the system.             | Implementation of user creation functionality with validations.   | 18/03/2025    | Source code, integration tests, API documentation.      | User can register successfully. Validations for CPF, email, and password. Unit tests cover the registration flow. |
-| **Login Functionality**                   | Allows doctors and administrators to access their areas in the system.       | Implementation of user authentication.                            | 20/03/2025    | Source code, integration tests, API documentation.      | Successful login with authentication token. Error messages for failures. Security tests against attacks.          |
-| **Profile Edit and Deletion**             | Allows editing of profile data, such as password and contact information.    | Development of the profile editing interface and routes.          | 25/03/2025    | Source code, interface prototypes, functionality tests. | User can update their information. Data validation. Notification to user upon update.                             |
-| **Document Creation and Listing**         | Allows administrators to create and list existing documents.                 | Development of the document administration interface.             | 30/03/2025    | Source code, interface prototypes, tests.               | Administrator can create document. Document appears in the listing. Filters working in the interface.             |
-| **Notification System**                   | Sends notifications to doctors about events or updates.                      | Implementation of the notification system.                        | 05/04/2025    | Source code, integration documentation.                 | Automatic notifications based on events. Tests ensure message consistency.                                        |
-| **Subscription Management**               | Allows doctors to manage subscriptions and payment plans.                    | Creation of financial panel and integration with payment gateway. | 10/04/2025    | Source code, integration tests, API documentation.      | Doctor can view and modify plan. Correct integration with the payment gateway.                                    |
-| **Documented API**                        | Documentation of the system's API.                                           | Create complete API documentation.                                | 12/04/2025    | Markdown or Swagger document.                           | Complete documentation with examples. Publicly available.                                                         |
-| **Automated Tests**                       | Automated tests to ensure system quality.                                    | Implementation of unit, integration, and interface tests.         | 15/04/2025    | Test scripts, coverage reports.                         | Coverage of at least 80%. Tests run in CI/CD environment.                                                         |
-| **Deployment Document**                   | System deployment guide, including server setup, database, and dependencies. | Create deployment documentation.                                  | 20/04/2025    | Markdown or PDF document.                               | Complete deployment guide with no errors. Tested in production environment.                                       |
+This document outlines the key deliverables planned for the Ecolink project, aligning with the sprint schedule and functional priorities defined for the CMS and EcoPoints modules.
+
+| Deliverable                        | Description                                                               | Associated Task                                        | Delivery Date | Format                                               | Acceptance Criteria                                                                          |
+| ---------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------ | ------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **EcoPoints Prototype**            | Interactive map with filtering and static data for testing locations.     | Development of frontend integration using mocked data. | 2025-05-04    | Web component, frontend code, test cases.            | Points are displayed correctly on map with category filters working.                         |
+| **EcoPoints Module (MVP)**         | Complete EcoPoints functionality including filters, geolocation, and API. | Full integration with backend API and testing.         | 2025-05-18    | Source code, API integration tests.                  | Users can search and view EcoPoints. Filters and coordinates are accurate. Fully tested.     |
+| **CMS Prototype (CRUD + Roles)**   | Basic CMS to create, edit, and delete content by user role.               | CMS architecture and route prototyping.                | 2025-05-18    | Admin panel UI, backend routes, user role logic.     | Admin and content editors can log in and manage content. Role restrictions apply correctly.  |
+| **CMS Final Version**              | Full CMS with validation, feedback, and responsive interface.             | Frontend refinement and testing.                       | 2025-06-01    | Functional CMS system, documentation.                | All content types can be created/edited with validation. Includes form feedback and preview. |
+| **Gamification System (stub)**     | Basic backend structure for gamification with placeholder logic.          | Start database schema and gamification routes.         | 2025-06-01    | Backend routes, models.                              | Stubs are in place for credit generation based on recycling activity.                        |
+| **Student Area Prototype**         | Area for students to view content, credits, and EcoPoints.                | Frontend development using existing data endpoints.    | 2025-06-10    | UI component, navigation structure.                  | Students can view EcoPoints, read articles, and see gamified score placeholder.              |
+| **Final Version + UX Adjustments** | Project ready for delivery with adjustments from testing.                 | Final QA and stakeholder feedback review.              | 2025-06-17    | Packaged source, documentation, presentation slides. | No critical bugs. Feedback incorporated. Ready for stakeholder delivery.                     |
+| **Documentation**                  | Technical and user documentation for all modules.                         | Write deployment, API, and CMS usage docs.             | 2025-06-17    | Markdown files.                                      | Complete and clear. Reviewed by technical and non-technical testers.                         |
 
 ---
 
-## **Revision History**
+## Revision History
 
-| Date       | Version | Changes                           | Authors |
-| ---------- | ------- | --------------------------------- | ------- |
-| 2025-03-28 | 0.1     | Document creation                 | [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes)        |
+| Date       | Version | Changes                                                      | Authors                                    |
+| ---------- | ------- | ------------------------------------------------------------ | ------------------------------------------ |
+| 2025-04-08 | 0.1     | Initial draft using Ecolink scope, sprint dates, and modules | [Mateus Vieira](https://github.com/matix0) |
 
 [← Back to Main Page](../../index.md)
