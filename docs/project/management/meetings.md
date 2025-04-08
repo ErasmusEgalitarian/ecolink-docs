@@ -22,25 +22,26 @@
 
 ## 📆 Reuniões Planejadas
 
-| **Reunião**                               | **Data**    | **Participantes**                        | **Objetivo**                                                                 |
-|-------------------------------------------|-------------|------------------------------------------|------------------------------------------------------------------------------|
-| **Sprint 0 – Início**                     | 24/03/2025  | Equipe de Desenvolvimento                | Alinhar organização da equipe, stack e ferramentas.                         |
-| **Sprint 0 – Acompanhamento**             | 31/03/2025  | Equipe de Desenvolvimento                | Verificar progresso e dependências iniciais.                                |
-| **Sprint 1 – Planejamento**               | 07/04/2025  | Equipe de Desenvolvimento, PO            | Iniciar levantamento de requisitos de EcoPoints e CMS.                      |
-| **Sprint 1 – Acompanhamento**             | 14/04/2025  | Equipe de Desenvolvimento                | Acompanhar evolução do levantamento de requisitos.                          |
-| **Sprint 2 – Planejamento**               | 21/04/2025  | Equipe de Desenvolvimento, PO            | Validar requisitos e consolidar backlog.                                    |
-| **Sprint 2 – Acompanhamento**             | 28/04/2025  | Equipe de Desenvolvimento                | Acompanhar refinamento do backlog.                                          |
-| **Sprint 3 – Início do Dev (EcoPoints)**  | 05/05/2025  | Frontend e Backend                        | Iniciar desenvolvimento do módulo de EcoPoints.                            |
-| **Sprint 3 – Acompanhamento**             | 12/05/2025  | Frontend e Backend                        | Validar integração e progresso inicial.                                     |
-| **Sprint 4 – Continuação EcoPoints**      | 19/05/2025  | Frontend e Backend                        | Desenvolver filtros e geolocalização.                                       |
-| **Sprint 4 – Acompanhamento**             | 26/05/2025  | Frontend e Backend                        | Validar testes com dados reais.                                             |
-| **Sprint 5 – Início do CMS**              | 02/06/2025  | Frontend e Backend                        | Iniciar desenvolvimento do CMS.                                             |
-| **Sprint 5 – Acompanhamento**             | 09/06/2025  | Frontend e Backend                        | Avaliar evolução do CRUD e roles.                                           |
-| **Sprint 6 – Finalização CMS**            | 16/06/2025  | Frontend e Backend                        | Finalizar funcionalidades do CMS.                                           |
-| **Sprint 6 – Acompanhamento**             | 23/06/2025  | Frontend e Backend                        | Testar integração final.                                                    |
-| **Sprint 7 – Estabilização**              | 30/06/2025  | Equipe de Desenvolvimento                | Corrigir bugs e documentar sistema.                                         |
-| **Sprint 8 – Validação e Go-Live**        | 07/07/2025  | Equipe de Desenvolvimento, Stakeholders  | Validar solução final e preparar publicação.                                |
-| **Sprint 8 – Encerramento e Feedback**    | 14/07/2025  | Equipe de Desenvolvimento, PO            | Recolher feedbacks e planejar ajustes pós-go-live.                          |
+| **Reunião**                               | **Data**    | **Participantes**                   | **Objetivo**                                                                 |
+|-------------------------------------------|-------------|-------------------------------------|------------------------------------------------------------------------------|
+| **Sprint 0 – Início**                     | 24/03/2025  | Equipe de Desenvolvimento, PM       | Alinhar organização da equipe, stack e ferramentas.                         |
+| **Sprint 0 – Acompanhamento**             | 31/03/2025  | Equipe de Desenvolvimento, PM       | Verificar progresso e dependências iniciais.                                |
+| **Sprint 1 – Planejamento**               | 07/04/2025  | Equipe de Desenvolvimento, PM       | Iniciar levantamento de requisitos de EcoPoints e CMS.                      |
+| **Sprint 1 – Acompanhamento**             | 14/04/2025  | Equipe de Desenvolvimento, PM       | Acompanhar evolução do levantamento de requisitos.                          |
+| **Sprint 2 – Planejamento**               | 21/04/2025  | Equipe de Desenvolvimento, PM       | Validar requisitos e consolidar backlog.                                    |
+| **Sprint 2 – Acompanhamento**             | 28/04/2025  | Equipe de Desenvolvimento, PM       | Acompanhar refinamento do backlog.                                          |
+| **Sprint 3 – Início do Dev (EcoPoints)**  | 05/05/2025  | Equipe de Desenvolvimento, PM       | Iniciar desenvolvimento do módulo de EcoPoints.                            |
+| **Sprint 3 – Acompanhamento**             | 12/05/2025  | Equipe de Desenvolvimento, PM       | Validar integração e progresso inicial.                                     |
+| **Sprint 4 – Continuação EcoPoints**      | 19/05/2025  | Equipe de Desenvolvimento, PM       | Desenvolver filtros e geolocalização.                                       |
+| **Sprint 4 – Acompanhamento**             | 26/05/2025  | Equipe de Desenvolvimento, PM       | Validar testes com dados reais.                                             |
+| **Sprint 5 – Início do CMS**              | 02/06/2025  | Equipe de Desenvolvimento, PM       | Iniciar desenvolvimento do CMS.                                             |
+| **Sprint 5 – Acompanhamento**             | 09/06/2025  | Equipe de Desenvolvimento, PM       | Avaliar evolução do CRUD e roles.                                           |
+| **Sprint 6 – Finalização CMS**            | 16/06/2025  | Equipe de Desenvolvimento, PM       | Finalizar funcionalidades do CMS.                                           |
+| **Sprint 6 – Acompanhamento**             | 23/06/2025  | Equipe de Desenvolvimento, PM       | Testar integração final.                                                    |
+| **Sprint 7 – Estabilização**              | 30/06/2025  | Equipe de Desenvolvimento, PM       | Corrigir bugs e documentar sistema.                                         |
+| **Sprint 8 – Validação e Go-Live**        | 07/07/2025  | Equipe de Desenvolvimento, PM       | Validar solução final e preparar publicação.                                |
+| **Sprint 8 – Encerramento e Feedback**    | 14/07/2025  | Equipe de Desenvolvimento, PM       | Recolher feedbacks e planejar ajustes pós-go-live.                          |
+
 
 
 ## **Revision History**
