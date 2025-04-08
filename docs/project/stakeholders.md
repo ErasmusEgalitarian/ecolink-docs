@@ -4,38 +4,37 @@
 
 ## Overview
 
-This document provides an overview of the stakeholders involved in the Ecolink project, outlining their roles, responsibilities, and expectations. Understanding each stakeholder's interests and engagement level is crucial for ensuring effective communication and alignment throughout the project lifecycle.
+Este documento fornece uma visão geral dos stakeholders envolvidos no projeto, seus papéis e como contribuem para o sucesso da iniciativa. Compreender os interesses, expectativas e o envolvimento de cada stakeholder é crucial para garantir uma comunicação eficaz e o alinhamento durante todo o ciclo de vida do projeto.
 
 ## Stakeholder Identification
 
-| **Stakeholder**               | **Role**                                                               | **Responsibilities**                                                                                                                                             | **Expectations**                                                                                                      |
-| ----------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Project Sponsor**           | University of Brasília & Federal District Environment Authority        | - Provide funding and strategic oversight.<br>- Approve scope and budgets.<br>- Facilitate partnerships and policy alignment.                                    | - Timely delivery within budget.<br>- Alignment with environmental objectives.<br>- Transparent progress reporting.   |
-| **Project Manager**           | Ecolink Project Manager                                                | - Plan, execute, and monitor project activities.<br>- Coordinate teams and stakeholders.<br>- Manage risks and issues.                                           | - Effective leadership and coordination.<br>- Clear communication.<br>- Successful delivery of milestones.            |
-| **App Development Team**      | Developers and engineers                                               | - Design and implement the mobile app and CMS.<br>- Ensure app performance, security, and usability.<br>- Integrate with UnB credit system and geolocation APIs. | - High‑quality, maintainable code.<br>- On‑time feature delivery.<br>- Reliable integration with external systems.    |
-| **Content Team**              | Waste pickers & UnB student collaborators                              | - Co‑create educational videos and tutorials.<br>- Manage content calendar and CMS.<br>- Ensure content relevance and accessibility.                             | - Engaging, accurate content.<br>- Consistent publishing schedule.<br>- Positive user feedback.                       |
-| **Waste Picker Cooperatives** | Local recycling cooperatives (e.g., Centcoop)                          | - Provide practical knowledge and handle collected materials.<br>- Operate and maintain EcoPoints.                                                               | - Increased volume and quality of recyclables.<br>- Fair income generation.<br>- Technical support from project team. |
-| **End Users (Students)**      | University of Brasília students                                        | - Use the app to locate EcoPoints and deposit recyclables.<br>- Provide feedback and participate in gamification.                                                | - Intuitive app experience.<br>- Incentives (credits) awarded promptly.<br>- Clear guidance and support.              |
-| **Marketing Team**            | Social media and outreach specialists                                  | - Develop and execute Instagram/TikTok campaigns.<br>- Analyze engagement metrics.<br>- Coordinate promotional events.                                           | - Increased awareness and engagement.<br>- Growth in app downloads and active users.                                  |
-| **Hardware Partners**         | Companies using smart collection machines (e.g., Ambev, Pão de Açúcar) | - Share best practices and technical specifications.<br>- Support feasibility studies and prototyping.                                                           | - Transparent documentation of machine capabilities.<br>- Potential collaboration opportunities.                      |
+| **Stakeholder**           | **Role**                                                                                  | **Responsibilities**                                                                                                                                                   | **Expectations**                                                                                                                                |
+| ------------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Sponsor**       | O Project Sponsor é o principal tomador de decisões e autoridade de financiamento do projeto. | - Aprovar orçamento e escopo.  - Tomar decisões-chave.  - Resolver riscos e problemas de alto nível.                                                                      | - Entrega pontual do projeto dentro do orçamento.  - Alinhamento com os objetivos estratégicos.  - Comunicação clara sobre progresso e riscos.    |
+| **Project Manager**       | O Project Manager supervisiona as operações diárias do projeto, gerencia recursos e prazos.  | - Planejar, executar e monitorar o progresso.  - Coordenar as atividades e recursos.  - Gerenciar riscos e problemas.                                                        | - Conclusão bem-sucedida do projeto dentro dos parâmetros.  - Atualizações regulares para os stakeholders.  - Gestão eficaz da equipe.           |
+| **Development Team**      | A Development Team desenvolve, testa e implementa a solução.                                  | - Desenvolver software conforme especificações.  - Realizar testes.  - Participar de reuniões de projeto.                                                                 | - Código de alta qualidade.  - Entrega pontual das funcionalidades.  - Participação ativa nas discussões e soluções.                            |
+| **Product Owner**         | O Product Owner define as funcionalidades do produto e prioriza os requisitos.                  | - Definir e priorizar funcionalidades.  - Garantir que o produto atenda às necessidades dos usuários.  - Comunicar-se entre os stakeholders e a equipe de desenvolvimento. | - Roteiro claro e priorizado.  - Comunicação regular com a equipe.  - Satisfação do cliente e demanda de mercado atendida.                        |
+| **End Users**             | Os End Users são os usuários finais que interagem diretamente com o produto.                  | - Fornecer feedback sobre funcionalidades e usabilidade.  - Participar de testes e feedback.                                                                                 | - Produto intuitivo e fácil de usar.  - Funcionalidades que atendem às suas necessidades.  - Atualizações regulares sobre o progresso do projeto. |
+| **Marketing Team**        | O Marketing Team promove o produto e cria a estratégia de lançamento.                         | - Desenvolver e executar campanhas de marketing.  - Realizar pesquisa de mercado.  - Coordenar o lançamento e o engajamento dos usuários.                                  | - Alinhamento com as demandas do mercado.  - Apoio ao crescimento do produto.  - Comunicação clara sobre características e prazos.                 |
+| **Customer Support Team** | O Customer Support Team resolve dúvidas e problemas após o lançamento do produto.            | - Oferecer suporte contínuo aos usuários.  - Documentar problemas frequentes.  - Relatar feedback para melhorias.                                                          | - Resolução eficiente de problemas.  - Alta satisfação pós-lançamento.  - Comunicação clara com a equipe de produto.                          |
 
 ## Stakeholder Engagement Strategy
 
-| **Strategy**            | **Description**                                                                                      |
-| ----------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Regular Updates**     | Weekly or bi‑weekly status reports and meetings with key stakeholders.                               |
-| **Workshops & Demos**   | Interactive sessions to demonstrate prototypes and gather feedback (e.g., EcoPoint demos on campus). |
-| **Feedback Channels**   | Open channels (Slack, email) for continuous input from users and partners.                           |
-| **Steering Committee**  | Monthly governance meetings with sponsors and project leads to address strategic decisions.          |
-| **Conflict Resolution** | Proactive issue identification and facilitated discussions to reach consensus.                       |
+A gestão eficaz dos stakeholders é vital para o sucesso do projeto. As seguintes estratégias serão adotadas para garantir o alinhamento com todos os stakeholders:
+
+| **Strategy**                   | **Description**                                                                                                                                  |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Comunicação Regular**      | Manter comunicação consistente por meio de relatórios de status semanais ou quinzenais, reuniões e atualizações.                                 |
+| **Reuniões com Stakeholders** | Organizar reuniões regulares para coletar feedback, revisar o progresso e abordar qualquer preocupação.                                             |
+| **Canais de Feedback**         | Estabelecer canais formais e informais de feedback para coletar informações dos stakeholders, especialmente dos usuários finais e do Product Owner. |
+| **Resolução de Conflitos**   | Abordar proativamente quaisquer conflitos ou desalinhamentos entre stakeholders, facilitando discussões transparentes e encontrando um terreno comum. |
 
 ---
 
-## Revision History
+# Revision History
 
-| Date       | Version | Changes                                   | Authors                                                                                          |
-| ---------- | ------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 2025-04-08 | 0.2     | Translated and adapted to Ecolink context | [Mateus Vieira](https://github.com/matix0)                                                       |
-| 2025-03-28 | 0.1     | Document creation                         | [Cainã Freitas](https://github.com/freitasc), [Lucas Antunes](https://github.com/LucasGSAntunes) |
+| Date       | Version | Changes                           | Authors |
+| ---------- | ------- | --------------------------------- | ------- |
+| 2025-03-28 | 0.1     | Document creation                 | [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes)        |
 
 [← Back to Main Page](../index.md)

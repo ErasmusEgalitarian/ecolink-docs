@@ -1,5 +1,8 @@
 theme:
   name: material
+  palette:
+    primary: black
+    accent: red
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
@@ -9,19 +12,6 @@ theme:
     - content.code.copy
     - toc.integrate
     - toc.collapse
-  palette:
-    - scheme: default
-      primary: black
-      accent: red
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
-      primary: black
-      accent: red
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
 
 site_name: Ecolink
 
@@ -60,7 +50,6 @@ nav:
           - System Architecture: project/development/technical/architecture.md
           - Database Schema: project/development/technical/database-schema.md
       - Tools & Dependencies: project/development/tools.md
-      - Contributing Policy: project/development/policies.md
   - Setup & Configuration:
       - MkDocs:
           - MkDocs Configuration: setup/mkdocs-configuration.md
@@ -70,6 +59,7 @@ nav:
           - Publishing Guide: setup/publishing-guide.md
       - README: setup/readme.md
   - References: references.md
+
 
 extra:
   analytics:

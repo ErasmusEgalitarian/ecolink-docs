@@ -1,45 +1,54 @@
-# Schedule
-## 📅 Sprint Planning — Ecolink
+# Meeting Notes
 
-> Final delivery: **June 17, 2025**  
-> Each sprint lasts **14 days**
-
-| Sprint       | Goals                                                                                                                                                                                           | Deliverables                                                  | Start Date | End Date       |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------- | -------------- |
-| **SPRINT 0** | - Define frontend and backend responsibilities <br> - Set up communication tools <br> - Study current repository and map existing infrastructure <br> - Identify initial technical dependencies | Team alignment document <br> Initial technical mapping        | 2025-03-24 | 2025-04-06     |
-| **SPRINT 1** | - Gather requirements for EcoPoints and CMS <br> - Analyze existing APIs and dependencies <br> - Start building the backlog                                                                     | Requirements document <br> Technical dependencies report      | 2025-04-07 | 2025-04-20     |
-| **SPRINT 2** | - Finalize detailed requirements and acceptance criteria <br> - Prioritize and structure the backlog <br> - Start API and static map prototype                                                  | Prioritized backlog <br> Initial EcoPoints prototype          | 2025-04-21 | 2025-05-04     |
-| **SPRINT 3** | - Complete EcoPoints module (filters, location, tests) <br> - Start CMS with CRUD structure and user roles                                                                                      | Functional EcoPoints module <br> CMS prototype (CRUD + roles) | 2025-05-05 | 2025-05-18     |
-| **SPRINT 4** | - Finalize CMS features (editing, validation) <br> - General testing and polish <br> - Draft technical and user documentation                                                                   | Fully functional CMS <br> Initial documentation               | 2025-05-19 | 2025-06-01     |
-| **SPRINT 5** | - Final testing, bug fixes, stakeholder validation <br> - UX adjustments and official delivery                                                                                                  | Final validated system <br> Final documentation <br> Delivery | 2025-06-02 | **2025-06-17** |
+[← Back to Main Page](../../index.md)
 
 ---
 
-## 📆 Planned Meetings
+# 📅 Planejamento de Sprints — Ecolink
 
-| **Meeting**                         | **Date**   | **Participants**             | **Purpose**                                              |
-| ----------------------------------- | ---------- | ---------------------------- | -------------------------------------------------------- |
-| **Sprint 0 – Kickoff**              | 2025-03-24 | Dev Team + PM                | Initial alignment and technical structuring              |
-| **Sprint 0 – Follow-up**            | 2025-03-31 | Dev Team + PM                | Review studies and stack mapping                         |
-| **Sprint 1 – Planning**             | 2025-04-07 | Dev Team + PM                | Start requirements gathering and API analysis            |
-| **Sprint 1 – Follow-up**            | 2025-04-14 | Dev Team + PM                | Validate technical dependencies and domain understanding |
-| **Sprint 2 – Planning**             | 2025-04-21 | Dev Team + PM                | Consolidate backlog and start technical development      |
-| **Sprint 2 – Follow-up**            | 2025-04-28 | Dev Team + PM                | Check progress on EcoPoints module                       |
-| **Sprint 3 – CMS Kickoff**          | 2025-05-05 | Dev Team + PM                | Review EcoPoints completion and start CMS                |
-| **Sprint 3 – Follow-up**            | 2025-05-12 | Dev Team + PM                | Validate filters integration and CMS structure           |
-| **Sprint 4 – CMS Finalization**     | 2025-05-19 | Dev Team + PM                | Finalize features and testing                            |
-| **Sprint 4 – Follow-up**            | 2025-05-26 | Dev Team + PM                | Review documentation and final integration               |
-| **Sprint 5 – Final Delivery Check** | 2025-06-10 | Dev Team + PM + Stakeholders | Validate final product with stakeholders                 |
-| **Sprint 5 – Wrap-up**              | 2025-06-17 | Dev Team + PM                | Final presentation, delivery and retrospective           |
+| Sprint     | Goals | Entregáveis | Start Date | End Date |
+|------------|--------|-------------|------------|----------|
+| **SPRINT 0** | - Separar funções da equipe (frontend e backend) <br> - Definir ferramentas de comunicação <br> - Estudar o repositório atual e mapear infraestrutura existente <br> - Levantar dependências técnicas iniciais | Documento de alinhamento da equipe e stack <br> Mapeamento técnico inicial | 24/03/2025 | 06/04/2025 |
+| **SPRINT 1** | - **Dupla EcoPoints**: Levantar requisitos da funcionalidade de mapa, critérios de exibição de EcoPoints, integração com geolocalização e filtros <br> - **Dupla CMS**: Levantar requisitos do CMS, papéis de usuário e fluxo de conteúdo <br> - Analisar as APIs do backend para identificar dependências técnicas | Documento de requisitos iniciais (EcoPoints e CMS) <br> Levantamento de dependências e gaps de API | 07/04/2025 | 20/04/2025 |
+| **SPRINT 2** | - Especificar requisitos completos com casos de uso, critérios de aceitação e regras de negócio <br> - Consolidar backlog priorizado (modelo SAFe) | Documentos finais de requisitos validados <br> Backlog priorizado para desenvolvimento | 21/04/2025 | 04/05/2025 |
+| **SPRINT 3** | - Início do desenvolvimento da funcionalidade de mapa com EcoPoints <br> - Criar visualização inicial, exibir pontos no mapa e base de geolocalização <br> - Estruturação da API e banco de dados | Mapa funcional com exibição estática dos EcoPoints <br> Protótipo funcional da API de EcoPoints | 05/05/2025 | 18/05/2025 |
+| **SPRINT 4** | - Implementar filtros, busca e integração completa com geolocalização <br> - Testar fluxo da funcionalidade com dados reais | Módulo de EcoPoints completo (filtros + localização) <br> API de EcoPoints integrada e testada | 19/05/2025 | 01/06/2025 |
+| **SPRINT 5** | - Início do desenvolvimento do CMS <br> - Implementar permissões básicas e estrutura de publicação de conteúdo | Protótipo funcional do CMS (CRUD básico) <br> Estrutura inicial de roles de usuários | 02/06/2025 | 15/06/2025 |
+| **SPRINT 6** | - Finalizar funcionalidades do CMS: edição, validação e tempo real <br> - Melhorias na experiência de usuário | CMS completo e funcional com permissões <br> Integração com banco e testes finais | 16/06/2025 | 29/06/2025 |
+| **SPRINT 7** | - Testes finais e correções de bugs <br> - Documentação técnica e de uso | Aplicação estabilizada <br> Documentação técnica (dev + usuário) | 30/06/2025 | 05/07/2025 |
+| **SPRINT 8** | - Validação com stakeholders <br> - Publicação e monitoramento pós-go-live | Funcionalidades publicadas <br> Feedbacks e plano de ajustes pós-lançamento | 06/07/2025 | 19/07/2025 |
 
 ---
+
+## 📆 Reuniões Planejadas
+
+| **Reunião**                               | **Data**    | **Participantes**                   | **Objetivo**                                                                 |
+|-------------------------------------------|-------------|-------------------------------------|------------------------------------------------------------------------------|
+| **Sprint 0 – Início**                     | 24/03/2025  | Equipe de Desenvolvimento, PM       | Alinhar organização da equipe, stack e ferramentas.                         |
+| **Sprint 0 – Acompanhamento**             | 31/03/2025  | Equipe de Desenvolvimento, PM       | Verificar progresso e dependências iniciais.                                |
+| **Sprint 1 – Planejamento**               | 07/04/2025  | Equipe de Desenvolvimento, PM       | Iniciar levantamento de requisitos de EcoPoints e CMS.                      |
+| **Sprint 1 – Acompanhamento**             | 14/04/2025  | Equipe de Desenvolvimento, PM       | Acompanhar evolução do levantamento de requisitos.                          |
+| **Sprint 2 – Planejamento**               | 21/04/2025  | Equipe de Desenvolvimento, PM       | Validar requisitos e consolidar backlog.                                    |
+| **Sprint 2 – Acompanhamento**             | 28/04/2025  | Equipe de Desenvolvimento, PM       | Acompanhar refinamento do backlog.                                          |
+| **Sprint 3 – Início do Dev (EcoPoints)**  | 05/05/2025  | Equipe de Desenvolvimento, PM       | Iniciar desenvolvimento do módulo de EcoPoints.                            |
+| **Sprint 3 – Acompanhamento**             | 12/05/2025  | Equipe de Desenvolvimento, PM       | Validar integração e progresso inicial.                                     |
+| **Sprint 4 – Continuação EcoPoints**      | 19/05/2025  | Equipe de Desenvolvimento, PM       | Desenvolver filtros e geolocalização.                                       |
+| **Sprint 4 – Acompanhamento**             | 26/05/2025  | Equipe de Desenvolvimento, PM       | Validar testes com dados reais.                                             |
+| **Sprint 5 – Início do CMS**              | 02/06/2025  | Equipe de Desenvolvimento, PM       | Iniciar desenvolvimento do CMS.                                             |
+| **Sprint 5 – Acompanhamento**             | 09/06/2025  | Equipe de Desenvolvimento, PM       | Avaliar evolução do CRUD e roles.                                           |
+| **Sprint 6 – Finalização CMS**            | 16/06/2025  | Equipe de Desenvolvimento, PM       | Finalizar funcionalidades do CMS.                                           |
+| **Sprint 6 – Acompanhamento**             | 23/06/2025  | Equipe de Desenvolvimento, PM       | Testar integração final.                                                    |
+| **Sprint 7 – Estabilização**              | 30/06/2025  | Equipe de Desenvolvimento, PM       | Corrigir bugs e documentar sistema.                                         |
+| **Sprint 8 – Validação e Go-Live**        | 07/07/2025  | Equipe de Desenvolvimento, PM       | Validar solução final e preparar publicação.                                |
+| **Sprint 8 – Encerramento e Feedback**    | 14/07/2025  | Equipe de Desenvolvimento, PM       | Recolher feedbacks e planejar ajustes pós-go-live.                          |
+
+
 
 ## **Revision History**
 
-| Date       | Version | Changes                                          | Authors                                                                                          |
-| ---------- | ------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| 2024-03-28 | 0.1     | Document creation                                | [Cainã Freitas](https://github.com/freitasc), [Lucas Antunes](https://github.com/LucasGSAntunes) |
-| 2025-04-06 | 0.2     | Updated document with Ecolink scope and timeline | [Mateus Vieira](https://github.com/matix0)                                                       |
-| 2025-04-08 | 0.3     | Adjusted for 14-day sprints and final deadline   | [Mateus Vieira](https://github.com/matix0)                                                       |
+| Date       | Version | Changes                           | Authors |
+| ---------- | ------- | --------------------------------- | ------- |
+| 03/28/2024 | 0.1     | Document creation                 |  [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes)  |
+| 04/06/2025 | 0.2     | Update document with ecolink information and datas                |  [Mateus Vieira](https://github.com/matix0)|
 
-
+[← Back to Main Page](../../index.md)

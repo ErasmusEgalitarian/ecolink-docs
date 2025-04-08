@@ -1,83 +1,95 @@
+
 # Project Objectives
 
 ## 1. Overview
 
 [← Back to the Main Page](../../index.md)
 
-The primary objective of the **Ecolink project** is to promote recycling awareness and sustainable practices in the Federal District through a hybrid technological and social approach. This includes the development of an educational app integrated with smart EcoPoint containers and a gamified incentive system for university students. By combining content co-created with waste pickers and interactive tools, Ecolink aims to increase qualified recyclable collection, reduce contamination, and strengthen the circular economy.
+The primary objective of this project is to **develop a real-time monitoring system** capable of detecting anomalies and potential failures in large-scale server infrastructures. The system will use machine learning algorithms to identify unusual patterns in server performance metrics, which may indicate potential failures or security threats. By implementing this system, we aim to enhance the reliability and availability of enterprise IT systems and reduce the time to detect and respond to issues.
 
 ## 2. General Objectives
 
 The project seeks to achieve the following general goals:
 
-| Objective                          | Description                                                                                                              |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Raise environmental awareness      | Create educational content with waste pickers and students to teach correct waste separation and pre-cleaning practices. |
-| Implement EcoPoints                | Deliver smart collection containers (EcoPoints) capable of monitoring and sorting recyclable waste efficiently.          |
-| Incentivize sustainable behavior   | Introduce a gamified system where UnB students can earn university credits by contributing to the recycling process.     |
-| Empower waste picker cooperatives  | Provide tools and a platform for waste pickers to share their expertise and increase the value of collected materials.   |
-| Ensure accessibility and usability | Build an intuitive, inclusive platform (app + CMS) for all stakeholders involved, from students to cooperative workers.  |
+| Objective                    | Description                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scalable monitoring platform | Develop a platform capable of tracking real-time server performance metrics (e.g., CPU usage, memory usage, network traffic).                |
+| Machine learning models      | Implement models to analyze historical and real-time data to predict hardware failures and detect performance anomalies.                     |
+| Seamless integration         | Ensure integration with existing IT infrastructure and monitoring tools like**Nagios** , **Zabbix** , and **Prometheus** . |
+| Robust alerting system       | Create a system to notify system administrators of detected anomalies or potential failures.                                                 |
+| Dashboard interface          | Provide a user interface for visualizing the real-time status of servers and system components.                                              |
 
 ## 3. Specific Objectives
 
 To meet the general objectives, the project will focus on the following specific tasks:
 
-### Educational Content & Community Engagement
+### Research & Algorithm Development
 
-| Task                       | Description                                                                                                       |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Co-create content          | Record and publish recycling tips, separation tutorials, and hygiene practices in partnership with waste pickers. |
-| Content calendar           | Plan regular publishing on social media and app sections with a structured schedule and content map.              |
-| Develop content guidelines | Create visual and text templates, tone/style guides, and scripts for consistency across media platforms.          |
-| Launch Instagram strategy  | Maintain an official social media presence with at least one post per week and two marketing campaigns per month. |
+| Task                            | Description                                                                                                                                                            |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Literature review               | Conduct a review of anomaly detection techniques, focusing on time-series data analysis and unsupervised learning algorithms (e.g., k-means clustering, autoencoders). |
+| Data preprocessing              | Implement pipelines to clean and normalize raw server performance data (e.g., handling missing values, outliers, and normalization).                                   |
+| Machine learning model training | Train models to detect performance anomalies by analyzing server metrics in real time, evaluated based on precision, recall, and F1-score.                             |
 
-### Technical Development (App + CMS)
+### System Design & Integration
 
-| Task                      | Description                                                                                                                           |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Build educational section | App section that displays co-created videos, images, and explanations on recycling topics.                                            |
-| CMS integration           | Enable waste pickers and students to manage content using a user-friendly CMS interface that supports text, image, and video formats. |
-| Role-based access         | Implement permissions for students, cooperative workers, and app users to ensure secure and relevant access to features.              |
-| Student area              | Create a space in the app where students can register and track their contributions to receive academic credits.                      |
+| Task                     | Description                                                                                                                         |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Architecture design      | Design the platform using a microservices architecture, with services for data collection, anomaly detection, and alert management. |
+| API layer implementation | Implement an API layer to integrate with external monitoring tools and support data retrieval and alerts.                           |
+| Logging system           | Develop a centralized logging system to collect and analyze logs from multiple servers for further anomaly detection.               |
 
-### EcoPoint & Recycling Infrastructure
+### Alerting & Visualization
 
-| Task                               | Description                                                                                                                      |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Locate and map EcoPoints           | Implement a feature that allows users to locate collection containers through an in-app map.                                     |
-| Research hardware partnerships     | Identify and evaluate smart container solutions from at least 5 companies for potential partnership.                             |
-| Document recycling workflows       | Map the processes from disposal to collection, covering logistics, container interaction, and recycling stakeholder involvement. |
-| Study hardware development options | Evaluate feasibility and costs for developing proprietary EcoPoint hardware for long-term independence.                          |
+| Task                   | Description                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Real-time alert system | Design and implement a system using WebSocket and Push Notifications to notify administrators of detected anomalies.    |
+| Dashboard interface    | Create an interactive dashboard using React and D3.js to visualize server health, metrics trends, and real-time alerts. |
+| Alert customization    | Enable administrators to customize alert thresholds and notification preferences via the user interface.                |
 
 ## 4. Expected Outcomes
 
 By the end of the project, we expect the following deliverables and outcomes:
 
-| Deliverable              | Description                                                                                                    |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| Educational content hub  | App + CMS capable of displaying, managing, and updating multimedia educational content.                        |
-| Functioning EcoPoints    | Operational smart containers mapped across the UnB campus and other selected locations.                        |
-| Student incentive system | System that records recycling activity and enables academic credit redemption.                                 |
-| Instagram and outreach   | Social media presence that boosts awareness and increases participation through frequent, informative posts.   |
-| Process documentation    | Complete mapping of recycling logistics and stakeholder roles, supporting future iterations and optimizations. |
+| Deliverable             | Description                                                                                                                                         |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Monitoring platform     | A fully functional platform capable of tracking multiple servers in real time and providing actionable insights into server performance and health. |
+| Machine learning models | Models that predict server failures or performance degradation with at least 85% accuracy.                                                          |
+| Dashboard interface     | An interface providing clear visualizations of server health and performance metrics, enabling quick, informed decisions.                           |
+| Alerting system         | A robust alerting system integrated with email, SMS, and Slack, ensuring prompt responses to critical incidents.                                    |
+| API documentation       | Comprehensive documentation for external integrations and scalability.                                                                              |
 
 ## 5. Long-Term Objectives
 
 In the long term, the project aims to:
 
-| Objective                     | Description                                                                                                               |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Expand EcoPoints coverage     | Install containers in more communities and academic settings across the Federal District.                                 |
-| Refine gamification           | Improve and scale the credit incentive system to engage more universities and include broader sustainability challenges.  |
-| Promote data-driven decisions | Use app data to inform public policy and cooperative strategies around waste collection and environmental education.      |
-| Strengthen cooperatives       | Provide increased autonomy and technical tools for waste picker cooperatives to manage and benefit from recyclable flows. |
+| Objective                 | Description                                                                                                               |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Expand capabilities       | Extend the platform to monitor additional infrastructure components (e.g., databases, network devices, virtual machines). |
+| Advanced analytics        | Integrate trend forecasting and capacity planning for proactive infrastructure management.                                |
+| Cross-platform deployment | Support deployments across on-premises, cloud-based, and hybrid environments.                                             |
 
 ---
 
-### Revision History
+### Technical Focus
 
-| Date       | Author                                     | Changes Made                           |
-| ---------- | ------------------------------------------ | -------------------------------------- |
-| 2025-04-08 | [Mateus Vieira](https://github.com/matix0) | Rewrote project objectives for Ecolink |
+The system will leverage a combination of cutting-edge technologies:
+
+| Component        | Technologies                                       |
+| ---------------- | -------------------------------------------------- |
+| Backend          | Python (Flask/FastAPI), Docker, Kubernetes, Celery |
+| Machine Learning | Scikit-learn, TensorFlow                           |
+| Frontend         | React.js, D3.js                                    |
+| Database         | PostgreSQL, MongoDB                                |
+
+### Success Criteria
+
+| Criteria          | Description                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| Anomaly detection | Real-time anomaly detection with a false positive rate of less than 5%.                                       |
+| Scalability       | Ability to handle up to 1,000 servers in a distributed environment.                                           |
+| Alert system      | A highly responsive alerting system with less than 1-minute delay from anomaly detection to alert generation. |
+
+---
 
 [← Back to the Main Page](../../index.md)
