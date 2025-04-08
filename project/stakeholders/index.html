@@ -72,6 +72,8 @@
   
     
     
+      
+    
     
     
     
@@ -127,7 +129,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -477,6 +505,15 @@
   <a href="#stakeholder-engagement-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       Stakeholder Engagement Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revision History
     </span>
   </a>
   
@@ -973,6 +1010,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1264,7 +1323,7 @@
 <h1 id="stakeholders">Stakeholders</h1>
 <p><a href="../../">← Back to Main Page</a></p>
 <h2 id="overview">Overview</h2>
-<p>Este documento fornece uma visão geral dos stakeholders envolvidos no projeto, seus papéis e como contribuem para o sucesso da iniciativa. Compreender os interesses, expectativas e o envolvimento de cada stakeholder é crucial para garantir uma comunicação eficaz e o alinhamento durante todo o ciclo de vida do projeto.</p>
+<p>This document provides an overview of the stakeholders involved in the Ecolink project, outlining their roles, responsibilities, and expectations. Understanding each stakeholder's interests and engagement level is crucial for ensuring effective communication and alignment throughout the project lifecycle.</p>
 <h2 id="stakeholder-identification">Stakeholder Identification</h2>
 <table>
 <thead>
@@ -1278,50 +1337,55 @@
 <tbody>
 <tr>
 <td><strong>Project Sponsor</strong></td>
-<td>O Project Sponsor é o principal tomador de decisões e autoridade de financiamento do projeto.</td>
-<td>- Aprovar orçamento e escopo.  - Tomar decisões-chave.  - Resolver riscos e problemas de alto nível.</td>
-<td>- Entrega pontual do projeto dentro do orçamento.  - Alinhamento com os objetivos estratégicos.  - Comunicação clara sobre progresso e riscos.</td>
+<td>University of Brasília &amp; Federal District Environment Authority</td>
+<td>- Provide funding and strategic oversight.<br>- Approve scope and budgets.<br>- Facilitate partnerships and policy alignment.</td>
+<td>- Timely delivery within budget.<br>- Alignment with environmental objectives.<br>- Transparent progress reporting.</td>
 </tr>
 <tr>
 <td><strong>Project Manager</strong></td>
-<td>O Project Manager supervisiona as operações diárias do projeto, gerencia recursos e prazos.</td>
-<td>- Planejar, executar e monitorar o progresso.  - Coordenar as atividades e recursos.  - Gerenciar riscos e problemas.</td>
-<td>- Conclusão bem-sucedida do projeto dentro dos parâmetros.  - Atualizações regulares para os stakeholders.  - Gestão eficaz da equipe.</td>
+<td>Ecolink Project Manager</td>
+<td>- Plan, execute, and monitor project activities.<br>- Coordinate teams and stakeholders.<br>- Manage risks and issues.</td>
+<td>- Effective leadership and coordination.<br>- Clear communication.<br>- Successful delivery of milestones.</td>
 </tr>
 <tr>
-<td><strong>Development Team</strong></td>
-<td>A Development Team desenvolve, testa e implementa a solução.</td>
-<td>- Desenvolver software conforme especificações.  - Realizar testes.  - Participar de reuniões de projeto.</td>
-<td>- Código de alta qualidade.  - Entrega pontual das funcionalidades.  - Participação ativa nas discussões e soluções.</td>
+<td><strong>App Development Team</strong></td>
+<td>Developers and engineers</td>
+<td>- Design and implement the mobile app and CMS.<br>- Ensure app performance, security, and usability.<br>- Integrate with UnB credit system and geolocation APIs.</td>
+<td>- High‑quality, maintainable code.<br>- On‑time feature delivery.<br>- Reliable integration with external systems.</td>
 </tr>
 <tr>
-<td><strong>Product Owner</strong></td>
-<td>O Product Owner define as funcionalidades do produto e prioriza os requisitos.</td>
-<td>- Definir e priorizar funcionalidades.  - Garantir que o produto atenda às necessidades dos usuários.  - Comunicar-se entre os stakeholders e a equipe de desenvolvimento.</td>
-<td>- Roteiro claro e priorizado.  - Comunicação regular com a equipe.  - Satisfação do cliente e demanda de mercado atendida.</td>
+<td><strong>Content Team</strong></td>
+<td>Waste pickers &amp; UnB student collaborators</td>
+<td>- Co‑create educational videos and tutorials.<br>- Manage content calendar and CMS.<br>- Ensure content relevance and accessibility.</td>
+<td>- Engaging, accurate content.<br>- Consistent publishing schedule.<br>- Positive user feedback.</td>
 </tr>
 <tr>
-<td><strong>End Users</strong></td>
-<td>Os End Users são os usuários finais que interagem diretamente com o produto.</td>
-<td>- Fornecer feedback sobre funcionalidades e usabilidade.  - Participar de testes e feedback.</td>
-<td>- Produto intuitivo e fácil de usar.  - Funcionalidades que atendem às suas necessidades.  - Atualizações regulares sobre o progresso do projeto.</td>
+<td><strong>Waste Picker Cooperatives</strong></td>
+<td>Local recycling cooperatives (e.g., Centcoop)</td>
+<td>- Provide practical knowledge and handle collected materials.<br>- Operate and maintain EcoPoints.</td>
+<td>- Increased volume and quality of recyclables.<br>- Fair income generation.<br>- Technical support from project team.</td>
+</tr>
+<tr>
+<td><strong>End Users (Students)</strong></td>
+<td>University of Brasília students</td>
+<td>- Use the app to locate EcoPoints and deposit recyclables.<br>- Provide feedback and participate in gamification.</td>
+<td>- Intuitive app experience.<br>- Incentives (credits) awarded promptly.<br>- Clear guidance and support.</td>
 </tr>
 <tr>
 <td><strong>Marketing Team</strong></td>
-<td>O Marketing Team promove o produto e cria a estratégia de lançamento.</td>
-<td>- Desenvolver e executar campanhas de marketing.  - Realizar pesquisa de mercado.  - Coordenar o lançamento e o engajamento dos usuários.</td>
-<td>- Alinhamento com as demandas do mercado.  - Apoio ao crescimento do produto.  - Comunicação clara sobre características e prazos.</td>
+<td>Social media and outreach specialists</td>
+<td>- Develop and execute Instagram/TikTok campaigns.<br>- Analyze engagement metrics.<br>- Coordinate promotional events.</td>
+<td>- Increased awareness and engagement.<br>- Growth in app downloads and active users.</td>
 </tr>
 <tr>
-<td><strong>Customer Support Team</strong></td>
-<td>O Customer Support Team resolve dúvidas e problemas após o lançamento do produto.</td>
-<td>- Oferecer suporte contínuo aos usuários.  - Documentar problemas frequentes.  - Relatar feedback para melhorias.</td>
-<td>- Resolução eficiente de problemas.  - Alta satisfação pós-lançamento.  - Comunicação clara com a equipe de produto.</td>
+<td><strong>Hardware Partners</strong></td>
+<td>Companies using smart collection machines (e.g., Ambev, Pão de Açúcar)</td>
+<td>- Share best practices and technical specifications.<br>- Support feasibility studies and prototyping.</td>
+<td>- Transparent documentation of machine capabilities.<br>- Potential collaboration opportunities.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="stakeholder-engagement-strategy">Stakeholder Engagement Strategy</h2>
-<p>A gestão eficaz dos stakeholders é vital para o sucesso do projeto. As seguintes estratégias serão adotadas para garantir o alinhamento com todos os stakeholders:</p>
 <table>
 <thead>
 <tr>
@@ -1331,25 +1395,29 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Comunicação Regular</strong></td>
-<td>Manter comunicação consistente por meio de relatórios de status semanais ou quinzenais, reuniões e atualizações.</td>
+<td><strong>Regular Updates</strong></td>
+<td>Weekly or bi‑weekly status reports and meetings with key stakeholders.</td>
 </tr>
 <tr>
-<td><strong>Reuniões com Stakeholders</strong></td>
-<td>Organizar reuniões regulares para coletar feedback, revisar o progresso e abordar qualquer preocupação.</td>
+<td><strong>Workshops &amp; Demos</strong></td>
+<td>Interactive sessions to demonstrate prototypes and gather feedback (e.g., EcoPoint demos on campus).</td>
 </tr>
 <tr>
-<td><strong>Canais de Feedback</strong></td>
-<td>Estabelecer canais formais e informais de feedback para coletar informações dos stakeholders, especialmente dos usuários finais e do Product Owner.</td>
+<td><strong>Feedback Channels</strong></td>
+<td>Open channels (Slack, email) for continuous input from users and partners.</td>
 </tr>
 <tr>
-<td><strong>Resolução de Conflitos</strong></td>
-<td>Abordar proativamente quaisquer conflitos ou desalinhamentos entre stakeholders, facilitando discussões transparentes e encontrando um terreno comum.</td>
+<td><strong>Steering Committee</strong></td>
+<td>Monthly governance meetings with sponsors and project leads to address strategic decisions.</td>
+</tr>
+<tr>
+<td><strong>Conflict Resolution</strong></td>
+<td>Proactive issue identification and facilitated discussions to reach consensus.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1 id="revision-history">Revision History</h1>
+<h2 id="revision-history">Revision History</h2>
 <table>
 <thead>
 <tr>
@@ -1361,10 +1429,16 @@
 </thead>
 <tbody>
 <tr>
+<td>2025-04-08</td>
+<td>0.2</td>
+<td>Translated and adapted to Ecolink context</td>
+<td><a href="https://github.com/matix0">Mateus Vieira</a></td>
+</tr>
+<tr>
 <td>2025-03-28</td>
 <td>0.1</td>
 <td>Document creation</td>
-<td><a href="https://github.com/freitasc">Cainã Freitas</a> and <a href="https://github.com/LucasGSAntunes">Lucas Antunes</a></td>
+<td><a href="https://github.com/freitasc">Cainã Freitas</a>, <a href="https://github.com/LucasGSAntunes">Lucas Antunes</a></td>
 </tr>
 </tbody>
 </table>

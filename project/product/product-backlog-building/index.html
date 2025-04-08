@@ -72,6 +72,8 @@
   
     
     
+      
+    
     
     
     
@@ -127,7 +129,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -1053,6 +1081,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1344,25 +1394,24 @@
 <h1 id="product-backlog-building">Product Backlog Building</h1>
 <p><a href="../../../">← Back to Main Page</a></p>
 <h2 id="guide-to-reviewing-this-documentation">Guide to Reviewing This Documentation</h2>
-<p>This document outlines the <strong>functional and non-functional requirements</strong> for the <strong>Ecolink</strong>, which integrates <strong>a hardware-connected scale, an API, and a mobile application</strong>. The documentation follows a structured approach to ensure clarity and completeness.</p>
+<p>This document outlines the <strong>functional and non-functional requirements</strong> for <strong>Ecolink</strong>, which integrates <strong>a hardware-connected scale, an API, and a mobile application</strong>. The documentation follows a structured approach to ensure clarity and completeness.</p>
 <h3 id="how-to-use-this-documentation"><strong>How to Use This Documentation</strong></h3>
 <ul>
-<li><strong>Functional Requirements (FR-00)</strong> - The key capabilities the system must implement.</li>
-<li><strong>Non-Functional Requirements (NFR-00)</strong> - The quality attributes ensuring system performance, security, and usability.</li>
-<li><strong>Themes (TM-00)</strong> - High-level system areas grouping functionalities.</li>
-<li><strong>Epics (EP-00)</strong> - Major features that contribute to the system’s development.</li>
-<li><strong>Capabilities (C-00)</strong> - The abilities the system must support.</li>
-<li><strong>Features (F-00)</strong> - Specific technical functionalities fulfilling each capability.</li>
-<li><strong>User Stories (US-00)</strong> - Individual use cases defining how users interact with the system.</li>
-<li><strong>Backlog</strong> - A detailed, structured representation of all functionalities. (After have all topics, we can construct that)</li>
+<li><strong>Functional Requirements (FR-00)</strong> – Key capabilities the system must implement.</li>
+<li><strong>Non-Functional Requirements (NFR-00)</strong> – Quality attributes ensuring system performance, security, and usability.</li>
+<li><strong>Themes (TM-00)</strong> – High-level system areas grouping functionalities.</li>
+<li><strong>Epics (EP-00)</strong> – Major features that contribute to the system’s development.</li>
+<li><strong>Capabilities (C-00)</strong> – The abilities the system must support.</li>
+<li><strong>Features (F-00)</strong> – Specific technical functionalities fulfilling each capability.</li>
+<li><strong>User Stories (US-00)</strong> – Individual use cases defining how users interact with the system.</li>
+<li><strong>Backlog</strong> – A detailed, structured representation of all functionalities (to be built once all topics are mapped).</li>
 </ul>
-<p>Each section follows a progressive breakdown of the system’s structure, from high-level requirements to detailed functionalities.
-Nothing in this document is set in stone; if you notice an error, please discuss it with the team.</p>
+<p>Each section follows a progressive breakdown of the system’s structure, from high-level requirements to detailed functionalities.<br />
+Nothing in this document is final; please suggest corrections or improvements.</p>
 <hr />
 <h2 id="1-functional-requirements"><strong>1. Functional Requirements</strong></h2>
 <blockquote>
-<p>Defines the system's <strong>core functionalities</strong>.
-What the system must do</p>
+<p>Defines the system's <strong>core functionalities</strong> — what the system must do.</p>
 </blockquote>
 <table>
 <thead>
@@ -1373,29 +1422,15 @@ What the system must do</p>
 </thead>
 <tbody>
 <tr>
-<td>FR-01</td>
-<td>The system must have a <strong>hardware-integrated scale prototype</strong>.</td>
-</tr>
-<tr>
-<td>FR-02</td>
-<td>The system must have an <strong>API</strong>.</td>
-</tr>
-<tr>
-<td>FR-03</td>
-<td>The system must have a <strong>mobile application (APP)</strong>.</td>
-</tr>
-<tr>
-<td>FR-04</td>
-<td>The system must align with the <strong>Implementation Guide</strong>.</td>
+<td>FR-00</td>
+<td>[Describe a core system functionality]</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional functional requirements …)</p>
 <hr />
 <h2 id="2-non-functional-requirements"><strong>2. Non-Functional Requirements</strong></h2>
 <blockquote>
-<p>Specifies <strong>quality attributes</strong> that ensure the system meets expectations for <strong>performance, security, usability, scalability, etc</strong>...
-How the system must do functional requirements</p>
+<p>Specifies <strong>quality attributes</strong> for performance, security, usability, scalability, etc. — how the system must perform the functions.</p>
 </blockquote>
 <table>
 <thead>
@@ -1407,42 +1442,16 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>NFR-01</td>
-<td>Reliability</td>
-<td>The<strong>scale must be resistant</strong> to environmental conditions (dust, moisture, impact).</td>
-</tr>
-<tr>
-<td>NFR-02</td>
-<td>Performance</td>
-<td>The<strong>API must process weight data in real-time</strong> with minimal latency.</td>
-</tr>
-<tr>
-<td>NFR-03</td>
-<td>Usability</td>
-<td>The APP must be<strong>easy to use</strong> for waste pickers with <strong>low digital literacy</strong>.</td>
-</tr>
-<tr>
-<td>NFR-04</td>
-<td>Scalability</td>
-<td>The system must be able to<strong>support multiple cooperative centers</strong>.</td>
-</tr>
-<tr>
-<td>NFR-05</td>
-<td>Security</td>
-<td>The API must ensure<strong>secure authentication</strong> for users.</td>
-</tr>
-<tr>
-<td>NFR-06</td>
-<td>Reliability</td>
-<td>The<strong>scale must accurately weigh</strong> the collected material.</td>
+<td>NFR-00</td>
+<td>[Type]</td>
+<td>[Describe the quality expectation]</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional non-functional requirements …)</p>
 <hr />
 <h2 id="3-themes"><strong>3. Themes</strong></h2>
 <blockquote>
-<p><strong>Themes</strong> categorize <strong>major system areas</strong>, grouping functionalities under broad topics.</p>
+<p><strong>Themes</strong> group major system areas under broad topics.</p>
 </blockquote>
 <table>
 <thead>
@@ -1454,42 +1463,16 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>TM-01</td>
-<td>Hardware Project</td>
-<td>Design and implementation of electronic components.</td>
-</tr>
-<tr>
-<td>TM-02</td>
-<td>Hardware Integration</td>
-<td>Development and integration of the scale prototype.</td>
-</tr>
-<tr>
-<td>TM-03</td>
-<td>System Architecture</td>
-<td>API design and alignment with the implementation guide.</td>
-</tr>
-<tr>
-<td>TM-04</td>
-<td>Security &amp; Compliance</td>
-<td>Secure authentication and data protection mechanisms.</td>
-</tr>
-<tr>
-<td>TM-05</td>
-<td>Scalability &amp; Performance</td>
-<td>Real-time processing and multi-center support.</td>
-</tr>
-<tr>
-<td>TM-06</td>
-<td>User Experience</td>
-<td>Ensuring usability for waste pickers and cooperative centers.</td>
+<td>TM-00</td>
+<td>[Theme Name]</td>
+<td>[High-level area description]</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional themes …)</p>
 <hr />
 <h2 id="4-epics"><strong>4. Epics</strong></h2>
 <blockquote>
-<p><strong>Epics</strong> define <strong>high-level features</strong> that contribute to system development.</p>
+<p><strong>Epics</strong> define <strong>major features</strong> that contribute to system development.</p>
 </blockquote>
 <table>
 <thead>
@@ -1501,52 +1484,16 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>EP-01</td>
-<td>Scale Prototype Development</td>
-<td>Design and build the hardware-integrated scale prototype.</td>
-</tr>
-<tr>
-<td>EP-02</td>
-<td>API Development</td>
-<td>Implement the API for data collection, processing, and storage.</td>
-</tr>
-<tr>
-<td>EP-03</td>
-<td>Mobile App Development</td>
-<td>Create the mobile application for user interaction.</td>
-</tr>
-<tr>
-<td>EP-04</td>
-<td>Implementation Guide Alignment</td>
-<td>Ensure compliance with the implementation guide.</td>
-</tr>
-<tr>
-<td>EP-05</td>
-<td>Security &amp; Authentication</td>
-<td>Develop secure authentication mechanisms.</td>
-</tr>
-<tr>
-<td>EP-06</td>
-<td>Usability &amp; Accessibility</td>
-<td>Optimize UI/UX for waste pickers and cooperative centers.</td>
-</tr>
-<tr>
-<td>EP-07</td>
-<td>System Performance &amp; Scalability</td>
-<td>Optimize for real-time data processing and multiple centers.</td>
-</tr>
-<tr>
-<td>EP-08</td>
-<td>Hardware Resilience</td>
-<td>Ensure durability against environmental conditions.</td>
+<td>EP-00</td>
+<td>[Epic Title]</td>
+<td>[High-level functional overview]</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional epics …)</p>
 <hr />
 <h2 id="5-capabilities"><strong>5. Capabilities</strong></h2>
 <blockquote>
-<p><strong>Capabilities</strong> describe the <strong>system's technical abilities</strong> to support key functionalities.</p>
+<p><strong>Capabilities</strong> describe the system's <strong>technical abilities</strong> that support key functionalities.</p>
 </blockquote>
 <table>
 <thead>
@@ -1558,52 +1505,16 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>C-01</td>
-<td>Weight Measurement</td>
-<td>Accurately measure weight using the scale prototype.</td>
-</tr>
-<tr>
-<td>C-02</td>
-<td>Real-Time Data Processing</td>
-<td>Process weight data with minimal latency.</td>
-</tr>
-<tr>
-<td>C-03</td>
-<td>Secure API Access</td>
-<td>Ensure authentication and authorization for API access.</td>
-</tr>
-<tr>
-<td>C-04</td>
-<td>Mobile User Interface</td>
-<td>Provide an intuitive mobile interface for waste pickers.</td>
-</tr>
-<tr>
-<td>C-05</td>
-<td>Multi-Center Support</td>
-<td>Allow multiple cooperative centers to use the system.</td>
-</tr>
-<tr>
-<td>C-06</td>
-<td>Environmental Resilience</td>
-<td>Ensure scale durability in dust, moisture, and impact conditions.</td>
-</tr>
-<tr>
-<td>C-07</td>
-<td>Data Storage &amp; Retrieval</td>
-<td>Store and retrieve weight data efficiently.</td>
-</tr>
-<tr>
-<td>C-08</td>
-<td>Compliance with Guidelines</td>
-<td>Follow best practices from the implementation guide.</td>
+<td>C-00</td>
+<td>[Capability Name]</td>
+<td>[Description of system’s technical ability]</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional capabilities …)</p>
 <hr />
 <h2 id="6-features"><strong>6. Features</strong></h2>
 <blockquote>
-<p><strong>Features</strong> define the <strong>specific functionalities</strong> required to implement each capability.</p>
+<p><strong>Features</strong> define the <strong>specific functionalities</strong> to implement each capability.</p>
 </blockquote>
 <table>
 <thead>
@@ -1615,52 +1526,16 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>F-01</td>
-<td>Scale Data Transmission</td>
-<td>Transmit weight data from the scale to the API.</td>
-</tr>
-<tr>
-<td>F-02</td>
-<td>Mobile Weight Display</td>
-<td>Display real-time weight data on the mobile app.</td>
-</tr>
-<tr>
-<td>F-03</td>
-<td>User Authentication</td>
-<td>Secure login system for API and app users.</td>
-</tr>
-<tr>
-<td>F-04</td>
-<td>Offline Mode</td>
-<td>Enable mobile app functionality without an internet connection.</td>
-</tr>
-<tr>
-<td>F-05</td>
-<td>Multi-Center Management</td>
-<td>Manage users and operations across multiple cooperative centers.</td>
-</tr>
-<tr>
-<td>F-06</td>
-<td>API Logging &amp; Monitoring</td>
-<td>Track API requests and performance metrics.</td>
-</tr>
-<tr>
-<td>F-07</td>
-<td>Data Export</td>
-<td>Allow users to export collected data in CSV or JSON formats.</td>
-</tr>
-<tr>
-<td>F-08</td>
-<td>UI Accessibility Enhancements</td>
-<td>Ensure the app is accessible for users with low digital literacy.</td>
+<td>F-00</td>
+<td>[Feature Name]</td>
+<td>[Detailed description of the required functionality]</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional features …)</p>
 <hr />
 <h2 id="7-user-stories"><strong>7. User Stories</strong></h2>
 <blockquote>
-<p><strong>User stories</strong> describe <strong>how different users interact with the system</strong>, providing real-world scenarios.</p>
+<p><strong>User stories</strong> describe how users interact with the system in real-world scenarios.</p>
 </blockquote>
 <table>
 <thead>
@@ -1671,31 +1546,14 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>US-01</td>
-<td>As a scale operator, I want the equipment to perform precise measurements to avoid weighing errors.</td>
-</tr>
-<tr>
-<td>US-02</td>
-<td>As a scale operator, I want the equipment to have a digital display to view the weight before confirmation.</td>
-</tr>
-<tr>
-<td>US-03</td>
-<td>As an administrator, I want the scale to be resistant to adverse environmental conditions (dust, moisture, impact) for greater durability.</td>
-</tr>
-<tr>
-<td>US-04</td>
-<td>As a scale operator, I want the system to notify me if the scale is uncalibrated to ensure accuracy.</td>
-</tr>
-<tr>
-<td>US-05</td>
-<td>As an administrator, I want to configure different weighing modes in the system to meet operational needs.</td>
+<td>US-00</td>
+<td>As a [user type], I want [action] so that [benefit or purpose].</td>
 </tr>
 </tbody>
 </table>
-<p>(Additional user stories …)</p>
 <hr />
 <h2 id="8-backlog"><strong>8. Backlog</strong></h2>
-<p>The project backlog is a comprehensive list of all tasks, features, and improvements planned for the application. It serves as a central reference for what needs to be developed, allowing the development team to have a clear view of the project scope. Additionally, it functions as a list of features that will be prioritized and selected for the MVP scope.</p>
+<p>The project backlog is a structured list of all tasks, features, and improvements planned. It guides development priorities and serves as the foundation for MVP scope selection.</p>
 <table>
 <thead>
 <tr>
@@ -1709,151 +1567,16 @@ How the system must do functional requirements</p>
 </thead>
 <tbody>
 <tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F01 Registration of Doctors and Admins</td>
-<td>US01</td>
-<td>As a doctor, I would like to register in the system to have access credentials</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F05 Login for Doctors and Admins</td>
-<td>US02</td>
-<td>As a doctor, I would like to log into the system to access the platform's content</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F05 Login for Doctors and Admins</td>
-<td>US03</td>
-<td>As an administrator, I would like to log into the system to access management features</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F04 User Profile Editing</td>
-<td>US04</td>
-<td>As a user (doctor or administrator), I would like to reset my password to recover access credentials</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F04 User Profile Editing</td>
-<td>US05</td>
-<td>As a user (doctor or administrator), I would like to edit my profile to update registered information</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 Subscription and Notifications</td>
-<td>C04 Finance Management</td>
-<td>F12 Subscription Management</td>
-<td>US06</td>
-<td>As a doctor, I would like to access the finance area to manage my subscription</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F01 Registration of Doctors and Admins</td>
-<td>US07</td>
-<td>As an administrator, I would like to create other admin accounts to assist in management</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F02 User Search and Listing</td>
-<td>US08</td>
-<td>As an administrator, I would like to list users to view registered users</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F03 User Editing and Deletion</td>
-<td>US09</td>
-<td>As an administrator, I would like to edit a user to correct any registration errors</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F03 User Editing and Deletion</td>
-<td>US10</td>
-<td>As an administrator, I would like to delete a user to remove any improper registrations</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C01 User Management</td>
-<td>F02 User Search and Listing</td>
-<td>US11</td>
-<td>As an administrator, I would like to search for a specific user to find them more easily</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F06 Document Creation and Listing</td>
-<td>US12</td>
-<td>As an administrator, I would like to create a document to add new material</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F06 Document Creation and Listing</td>
-<td>US13</td>
-<td>As an administrator, I would like to list documents to view registered materials</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F07 Document Editing and Deletion</td>
-<td>US14</td>
-<td>As an administrator, I would like to edit a document to update material</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F07 Document Editing and Deletion</td>
-<td>US15</td>
-<td>As an administrator, I would like to delete a document to remove outdated material</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F06 Document Creation and Listing</td>
-<td>US16</td>
-<td>As an administrator, I would like to create a topic to complement an already registered document</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F06 Document Creation and Listing</td>
-<td>US17</td>
-<td>As an administrator, I would like to list topics to view registered topics within a document</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 Content and User Management</td>
-<td>C02 Content Management</td>
-<td>F07 Document Editing and Deletion</td>
-<td>US18</td>
-<td>As an administrator, I would like to edit a topic to update the material</td>
+<td>TM00</td>
+<td>EP00</td>
+<td>C00</td>
+<td>F00</td>
+<td>US00</td>
+<td>As a [user], I want [functionality] so that [benefit].</td>
 </tr>
 </tbody>
 </table>
+<hr />
 <h2 id="revision-history">Revision History</h2>
 <table>
 <thead>

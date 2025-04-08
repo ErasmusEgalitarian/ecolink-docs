@@ -72,6 +72,8 @@
   
     
     
+      
+    
     
     
     
@@ -127,7 +129,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -640,6 +668,75 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#phase-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase Descriptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase Descriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-0-initialization-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Phase 0 — Initialization &amp; Alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-requirements-gathering-backlog-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Phase 1 — Requirements Gathering &amp; Backlog Building
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-specification-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Phase 2 — Specification &amp; Prototyping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-core-module-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Phase 3 — Core Module Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-feature-completion-polishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧼 Phase 4 — Feature Completion &amp; Polishing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-final-testing-validation-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Phase 5 — Final Testing, Validation &amp; Delivery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#revision-history" class="md-nav__link">
     <span class="md-ellipsis">
       Revision History
@@ -964,6 +1061,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1255,48 +1374,112 @@
 <h1 id="project-roadmap">Project Roadmap</h1>
 <p><a href="../../../">← Back to Main Page</a></p>
 <h2 id="overview">Overview</h2>
-<p>The roadmap outlines the phases and steps involved in the development and delivery of the user and content management system for doctors and administrators. The process follows an agile approach, ensuring continuous iteration, feedback, and improvement.</p>
+<p>This roadmap aligns with Ecolink’s 14‑day cadence, culminating in final delivery on <strong>June 17, 2025</strong>. Each phase focuses on specific goals and deliverables to incrementally build, test, and deliver the platform.</p>
 <table>
 <thead>
 <tr>
 <th><strong>Phase</strong></th>
 <th><strong>Timeline</strong></th>
 <th><strong>Goals</strong></th>
+<th><strong>Deliverables</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Phase 1: Planning and Requirement Definition</strong></td>
-<td>Month 1</td>
-<td>- Map the core features: Identify and prioritize the essential features for the MVP.  - Establish resources: Ensure necessary technology and team members are in place.  - Identify success metrics: Define key performance indicators (KPIs) to measure success.</td>
+<td><strong>Phase 0</strong></td>
+<td>March 24, 2025 – April 6, 2025</td>
+<td>- Define frontend &amp; backend responsibilities<br>- Set up communication tools<br>- Map existing infrastructure<br>- Identify technical dependencies</td>
+<td>- Team alignment document<br>- Initial technical mapping</td>
 </tr>
 <tr>
-<td><strong>Phase 2: Design and Architecture</strong></td>
-<td>Month 2</td>
-<td>- Finalize design for screens: Complete designs for key user screens (login, dashboard, etc.).  - Define database structure: Establish the structure for user and content data.  - Create wireframes and prototypes: Design wireframes and interactive prototypes.</td>
+<td><strong>Phase 1</strong></td>
+<td>April 7, 2025 – April 20, 2025</td>
+<td>- Gather requirements for EcoPoints &amp; CMS<br>- Analyze existing APIs &amp; dependencies<br>- Build backlog</td>
+<td>- Requirements document<br>- Technical dependencies report</td>
 </tr>
 <tr>
-<td><strong>Phase 3: Initial Development and MVP</strong></td>
-<td>Month 3-4</td>
-<td>- Build initial version: Develop the first version of the system with core functionalities.  - Test essential functionalities: Ensure that user registration, login, and user management work as intended.  - Ensure system operations: Verify that the system operates smoothly, focusing on core features.</td>
+<td><strong>Phase 2</strong></td>
+<td>April 21, 2025 – May 4, 2025</td>
+<td>- Finalize detailed requirements &amp; acceptance criteria<br>- Prioritize backlog<br>- Prototype API &amp; static map</td>
+<td>- Prioritized backlog<br>- Initial EcoPoints prototype</td>
 </tr>
 <tr>
-<td><strong>Phase 4: Testing and Validation</strong></td>
-<td>Month 5</td>
-<td>- Validate MVP functionality: Ensure the MVP meets all requirements and performs well with real users.  - Identify improvements: Based on user feedback, identify areas for improvement in design and functionality.  - Perform performance and security testing: Ensure the system performs under load and adheres to security standards.</td>
+<td><strong>Phase 3</strong></td>
+<td>May 5, 2025 – May 18, 2025</td>
+<td>- Complete EcoPoints module (filters, location, tests)<br>- Start CMS with CRUD &amp; user roles</td>
+<td>- Functional EcoPoints module<br>- CMS prototype (CRUD &amp; roles)</td>
 </tr>
 <tr>
-<td><strong>Phase 5: Launch and Implementation</strong></td>
-<td>Month 6</td>
-<td>- Ensure system stability: Ensure that the system runs smoothly in production without major issues.  - Provide user training: Educate doctors and administrators on how to use the system.  - Prepare user documentation: Ensure end-users have access to user guides and support materials.</td>
+<td><strong>Phase 4</strong></td>
+<td>May 19, 2025 – June 1, 2025</td>
+<td>- Finalize CMS features (editing, validation)<br>- General testing &amp; polish<br>- Draft technical &amp; user documentation</td>
+<td>- Fully functional CMS<br>- Initial documentation</td>
 </tr>
 <tr>
-<td><strong>Phase 6: Continuous Iteration and Improvements</strong></td>
-<td>Month 7 onwards</td>
-<td>- Make adjustments: Update the system based on user feedback and new needs.  - Release regular updates: Regularly update the system to fix bugs and add features.  - Expand the platform: Add new features, such as reports and integrations.</td>
+<td><strong>Phase 5</strong></td>
+<td>June 2, 2025 – June 17, 2025</td>
+<td>- Final testing &amp; bug fixes<br>- Stakeholder validation<br>- UX adjustments &amp; official delivery</td>
+<td>- Final validated system<br>- Final documentation<br>- Delivery</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="phase-descriptions">Phase Descriptions</h2>
+<hr />
+<h3 id="phase-0-initialization-alignment">🛠️ Phase 0 — Initialization &amp; Alignment</h3>
+<p><strong>Timeline:</strong> March 24 → April 6, 2025<br />
+<strong>Purpose:</strong> Align team responsibilities and prepare the technical foundation.</p>
+<p><strong>Key Activities:</strong><br />
+- Define frontend and backend roles<br />
+- Set up communication tools (e.g., Slack, GitHub)<br />
+- Review and map existing infrastructure<br />
+- Identify initial technical dependencies  </p>
+<hr />
+<h3 id="phase-1-requirements-gathering-backlog-building">📋 Phase 1 — Requirements Gathering &amp; Backlog Building</h3>
+<p><strong>Timeline:</strong> April 7 → April 20, 2025<br />
+<strong>Purpose:</strong> Understand the product’s functional needs and shape the project backlog.</p>
+<p><strong>Key Activities:</strong><br />
+- Interview stakeholders (students, collectors, UnB teams)<br />
+- Define functional requirements for EcoPoints and CMS<br />
+- Analyze API integrations and external systems<br />
+- Structure and prioritize user stories in the backlog  </p>
+<hr />
+<h3 id="phase-2-specification-prototyping">🧪 Phase 2 — Specification &amp; Prototyping</h3>
+<p><strong>Timeline:</strong> April 21 → May 4, 2025<br />
+<strong>Purpose:</strong> Refine top-priority items and validate with early prototypes.</p>
+<p><strong>Key Activities:</strong><br />
+- Finalize detailed requirements and acceptance criteria<br />
+- Prioritize stories and dependencies<br />
+- Create API stubs and static map for EcoPoint discovery<br />
+- Build clickable mockups or wireframes for main flows  </p>
+<hr />
+<h3 id="phase-3-core-module-development">⚙️ Phase 3 — Core Module Development</h3>
+<p><strong>Timeline:</strong> May 5 → May 18, 2025<br />
+<strong>Purpose:</strong> Implement the EcoPoints module and CMS foundations.</p>
+<p><strong>Key Activities:</strong><br />
+- Implement EcoPoints filters, geolocation, and tests<br />
+- Scaffold CMS with CRUD functionality and user roles<br />
+- Begin writing unit and integration tests<br />
+- Present working features to stakeholders for feedback  </p>
+<hr />
+<h3 id="phase-4-feature-completion-polishing">🧼 Phase 4 — Feature Completion &amp; Polishing</h3>
+<p><strong>Timeline:</strong> May 19 → June 1, 2025<br />
+<strong>Purpose:</strong> Finalize CMS and enhance overall usability and documentation.</p>
+<p><strong>Key Activities:</strong><br />
+- Implement advanced CMS features (validation, media upload)<br />
+- Perform end-to-end testing across modules<br />
+- Polish UI based on testing and feedback<br />
+- Draft user and technical documentation  </p>
+<hr />
+<h3 id="phase-5-final-testing-validation-delivery">🚀 Phase 5 — Final Testing, Validation &amp; Delivery</h3>
+<p><strong>Timeline:</strong> June 2 → June 17, 2025<br />
+<strong>Purpose:</strong> Validate the system with users and stakeholders and deliver the final product.</p>
+<p><strong>Key Activities:</strong><br />
+- Execute QA (performance, security, accessibility)<br />
+- Conduct final stakeholder reviews and validations<br />
+- Apply final UX/UI refinements<br />
+- Finalize documentation and deliver the project  </p>
+<hr />
 <h2 id="revision-history">Revision History</h2>
 <table>
 <thead>
@@ -1309,10 +1492,16 @@
 </thead>
 <tbody>
 <tr>
-<td>2025-03-28</td>
+<td>2025‑04‑06</td>
+<td>0.2</td>
+<td>Updated document with Ecolink scope/timeline</td>
+<td><a href="https://github.com/matix0">Mateus Vieira</a></td>
+</tr>
+<tr>
+<td>2024‑03‑28</td>
 <td>0.1</td>
 <td>Document creation</td>
-<td><a href="https://github.com/freitasc">Cainã Freitas</a> and <a href="https://github.com/LucasGSAntunes">Lucas Antunes</a></td>
+<td><a href="https://github.com/freitasc">Cainã Freitas</a>, <a href="https://github.com/LucasGSAntunes">Lucas Antunes</a></td>
 </tr>
 </tbody>
 </table>

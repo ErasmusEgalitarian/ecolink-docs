@@ -72,6 +72,8 @@
   
     
     
+      
+    
     
     
     
@@ -127,7 +129,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -352,10 +380,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Context">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#objectives-and-scope" class="md-nav__link">
     <span class="md-ellipsis">
       Objectives and Scope
@@ -368,7 +395,7 @@
           <li class="md-nav__item">
   <a href="#objectives" class="md-nav__link">
     <span class="md-ellipsis">
-      Objectives:
+      Objectives
     </span>
   </a>
   
@@ -377,7 +404,7 @@
           <li class="md-nav__item">
   <a href="#scope" class="md-nav__link">
     <span class="md-ellipsis">
-      Scope:
+      Scope
     </span>
   </a>
   
@@ -387,8 +414,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#key-features-and-deliverables" class="md-nav__link">
     <span class="md-ellipsis">
       Key Features and Deliverables
@@ -396,8 +423,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#technologies-and-tools" class="md-nav__link">
     <span class="md-ellipsis">
       Technologies and Tools
@@ -405,17 +432,17 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#timeline" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#timeline-macro" class="md-nav__link">
     <span class="md-ellipsis">
-      Timeline
+      Timeline (Macro)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expected-impact" class="md-nav__link">
     <span class="md-ellipsis">
       Expected Impact
@@ -423,9 +450,13 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revision History
+    </span>
+  </a>
   
 </li>
       
@@ -1030,6 +1061,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1321,136 +1374,138 @@
 <h1 id="project-overview">Project Overview</h1>
 <p><a href="../../">← Back to Main Page</a></p>
 <h2 id="context">Context</h2>
-<p>In modern IT infrastructures, ensuring the reliability and availability of servers and services is crucial. The growing complexity of server environments and the increasing volume of data generated by these systems have created a pressing need for real-time monitoring and proactive anomaly detection.</p>
-<p>This project was initiated to address these challenges by creating a scalable real-time monitoring platform. The system will leverage advanced data analysis and machine learning techniques to monitor server health, detect performance anomalies, and alert system administrators to potential issues before they escalate into failures.</p>
-<p>The project's aim is to reduce downtime, increase operational efficiency, and minimize the need for manual intervention in server management, ultimately improving the overall stability of IT systems.</p>
-<hr />
-<h3 id="objectives-and-scope">Objectives and Scope</h3>
-<h4 id="objectives">Objectives:</h4>
+<p><strong>Ecolink</strong> is an environmental awareness initiative focused on promoting proper waste separation and recycling, especially within the university environment. Through a mobile app and smart collection stations — called <strong>Ecopoints</strong> — the project aims to encourage students to properly clean and sort recyclable materials, primarily aluminum cans and PET bottles.</p>
+<p>Currently, only around 39% of the recyclable waste in the Federal District is actually recycled. Ecolink seeks to help improve this statistic by combining <strong>technology, gamification, and educational content</strong>. The app will allow users to locate Ecopoints, register their recyclable donations, track their activity, and earn academic credits through an incentive system. Additionally, the project will leverage social media platforms such as Instagram and TikTok to share informative and engaging content created in collaboration with local waste pickers.</p>
+<h2 id="objectives-and-scope">Objectives and Scope</h2>
+<h3 id="objectives">Objectives</h3>
 <ul>
-<li>Develop a scalable and efficient real-time monitoring system capable of tracking server health across a wide range of metrics (e.g., CPU, memory, disk usage, network traffic).</li>
-<li>Implement machine learning algorithms to analyze historical and real-time server data, detecting anomalies and predicting potential hardware failures.</li>
-<li>Design an alerting system that notifies administrators of detected issues through various channels, including email, SMS, and integration with messaging platforms like Slack.</li>
-<li>Create an intuitive dashboard to provide administrators with real-time insights into server status, trends, and health indicators, allowing for informed decision-making.</li>
+<li>Increase the qualified recycling rate in the Federal District.</li>
+<li>Educate users on proper waste sanitation and separation practices.</li>
+<li>Engage University of Brasília (UnB) students through gamification and academic incentives.</li>
+<li>Develop an intuitive app with Ecopoint location services, user history, and deposit tracking.</li>
+<li>Build working prototypes of smart Ecopoints capable of identifying different recyclable materials.</li>
+<li>Produce and publish educational content in partnership with waste pickers on social media platforms.</li>
 </ul>
-<h4 id="scope">Scope:</h4>
+<h3 id="scope">Scope</h3>
 <p><strong>Included:</strong></p>
 <ul>
-<li>Real-time data collection from servers running various operating systems (Linux, Windows, etc.).</li>
-<li>Integration with existing IT infrastructure tools such as Nagios, Zabbix, and Prometheus.</li>
-<li>Machine learning models to detect performance anomalies and predict potential failures based on historical data.</li>
-<li>Alerting system with customizable thresholds and multi-channel notifications.</li>
-<li>Visual dashboard for displaying server health and performance metrics.</li>
+<li>Mobile application with areas for users and employees.</li>
+<li>Functionality to register drop-offs and track user activity.</li>
+<li>Integration with UnB's academic credit system.</li>
+<li>Development and prototyping of smart Ecopoints.</li>
+<li>Execution of awareness campaigns via Instagram and TikTok.</li>
+<li>Production of video and visual educational content.</li>
 </ul>
 <p><strong>Not Included:</strong></p>
 <ul>
-<li>Monitoring of non-server infrastructure components such as databases, network devices, or virtual machines (though these may be included in future iterations).</li>
-<li>Full end-to-end security monitoring (the focus is primarily on performance monitoring and anomaly detection).</li>
-<li>Monitoring for non-production environments (e.g., development and staging environments).</li>
+<li>Deployment beyond UnB (in this initial phase).</li>
+<li>Collection of waste materials other than cans and bottles.</li>
+<li>Advanced physical security features for Ecopoints (future consideration).</li>
+<li>Monitoring of external or non-controlled environments.</li>
 </ul>
-<hr />
-<h3 id="key-features-and-deliverables">Key Features and Deliverables</h3>
-<p>The key features and deliverables of this project include:</p>
+<h2 id="key-features-and-deliverables">Key Features and Deliverables</h2>
 <table>
 <thead>
 <tr>
-<th>Feature</th>
+<th>Feature / Deliverable</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Data Collection Service</strong></td>
-<td>Real-time ingestion of server performance metrics.</td>
+<td><strong>Ecolink App</strong></td>
+<td>Enables users to locate Ecopoints, register recyclable drop-offs, and track performance.</td>
 </tr>
 <tr>
-<td><strong>Anomaly Detection Engine</strong></td>
-<td>Machine learning-based analysis for identifying anomalies and predicting failures.</td>
+<td><strong>Gamification System</strong></td>
+<td>Encourages recycling through a point system convertible into academic credits.</td>
 </tr>
 <tr>
-<td><strong>Alerting System</strong></td>
-<td>Multi-channel notifications for administrators.</td>
+<td><strong>Educational Content</strong></td>
+<td>Videos and posts produced with waste pickers to promote proper recycling practices.</td>
 </tr>
 <tr>
-<td><strong>Web Dashboard</strong></td>
-<td>A user-friendly interface displaying real-time server status and health metrics.</td>
+<td><strong>Smart Ecopoint Prototype</strong></td>
+<td>Intelligent bin capable of recognizing different materials (e.g., by weight or type).</td>
 </tr>
 <tr>
-<td><strong>Documentation and API</strong></td>
-<td>Comprehensive documentation on how to deploy, use, and integrate the monitoring platform with existing infrastructure.</td>
+<td><strong>Social Media Campaigns</strong></td>
+<td>Engagement through Instagram and TikTok, with awareness posts and video content.</td>
+</tr>
+<tr>
+<td><strong>Documentation &amp; Research</strong></td>
+<td>Studies on feasibility, benchmarking, and prototyping documentation.</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="technologies-and-tools">Technologies and Tools</h3>
-<p>The platform will be built using a range of technologies to ensure scalability, reliability, and ease of use:</p>
+<h2 id="technologies-and-tools">Technologies and Tools</h2>
 <table>
 <thead>
 <tr>
-<th>Technology Area</th>
-<th>Tools and Frameworks</th>
+<th>Area</th>
+<th>Tools and Technologies</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Backend</strong></td>
-<td>Python (Flask/FastAPI), Docker, Kubernetes for container orchestration.</td>
-</tr>
-<tr>
-<td><strong>Machine Learning</strong></td>
-<td>Scikit-learn, TensorFlow for training models and anomaly detection.</td>
+<td>Node.js or Python; PostgreSQL for structured data.</td>
 </tr>
 <tr>
 <td><strong>Frontend</strong></td>
-<td>React.js for the web interface, D3.js for dynamic visualizations.</td>
+<td>React Native or Flutter for cross-platform mobile development.</td>
 </tr>
 <tr>
-<td><strong>Database</strong></td>
-<td>PostgreSQL for time-series data storage, MongoDB for logs and unstructured data.</td>
+<td><strong>Hardware</strong></td>
+<td>Arduino or Raspberry Pi; sensors for weight or material detection.</td>
 </tr>
 <tr>
-<td><strong>Alerting Framework</strong></td>
-<td>Integrations with SMTP, Twilio for SMS, and Slack API.</td>
+<td><strong>Gamification</strong></td>
+<td>Points and achievements system tied to real-life impact and credit conversion.</td>
+</tr>
+<tr>
+<td><strong>Social Media</strong></td>
+<td>Instagram, TikTok, Canva/Figma for content planning and visual identity.</td>
+</tr>
+<tr>
+<td><strong>Integrations</strong></td>
+<td>UnB’s academic system, geolocation APIs for map and Ecopoint discovery.</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="timeline">Timeline</h3>
-<p>The project is expected to be completed over the following phases:</p>
+<h2 id="timeline-macro">Timeline (Macro)</h2>
 <table>
 <thead>
 <tr>
 <th>Phase</th>
-<th>Duration</th>
-<th>Tasks</th>
+<th>Estimated Duration</th>
+<th>Key Activities</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Phase 1</strong></td>
-<td>0-3 months</td>
-<td>Research, data collection infrastructure, initial prototype for anomaly detection.</td>
+<td><strong>Phase 1: Research &amp; Planning</strong></td>
+<td>Months 0–2</td>
+<td>Market studies, stakeholder engagement, tech scope definition.</td>
 </tr>
 <tr>
-<td><strong>Phase 2</strong></td>
-<td>3-6 months</td>
-<td>Development of the alerting system, integration with existing infrastructure, and machine learning model training.</td>
+<td><strong>Phase 2: Initial Development</strong></td>
+<td>Months 2–5</td>
+<td>App prototype, Ecopoint concept, content creation.</td>
 </tr>
 <tr>
-<td><strong>Phase 3</strong></td>
-<td>6-9 months</td>
-<td>Dashboard development, user interface design, and system optimizations.</td>
+<td><strong>Phase 3: Validation &amp; Integration</strong></td>
+<td>Months 5–8</td>
+<td>User testing, feedback-based adjustments.</td>
 </tr>
 <tr>
-<td><strong>Phase 4</strong></td>
-<td>9-12 months</td>
-<td>Deployment, testing in real-world environments, and final adjustments based on user feedback.</td>
+<td><strong>Phase 4: Launch &amp; Expansion</strong></td>
+<td>Months 8–12</td>
+<td>Integration with UnB system, Pilot launch, social media rollout, data collection, and performance review.</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="expected-impact">Expected Impact</h3>
-<p>Upon completion, the monitoring platform will offer the following benefits to IT administrators and organizations:</p>
+<h2 id="expected-impact">Expected Impact</h2>
 <table>
 <thead>
 <tr>
@@ -1460,28 +1515,24 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Proactive failure detection</strong></td>
-<td>Minimize downtime and manual troubleshooting through machine learning.</td>
+<td><strong>Increased Recycling</strong></td>
+<td>Promotes better recycling habits and increases the rate of qualified waste disposal.</td>
 </tr>
 <tr>
-<td><strong>Faster response times</strong></td>
-<td>Address critical performance issues more quickly, improving system reliability.</td>
+<td><strong>Environmental Awareness</strong></td>
+<td>Educates the community with real-world guidance from waste professionals.</td>
 </tr>
 <tr>
-<td><strong>Scalability</strong></td>
-<td>Monitor large and diverse server infrastructures.</td>
+<td><strong>Student Engagement</strong></td>
+<td>Offers students meaningful participation and academic benefits.</td>
 </tr>
 <tr>
-<td><strong>Cost savings</strong></td>
-<td>Reduce the need for manual monitoring and improve resource utilization.</td>
-</tr>
-<tr>
-<td><strong>Improved system performance</strong></td>
-<td>Enable data-driven optimization and capacity planning.</td>
+<td><strong>Scalability Potential</strong></td>
+<td>Can be replicated in other institutions and communities.</td>
 </tr>
 </tbody>
 </table>
-<h1 id="revision-history">Revision History</h1>
+<h2 id="revision-history">Revision History</h2>
 <table>
 <thead>
 <tr>
@@ -1493,10 +1544,16 @@
 </thead>
 <tbody>
 <tr>
-<td>2025-03-28</td>
+<td>03/28/2024</td>
 <td>0.1</td>
 <td>Document creation</td>
 <td><a href="https://github.com/freitasc">Cainã Freitas</a> and <a href="https://github.com/LucasGSAntunes">Lucas Antunes</a></td>
+</tr>
+<tr>
+<td>04/08/2025</td>
+<td>0.2</td>
+<td>Update document with ecolink information</td>
+<td><a href="https://github.com/matix0">Mateus Vieira</a></td>
 </tr>
 </tbody>
 </table>
