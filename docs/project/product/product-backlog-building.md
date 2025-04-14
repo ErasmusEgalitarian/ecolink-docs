@@ -28,7 +28,11 @@ Nothing in this document is final; please suggest corrections or improvements.
 
 | #     | Description                               |
 | ----- | ----------------------------------------- |
-| FR-00 | [Describe a core system functionality]    |
+| FR-00 | [O sistema deve permitir que o usuário envie arquivos de videos (MP4, webM) e arquivos de imagem (PNG, JPEG, SVG)]    |
+| FR-01 | [Describe a core system functionality]             |
+| FR-02 | [Describe a core system functionality]             |
+| FR-03 | [Describe a core system functionality]             |
+
 
 ---
 
