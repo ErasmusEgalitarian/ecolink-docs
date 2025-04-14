@@ -26,12 +26,13 @@ Nothing in this document is final; please suggest corrections or improvements.
 
 > Defines the system's **core functionalities** — what the system must do.
 
-| #     | Description                               |
-| ----- | ----------------------------------------- |
-| FR-00 | Media upload [System must allow the user to upload video (MP4, webM) and image files(PNG, JPEG, SVG)]    |
-| FR-01 | Data editing [The system must allow adding/editing of metadata for uploaded media]             |
-| FR-02 | [Describe a core system functionality]             |
-| FR-03 | [Describe a core system functionality]             |
+| #     | Description                                                                                                                                                                                                                                                                       |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FR-00 | Media upload [System must allow the user to upload video (MP4, webM) and image files(PNG, JPEG, SVG)]                                                                                                                                                                             |
+| FR-01 | Data editing [The system must allow adding/editing of metadata for uploaded media]                                                                                                                                                                                                |
+| FR-02 | User Registration [The system must allow three types of users to register: administrators, students, and external users. Each user type will provide the necessary details for registration, such as personal information and academic data for students for incentive tracking.] |
+| FR-03 | Ecopoint Location [The system must provide users with the ability to locate nearby Ecopoints using geolocation services.]                                                                                                                                                         |
+| FR-04 | User Feedback [The system must allow users to provide feedback on the app’s usability and content for continuous improvement.]                                                                                                                                                    |
 
 
 ---
@@ -40,9 +41,14 @@ Nothing in this document is final; please suggest corrections or improvements.
 
 > Specifies **quality attributes** for performance, security, usability, scalability, etc. — how the system must perform the functions.
 
-| #      | Type        | Description                                 |
-| ------ | ----------- | ------------------------------------------- |
-| NFR-00 | [Scalability]      | [The system must support multiple simultaneous uploads with no issues in performance]          |
+| #      | Type             | Description                                                                                                                                                                                                                                                            |
+| ------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| NFR-00 | **Scalability**  | [The system must support multiple simultaneous uploads with no issues in performance]                                                                                                                                                                                  |
+| NFR-01 | **Usability**    | The application must use a color palette consistent with the project, ensuring a cohesive user experience. The colors should be selected to optimize readability and ensure adequate contrast for users with visual impairments, meeting WCAG 2.1 level AA guidelines. |
+| NFR-02 | **Availability** | The system must ensure 99.9% availability throughout each month.                                                                                                                                                                                                       |
+| NFR-03 | **Perfomance**   | The system’s home page must load in less than 3 seconds on 4G or better networks.                                                                                                                                                                                      |
+| NFR-04 | **Scalability**  | The system must allow the addition of new modules transparently, without impacting existing modules.                                                                                                                                                                   |
+| NFR-05 | **Security**     | The system must ensure encryption of sensitive data using the AES 256-bit protocol.                                                                                                                                                                                    |
 
 ---
 
