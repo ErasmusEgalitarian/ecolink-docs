@@ -42,7 +42,7 @@ Nothing in this document is final; please suggest corrections or improvements.
 
 | #      | Type        | Description                                 |
 | ------ | ----------- | ------------------------------------------- |
-| NFR-00 | [Type]      | [Describe the quality expectation]          |
+| NFR-00 | [Scalability]      | [The system must support multiple simultaneous uploads with no issues in performance]          |
 
 ---
 
