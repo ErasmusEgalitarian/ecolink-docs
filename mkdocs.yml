@@ -3,39 +3,65 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
+    - navigation.tabs
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.copy
     - toc.integrate
     - toc.collapse
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.tabs.sticky
   palette:
     - scheme: default
-      primary: black
-      accent: red
+      primary: teal
+      accent: green
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: Dark mode
     - scheme: slate
-      primary: black
-      accent: red
+      primary: teal
+      accent: green
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: Light mode
 
 site_name: Ecolink
-
-site_description: Software Documentation of the Ecolink Project
-
+site_description: Technical Documentation for Ecolink Project
 site_author: Cainã Freitas
-
 repo_url: https://github.com/ErasmusEgalitarian/ecolink-docs
+repo_name: GitHub
 
 plugins:
-  - search
+  - search:
+      lang: en
+      separator: '[\s\-]+'
 
+extra:
+  analytics:
+    provider: google
+    property: UA-XXXXX-Y
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ErasmusEgalitarian/ecolink-docs
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/ecolink_project
+
+strict: true
+use_directory_urls: true
 nav:
   - Home: index.md
+  - Quick Access:
+      - Product Backlog: project/product/product-backlog-building.md
+      - Roadmap: project/management/roadmap.md
+      - API Documentation: project/development/technical/api.md
+      - Meetings: project/management/meetings.md
+      - Database Schema: project/development/technical/database-schema.md
   - Project:
       - Overview: project/overview.md
       - Vision & Objectives:
@@ -46,13 +72,26 @@ nav:
           - Product Overview: project/product/overview.md
           - Product Backlog: project/product/product-backlog-building.md
           - MVPs: project/product/mvp.md
+  - Egalitarian:
+      - Hub: project/egalitarian/egalitarian.md
+      - Cycles:
+          - 2023:
+              - Cycle 1: project/egalitarian/cycles/2023-2.md
+          - 2024:
+              - Cycle 1: project/egalitarian/cycles/2024-1.md
+              - Cycle 2: project/egalitarian/cycles/2024-2.md
+          - 2025:
+              - Cycle 1: project/egalitarian/cycles/2025-1.md
   - Management:
       - Roadmap: project/management/roadmap.md
       - Workflow: project/management/workflow.md
       - Issue Tracking & Task Management: project/management/issue-tracking.md
       - Project Deliverables: project/management/deliverables.md
-      - Meeting Minutes: project/management/meetings.md
+      - Meeting: project/management/meetings.md
       - Lessons Learned: project/management/lessons-learned.md
+      - Sprints:
+          - Sprint Overview: project/management/sprints/sprint.md
+          - Sprint 1: project/management/sprints/sprint1.md
   - Development Process:
       - Software Development Lifecycle: project/development/lifecycle.md
       - Technical Documentation:
@@ -70,11 +109,4 @@ nav:
           - Publishing Guide: setup/publishing-guide.md
       - README: setup/readme.md
   - References: references.md
-
-extra:
-  analytics:
-    provider: google
-    property: UA-XXXXX-Y
-
-strict: true
-use_directory_urls: true
+  - Checklist: checklist.md
