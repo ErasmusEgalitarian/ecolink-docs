@@ -56,12 +56,6 @@ strict: true
 use_directory_urls: true
 nav:
   - Home: index.md
-  - Quick Access:
-      - Product Backlog: project/product/product-backlog-building.md
-      - Roadmap: project/management/roadmap.md
-      - API Documentation: project/development/technical/api.md
-      - Meetings: project/management/meetings.md
-      - Database Schema: project/development/technical/database-schema.md
   - Project:
       - Overview: project/overview.md
       - Vision & Objectives:
@@ -109,4 +103,3 @@ nav:
           - Publishing Guide: setup/publishing-guide.md
       - README: setup/readme.md
   - References: references.md
-  - Checklist: checklist.md
