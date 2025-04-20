@@ -29,6 +29,9 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #     | Description                               |
 | ----- | ----------------------------------------- |
 | FR-00 | [Describe a core system functionality]    |
+| FR-01 | 	The system must allow users to  log in using email and password.    |
+| FR-02 | 	The system must validate the user credentials via API.    |
+| FR-03 | 	The system must provide an error for failed login attempts.    |
 
 ---
 
@@ -39,6 +42,7 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #      | Type        | Description                                 |
 | ------ | ----------- | ------------------------------------------- |
 | NFR-00 | [Type]      | [Describe the quality expectation]          |
+| NFR-01 | Performance      | The login must take no more than 2 seconds to successfully log in the user.          |
 
 ---
 
@@ -49,6 +53,7 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #     | Theme         | Description                             |
 | ----- | ------------- | --------------------------------------- |
 | TM-00 | [Theme Name]  | [High-level area description]           |
+| TM-01 | Auth  | This theme is related to login and logout to/from the system.           |
 
 ---
 
@@ -59,6 +64,7 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #     | Epic             | Description                                 |
 | ----- | ---------------- | ------------------------------------------- |
 | EP-00 | [Epic Title]     | [High-level functional overview]            |
+| EP-01 | Login     | This epic is related to the user login into the system.           |
 
 ---
 
@@ -69,6 +75,7 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #    | Capability         | Description                                   |
 | ---- | ------------------ | --------------------------------------------- |
 | C-00 | [Capability Name]  | [Description of system’s technical ability]   |
+| C-01 | Security  | The system should be able to securely log in an user and store his credentials and tokens securely.  |
 
 ---
 
@@ -79,6 +86,9 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #    | Feature             | Description                                          |
 | ---- | ------------------- | ---------------------------------------------------- |
 | F-00 | [Feature Name]      | [Detailed description of the required functionality] |
+| F-01 | Login page (web)      | A login responsive webpage that asks for user credentials should be implemented. |
+| F-02 | API login endpoint      | A login endpoint on the backend should be implemented. |
+| F-03 | Web UI and backend integration     | Both systems should be properly integrated between each other. |
 
 ---
 
@@ -89,6 +99,10 @@ Nothing in this document is final; please suggest corrections or improvements.
 | #     | Description                                                              |
 | ----- | ------------------------------------------------------------------------ |
 | US-00 | As a [user type], I want [action] so that [benefit or purpose].          |
+| US-01 | As a user, I want to login on the system so that I can access specific data.          |
+| US-02 | As a user, I want to have my credentials securely handled so that I can trust the system.          |
+| US-03 | As a user, I want the website to be responsive so I can access it through multiple devices, such as smartphones and tablets.      |
+| US-04 | As a user, I want proper error and exception handling on the login/logout system so I can transparently understand what's happening when something goes wrong.      |
 
 ---
 
@@ -99,6 +113,10 @@ The project backlog is a structured list of all tasks, features, and improvement
 | Theme | Epic   | Capabilities | Features | User Story | Description                                                    |
 |-------|--------|--------------|----------|------------|----------------------------------------------------------------|
 | TM00  | EP00   | C00          | F00      | US00       | As a [user], I want [functionality] so that [benefit].         |
+| TM01  | EP01   | C01          | F01      | US01       | As a user, I want to log in using my credentials so that I can access specific data to my account.
+| TM01  | EP01   | C01          | F02      | US02       | As a user, I want my credentials properly handled so I can securely use the system.
+| TM01  | EP01   | C01          | F03      | US03       | As a user, I want the website to be responsive so I can access it through multiple different devices.
+| TM01  | EP01   | C01          | F03      | US04       | As a user, I want proper error/exception handling so I can have a transparent view of what's happening on the system.
 
 ---
 
@@ -107,5 +125,6 @@ The project backlog is a structured list of all tasks, features, and improvement
 | Date       | Version | Changes           | Authors  |
 | ---------- | ------- | ----------------- | -------- |
 | 2025-03-28 | 0.1     | Document creation | [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes) |
+| 2025-04-20 | 0.2     | Added login features, epics, user stories and backlog | [Eduardo F. Aquino](https://github.com/fxred)|
 
 [← Back to Main Page](../../index.md)
