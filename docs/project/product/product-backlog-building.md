@@ -30,9 +30,10 @@ Nothing in this document is final; please suggest corrections or improvements.
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | FR-00 | Media upload [System must allow the user to upload video (MP4, webM) and image files(PNG, JPEG, SVG)]                                                                                                                                                                             |
 | FR-01 | Data editing [The system must allow adding/editing of metadata for uploaded media]                                                                                                                                                                                                |
-| FR-02 | User Registration [The system must allow three types of users to register: administrators, students, and external users. Each user type will provide the necessary details for registration, such as personal information and academic data for students for incentive tracking.] |
-| FR-03 | Ecopoint Location [The system must provide users with the ability to locate nearby Ecopoints using geolocation services.]                                                                                                                                                         |
+| FR-02 | The system must support role-based access control for content management. |
+| FR-03 | The system must provide a content feed interface for users, displaying educational posts chronologically or by relevance.                                                                                                                                                         |
 | FR-04 | User Feedback [The system must allow users to provide feedback on the app’s usability and content for continuous improvement.]                                                                                                                                                    |
+FR-05 | The system must support uploading multiple media files in one session.                                                                                                                                                                 |
 
 
 ---
