@@ -59,7 +59,7 @@ Currently, only around 39% of the recyclable waste in the Federal District is ac
 | **Social Media** | Instagram, TikTok, Canva/Figma for content planning and visual identity.       |
 | **Integrations** | UnB’s academic system, geolocation APIs for map and Ecopoint discovery.        |
 
-## Timeline (Macro)
+## Timeline
 
 | Phase                                 | Estimated Duration | Key Activities                                                                                            |
 | ------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------- |
@@ -85,3 +85,6 @@ Currently, only around 39% of the recyclable waste in the Federal District is ac
 | 04/08/2025 | 0.2     | Update document with ecolink information | [Mateus Vieira](https://github.com/matix0)                                                          |
 
 [← Back to Main Page](../index.md)
+
+
+Se quiser, posso aplicar esse padrão em outros arquivos da documentação também — só me avisar!

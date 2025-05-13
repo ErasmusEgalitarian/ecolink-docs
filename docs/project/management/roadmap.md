@@ -27,7 +27,7 @@ This roadmap aligns with Ecolink’s 14‑day cadence, culminating in final deli
 
 **Key Activities:**  
 - Define frontend and backend roles  
-- Set up communication tools (e.g., Slack, GitHub)  
+- Set up communication tools  
 - Review and map existing infrastructure  
 - Identify initial technical dependencies  
 
