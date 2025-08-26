@@ -4,9 +4,17 @@
 
 ## Context
 
-**Ecolink** is an environmental awareness initiative focused on promoting proper waste separation and recycling, especially within the university environment. Through a mobile app and smart collection stations — called **Ecopoints** — the project aims to encourage students to properly clean and sort recyclable materials, primarily aluminum cans and PET bottles.
+**Ecolink** is an integrated environmental platform that combines a mobile application with a network of smart waste collection stations, known as **Ecopoints**. The project is built on the pillars of **technology, gamification, and education** to create a seamless and rewarding recycling experience.
 
-Currently, only around 39% of the recyclable waste in the Federal District is actually recycled. Ecolink seeks to help improve this statistic by combining **technology, gamification, and educational content**. The app will allow users to locate Ecopoints, register their recyclable donations, track their activity, and earn academic credits through an incentive system. Additionally, the project will leverage social media platforms such as Instagram and TikTok to share informative and engaging content created in collaboration with local waste pickers.
+The system is designed to guide users through the entire process: from learning how to correctly separate materials, to locating the nearest smart station, to receiving immediate feedback and incentives for their contributions. The mobile app serves as the user's hub for educational content, activity tracking, and redeeming rewards. A key component of the initiative is its collaborative approach, working alongside local waste picker cooperatives and leveraging social media platforms like Instagram and TikTok to amplify its educational reach and community engagement.
+
+## Problem Statement
+
+The improper disposal of waste represents a significant environmental challenge that undermines sustainability efforts in communities. Currently, there is a widespread lack of effective systems to guide people in proper waste separation, leading to low recycling rates due to contamination of recyclable materials, insufficient awareness about correct waste disposal practices, limited accessibility to proper waste collection points, and no incentive system to encourage sustainable behaviors.
+
+This problem is exacerbated by high consumption patterns and rapid waste generation, where different types of waste (paper, plastic, organic, electronic) are constantly produced without adequate separation mechanisms.
+
+Ecolink addresses these challenges through an integrated technological solution that educates, guides, and incentivizes proper waste disposal practices.
 
 ## Objectives and Scope
 
@@ -47,6 +55,7 @@ Currently, only around 39% of the recyclable waste in the Federal District is ac
 | **Smart Ecopoint Prototype** | Intelligent bin capable of recognizing different materials (e.g., by weight or type).    |
 | **Social Media Campaigns**   | Engagement through Instagram and TikTok, with awareness posts and video content.         |
 | **Documentation & Research** | Studies on feasibility, benchmarking, and prototyping documentation.                     |
+| **Communication**            | WhatsApp (for informal communication), Discord (for online meetings and development status updates) |
 
 ## Technologies and Tools
 
@@ -83,6 +92,7 @@ Currently, only around 39% of the recyclable waste in the Federal District is ac
 | ---------- | ------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | 03/28/2024 | 0.1     | Document creation                        | [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes) |
 | 04/08/2025 | 0.2     | Update document with ecolink information | [Mateus Vieira](https://github.com/matix0)                                                          |
+| 25/08/2025 | 0.3     | Update document                          | [Vinícius Rufino](https://github.com/RufinoVfR)                                                     |
 
 [← Back to Main Page](../index.md)
 
