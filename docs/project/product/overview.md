@@ -51,6 +51,6 @@ Hosting: AWS (Amazon Web Services) |
 | Date       | Version | Changes                           | Authors |
 | ---------- | ------- | --------------------------------- | ------- |
 | 2025-03-28 | 0.1     | Document creation                 | [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes)        |
-| 25/08/2025 | 0.2     | Update document                   | [Vinícius Rufino](https://github.com/RufinoVfR)                                                            |
+| 2025-03-25 | 0.2     | Update document                   | [Vinícius Rufino](https://github.com/RufinoVfR)                                                            |
 
 [← Back to Main Page](../../index.md)

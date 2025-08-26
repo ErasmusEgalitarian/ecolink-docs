@@ -92,7 +92,7 @@ Ecolink addresses these challenges through an integrated technological solution 
 | ---------- | ------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | 03/28/2024 | 0.1     | Document creation                        | [Cainã Freitas](https://github.com/freitasc) and [Lucas Antunes](https://github.com/LucasGSAntunes) |
 | 04/08/2025 | 0.2     | Update document with ecolink information | [Mateus Vieira](https://github.com/matix0)                                                          |
-| 25/08/2025 | 0.3     | Update document                          | [Vinícius Rufino](https://github.com/RufinoVfR)                                                     |
+| 2025-03-25 | 0.3     | Update document                          | [Vinícius Rufino](https://github.com/RufinoVfR)                                                     |
 
 [← Back to Main Page](../index.md)
 
