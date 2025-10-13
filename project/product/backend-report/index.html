@@ -1,0 +1,5063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Technical Documentation for Ecolink Project">
+      
+      
+        <meta name="author" content="Cainã Freitas">
+      
+      
+      
+        <link rel="prev" href="../mvp1-tracking/">
+      
+      
+        <link rel="next" href="../../egalitarian/egalitarian/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Reports - Ecolink</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-XXXXX-Y"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-XXXXX-Y",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#relatorio-final-ecolink-backend-estado-atual-e-roadmap-completo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Ecolink" class="md-header__button md-logo" aria-label="Ecolink" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ecolink
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reports
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ErasmusEgalitarian/ecolink-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../egalitarian/egalitarian/" class="md-tabs__link">
+          
+  
+    
+  
+  Egalitarian
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../management/roadmap/" class="md-tabs__link">
+          
+  
+    
+  
+  Management
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/lifecycle/" class="md-tabs__link">
+          
+  
+    
+  
+  Development Process
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../setup/mkdocs-configuration/" class="md-tabs__link">
+          
+  
+    
+  
+  Setup & Configuration
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../references/" class="md-tabs__link">
+        
+  
+    
+  
+  References
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Ecolink" class="md-nav__button md-logo" aria-label="Ecolink" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Ecolink
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ErasmusEgalitarian/ecolink-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Vision & Objectives
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Vision & Objectives
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vision-objectives/vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Vision
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vision-objectives/objectives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Objectives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stakeholders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stakeholders
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Product
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Product
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MVP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            MVP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp-releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MVP Releases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp1-backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MVP1 Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp1-tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MVP1 Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reports
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Reports
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sumario-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SUMÁRIO EXECUTIVO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SUMÁRIO EXECUTIVO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visao-geral-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-atual-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Atual do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metricas-de-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métricas de Qualidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-1-analise-do-sistema-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 1: ANÁLISE DO SISTEMA ATUAL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 1: ANÁLISE DO SISTEMA ATUAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-inventario-de-features-implementadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Inventário de Features Implementadas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Inventário de Features Implementadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades-operacionais-10-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Funcionalidades Operacionais (10 features)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades-ausentes-53-features-do-mvp1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Funcionalidades Ausentes (53 features do MVP1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-analise-de-codigo-pontos-criticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Análise de Código - Pontos Críticos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Análise de Código - Pontos Críticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vulnerabilidades-de-seguranca-criticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔴 Vulnerabilidades de Segurança CRÍTICAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-estruturais-nos-modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔴 Problemas Estruturais nos Modelos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-nas-rotas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Problemas nas Rotas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos-para-preservar" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟢 Pontos Positivos (Para Preservar)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cobertura-de-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Cobertura de Testes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-2-mapeamento-mvp1-vs-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 2: MAPEAMENTO MVP1 vs. IMPLEMENTAÇÃO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 2: MAPEAMENTO MVP1 vs. IMPLEMENTAÇÃO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-analise-cruzada-backlog-mvp1-68-us-x-codigo-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Análise Cruzada: Backlog MVP1 (68 US) x Código Atual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Análise Cruzada: Backlog MVP1 (68 US) x Código Atual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ep-001-user-authentication-profile-management-42-sp" class="md-nav__link">
+    <span class="md-ellipsis">
+      EP-001: User Authentication &amp; Profile Management (42 SP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ep-003-ecopoint-location-discovery-29-sp" class="md-nav__link">
+    <span class="md-ellipsis">
+      EP-003: EcoPoint Location &amp; Discovery (29 SP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ep-004-qr-code-access-kiosk-integration-21-sp" class="md-nav__link">
+    <span class="md-ellipsis">
+      EP-004: QR Code Access &amp; Kiosk Integration (21 SP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ep-005-donation-registration-validation-34-sp" class="md-nav__link">
+    <span class="md-ellipsis">
+      EP-005: Donation Registration &amp; Validation (34 SP)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-dashboard-progresso-por-epico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Dashboard: Progresso por Épico
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-3-plano-de-implementacao-consolidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 3: PLANO DE IMPLEMENTAÇÃO CONSOLIDADO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 3: PLANO DE IMPLEMENTAÇÃO CONSOLIDADO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-roadmap-estrategico-8-12-semanas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Roadmap Estratégico (8-12 semanas)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-fase-1-estabilizacao-seguranca-2-3-semanas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 FASE 1: Estabilização &amp; Segurança (2-3 semanas)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 FASE 1: Estabilização &amp; Segurança (2-3 semanas)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-1-security-hardening-1-2-semanas-31h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 1: Security Hardening (1-2 semanas, 31h)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-2-data-model-corrections-2-3-semanas-30h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 2: Data Model Corrections (2-3 semanas, 30h)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-fase-2-features-core-mvp1-3-4-semanas-174h" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 FASE 2: Features Core MVP1 (3-4 semanas, 174h)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 FASE 2: Features Core MVP1 (3-4 semanas, 174h)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-3-ecopoints-geolocation-3-4-semanas-36h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 3: EcoPoints &amp; Geolocation (3-4 semanas, 36h)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-4-qr-code-session-management-4-5-semanas-40h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 4: QR Code &amp; Session Management (4-5 semanas, 40h)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-5-donation-crud-completo-5-6-semanas-41h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 5: Donation CRUD Completo (5-6 semanas, 41h)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-6-user-profile-dashboard-6-7-semanas-33h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 6: User Profile &amp; Dashboard (6-7 semanas, 33h)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-7-password-reset-notifications-7-8-semanas-24h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 7: Password Reset &amp; Notifications (7-8 semanas, 24h)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-fase-3-testes-qualidade-1-2-semanas-55h" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 FASE 3: Testes &amp; Qualidade (1-2 semanas, 55h)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 FASE 3: Testes &amp; Qualidade (1-2 semanas, 55h)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-8-test-coverage-8-9-semanas-55h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 8: Test Coverage (8-9 semanas, 55h)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-fase-4-devops-deployment-1-semana-45h" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 FASE 4: DevOps &amp; Deployment (1 semana, 45h)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 FASE 4: DevOps &amp; Deployment (1 semana, 45h)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-9-production-ready-9-10-semanas-45h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 9: Production Ready (9-10 semanas, 45h)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-4-gestao-de-riscos-e-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 4: GESTÃO DE RISCOS E DEPENDÊNCIAS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 4: GESTÃO DE RISCOS E DEPENDÊNCIAS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-riscos-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Riscos Identificados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-dependencias-criticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Dependências Críticas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-5-metricas-e-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 5: MÉTRICAS E KPIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 5: MÉTRICAS E KPIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-criterios-de-aceitacao-por-fase" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Critérios de Aceitação por Fase
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Critérios de Aceitação por Fase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fase-1-estabilizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 1: Estabilização ✅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-2-features-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 2: Features Core ✅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-3-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 3: Testes ✅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-4-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fase 4: DevOps ✅
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-definicao-de-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Definição de "Done"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-kpis-de-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 KPIs de Sucesso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-6-estrutura-final-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 6: ESTRUTURA FINAL DO PROJETO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 6: ESTRUTURA FINAL DO PROJETO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-arvore-de-diretorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Árvore de Diretórios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-pacotes-npm-a-instalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Pacotes NPM a Instalar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 Pacotes NPM a Instalar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-1-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 1 (Segurança):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-7-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 7 (Email):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-9-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 9 (DevOps):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-7-cronograma-e-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 7: CRONOGRAMA E RECURSOS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 7: CRONOGRAMA E RECURSOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-distribuicao-de-esforco-por-fase" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Distribuição de Esforço por Fase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-alocacao-de-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Alocação de Recursos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-timeline-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Timeline Visual
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-8-recomendacoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      PARTE 8: RECOMENDAÇÕES FINAIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PARTE 8: RECOMENDAÇÕES FINAIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-acoes-imediatas-esta-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Ações Imediatas (Esta Semana)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-decisoes-tecnicas-necessarias" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Decisões Técnicas Necessárias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Próximos Passos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONCLUSÃO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CONCLUSÃO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo-da-situacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo da Situação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#veredicto-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Veredicto Final
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridades-absolutas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prioridades Absolutas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ANEXOS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ANEXOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anexo-a-checklist-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anexo A: Checklist de Implementação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anexo-b-recursos-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anexo B: Recursos e Referências
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Revisões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Egalitarian
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Egalitarian
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/egalitarian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cycles
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cycles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2023-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2024-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2024-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2025-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/issue-tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issue Tracking & Task Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/deliverables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Deliverables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/meetings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meeting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/lessons-learned/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lessons Learned
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/sprints/sprint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/sprints/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Development Process
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Development Process
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/lifecycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Development Lifecycle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/technical/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/technical/architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/technical/database-schema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database Schema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools & Dependencies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup & Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Setup & Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MkDocs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            MkDocs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/mkdocs-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/mkdocs-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Environment Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Environment Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/python-venv-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Virtual Environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/publishing-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Publishing Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="relatorio-final-ecolink-backend-estado-atual-e-roadmap-completo">📋 <strong>RELATÓRIO FINAL: Ecolink Backend - Estado Atual e Roadmap Completo</strong></h1>
+<h2 id="sumario-executivo"><strong>SUMÁRIO EXECUTIVO</strong></h2>
+<h3 id="visao-geral-do-projeto"><strong>Visão Geral do Projeto</strong></h3>
+<p>O <strong>Ecolink Backend</strong> é a API REST que suporta uma plataforma de reciclagem inteligente, conectando usuários, EcoPoints (estações de coleta) e cooperativas de catadores. O sistema visa incentivar a reciclagem através de gamificação, educação ambiental e rastreamento de impacto.</p>
+<h3 id="status-atual-do-projeto"><strong>Status Atual do Projeto</strong></h3>
+<pre><code>╔══════════════════════════════════════════════════════════════╗
+║                 MATURIDADE DO SISTEMA: 42%                   ║
+╠══════════════════════════════════════════════════════════════╣
+║  ✅ IMPLEMENTADO                          42%                ║
+║  ⚠️  PRECISA REFATORAÇÃO                   35%                ║
+║  ❌ NÃO IMPLEMENTADO                       23%                ║
+╠══════════════════════════════════════════════════════════════╣
+║  AVALIAÇÃO: Sistema Funcional mas NÃO PRONTO para Produção  ║
+╚══════════════════════════════════════════════════════════════╝
+</code></pre>
+<h3 id="metricas-de-qualidade"><strong>Métricas de Qualidade</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Atual</th>
+<th>Meta MVP1</th>
+<th>Gap</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Features Implementadas</strong></td>
+<td>42%</td>
+<td>100%</td>
+<td>-58%</td>
+<td>🔴 Crítico</td>
+</tr>
+<tr>
+<td><strong>Segurança (OWASP)</strong></td>
+<td>35%</td>
+<td>90%</td>
+<td>-55%</td>
+<td>🔴 Crítico</td>
+</tr>
+<tr>
+<td><strong>Cobertura de Testes</strong></td>
+<td>12%</td>
+<td>70%</td>
+<td>-58%</td>
+<td>🔴 Crítico</td>
+</tr>
+<tr>
+<td><strong>Documentação API</strong></td>
+<td>60%</td>
+<td>95%</td>
+<td>-35%</td>
+<td>🟡 Alto</td>
+</tr>
+<tr>
+<td><strong>Code Quality</strong></td>
+<td>65%</td>
+<td>90%</td>
+<td>-25%</td>
+<td>🟡 Alto</td>
+</tr>
+<tr>
+<td><strong>DevOps Readiness</strong></td>
+<td>20%</td>
+<td>85%</td>
+<td>-65%</td>
+<td>🔴 Crítico</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>N/A</td>
+<td>95%</td>
+<td>N/A</td>
+<td>🟢 Pendente</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Score Global de Maturidade: 38/100</strong> 🔴</p>
+<hr />
+<h2 id="parte-1-analise-do-sistema-atual"><strong>PARTE 1: ANÁLISE DO SISTEMA ATUAL</strong></h2>
+<h3 id="11-inventario-de-features-implementadas"><strong>1.1 Inventário de Features Implementadas</strong></h3>
+<h4 id="funcionalidades-operacionais-10-features"><strong>✅ Funcionalidades Operacionais (10 features)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Feature</th>
+<th>Endpoint</th>
+<th>Qualidade</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Registro de usuário</td>
+<td><code>POST /api/auth/register</code></td>
+<td>🟡 70%</td>
+<td>Falta validação forte de senha</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Login de usuário</td>
+<td><code>POST /api/auth/login</code></td>
+<td>🟡 80%</td>
+<td>Falta rate limiting</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Perfil do usuário</td>
+<td><code>GET /api/users/me</code></td>
+<td>🟡 50%</td>
+<td>Retorna dados do token, não do DB</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Listar usuários (Admin)</td>
+<td><code>GET /api/users</code></td>
+<td>✅ 90%</td>
+<td>Funcional, falta paginação</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Listar roles</td>
+<td><code>GET /api/roles</code></td>
+<td>✅ 100%</td>
+<td>Perfeito</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Atribuir role (Admin)</td>
+<td><code>PUT /api/roles/edit/:userId</code></td>
+<td>✅ 100%</td>
+<td>Excelente implementação</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Upload de mídia</td>
+<td><code>POST /media/upload</code></td>
+<td>✅ 85%</td>
+<td>Falta paginação na listagem</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Listar mídia</td>
+<td><code>GET /media</code></td>
+<td>🟡 75%</td>
+<td>Sincronização DB↔FS problemática</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Categorias de mídia</td>
+<td><code>GET /media/categories</code></td>
+<td>✅ 100%</td>
+<td>Array estático</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Criar doação</td>
+<td><code>POST /api/donation</code></td>
+<td>🔴 40%</td>
+<td>SEM autenticação nem validação</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legenda:</strong> ✅ Excelente | 🟡 Necessita Melhorias | 🔴 Crítico</p>
+<hr />
+<h4 id="funcionalidades-ausentes-53-features-do-mvp1"><strong>❌ Funcionalidades Ausentes (53 features do MVP1)</strong></h4>
+<p><strong>Distribuição por Épico:</strong></p>
+<pre><code>EP-001 (Auth &amp; Profile)     : 5/13 US implementadas  (38%)
+EP-002 (UI - Backend APIs)  : 0/3  endpoints         (0%)
+EP-003 (EcoPoints)          : 0/11 US implementadas  (0%)
+EP-004 (QR Code &amp; Kiosk)    : 1/8  US implementadas  (12%)
+EP-005 (Donations)          : 2/12 US implementadas  (17%)
+EP-010 (Backend Core APIs)  : 6/10 endpoints         (60%)
+</code></pre>
+<p><strong>Total: 15/68 User Stories implementadas = 22% do MVP1</strong></p>
+<hr />
+<h3 id="12-analise-de-codigo-pontos-criticos"><strong>1.2 Análise de Código - Pontos Críticos</strong></h3>
+<h4 id="vulnerabilidades-de-seguranca-criticas"><strong>🔴 Vulnerabilidades de Segurança CRÍTICAS</strong></h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Vulnerabilidade</th>
+<th>CVSS</th>
+<th>Impacto</th>
+<th>Exploração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>NoSQL Injection</strong></td>
+<td>9.1</td>
+<td>🔴 CRÍTICA</td>
+<td>Bypass de autenticação possível com <code>{"$ne": null}</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Sem Rate Limiting</strong></td>
+<td>8.5</td>
+<td>🔴 CRÍTICA</td>
+<td>Brute force ilimitado em <code>/login</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Sem Validação de Entrada</strong></td>
+<td>7.8</td>
+<td>🔴 ALTA</td>
+<td>Aceita payloads maliciosos, negativos, strings vazias</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>CORS Totalmente Aberto</strong></td>
+<td>7.5</td>
+<td>🔴 ALTA</td>
+<td><code>app.use(cors())</code> aceita qualquer origem</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Erros Internos Expostos</strong></td>
+<td>5.3</td>
+<td>🟡 MÉDIA</td>
+<td>Stack traces vazam para o cliente</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Sem Headers HTTP Seguros</strong></td>
+<td>5.0</td>
+<td>🟡 MÉDIA</td>
+<td>Helmet.js não configurado</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplo Real de Exploit NoSQL Injection:</strong></p>
+<pre><code class="language-bash">curl -X POST http://localhost:5000/api/auth/login \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;email&quot;: {&quot;$ne&quot;: null}, &quot;password&quot;: {&quot;$ne&quot;: null}}'
+# ✅ LOGIN BEM-SUCEDIDO SEM CREDENCIAIS!
+</code></pre>
+<hr />
+<h4 id="problemas-estruturais-nos-modelos"><strong>🔴 Problemas Estruturais nos Modelos</strong></h4>
+<p><strong>User Model:</strong></p>
+<pre><code class="language-javascript">❌ Campo duplicado: 'phoneNumber' E 'phone'
+❌ Falta: lastLogin, wasteSaved, carbonCredit, totalPickups
+⚠️ Validação CPF apenas formato (não valida dígito verificador)
+</code></pre>
+<p><strong>Donation Model:</strong></p>
+<pre><code class="language-javascript">❌ userId como String (deveria ser ObjectId com ref)
+❌ materialType sem enum (aceita qualquer valor)
+❌ qtdMaterial sem validação min (aceita negativos)
+❌ Falta: location (GeoJSON), image, status, ecopointId
+❌ Nome da collection singular ('donation' → 'donations')
+</code></pre>
+<p><strong>Pickup Model:</strong></p>
+<pre><code class="language-javascript">❌ ARQUIVO COMPLETAMENTE VAZIO (0 bytes)
+   → Feature central do sistema NÃO EXISTE
+</code></pre>
+<p><strong>EcoPoint Model:</strong></p>
+<pre><code class="language-javascript">❌ NÃO EXISTE (precisa ser criado do zero)
+   → Sem modelo, sem rotas, sem seeds
+</code></pre>
+<hr />
+<h4 id="problemas-nas-rotas"><strong>⚠️ Problemas nas Rotas</strong></h4>
+<p><strong>Auth Routes (auth.js):</strong></p>
+<pre><code class="language-javascript">❌ Mensagens de erro diferentes:
+   → &quot;User not found&quot; vs &quot;Invalid credentials&quot;
+   → Facilita enumeração de usuários
+
+❌ Status HTTP incorreto:
+   → 404 no login (deveria ser 401 Unauthorized)
+
+❌ Sem rate limiting:
+   → Infinitas tentativas de login permitidas
+</code></pre>
+<p><strong>Donation Routes (donation.js):</strong></p>
+<pre><code class="language-javascript">❌ SEM AUTENTICAÇÃO:
+   → Qualquer pessoa pode criar doação para qualquer userId
+
+❌ SEM VALIDAÇÃO:
+   → Aceita: qtdMaterial = -999, materialType = &quot;hack&quot;
+
+❌ CRUD INCOMPLETO:
+   → Apenas POST existe (sem GET, PUT, DELETE)
+
+❌ Console.log em produção:
+   → console.log('Request Body:', req.body);
+</code></pre>
+<hr />
+<h4 id="pontos-positivos-para-preservar"><strong>🟢 Pontos Positivos (Para Preservar)</strong></h4>
+<p><strong>Role Management System:</strong></p>
+<pre><code class="language-javascript">✅ Implementação EXCELENTE
+✅ Seeding automático com IDs fixos
+✅ Validação de ObjectIds
+✅ Proteção contra self-demotion de admin
+✅ Documentação inline com JSDoc
+✅ Mensagens de erro claras
+</code></pre>
+<p><strong>DB Connection:</strong></p>
+<pre><code class="language-javascript">✅ Tratamento de erro robusto
+✅ Process.exit(1) em caso de falha
+✅ Configuração limpa
+</code></pre>
+<p><strong>Auth Middleware:</strong></p>
+<pre><code class="language-javascript">✅ Extração correta do Bearer token
+✅ Verificação JWT funcional
+✅ Dados do usuário anexados a req.user
+</code></pre>
+<hr />
+<h3 id="13-cobertura-de-testes"><strong>1.3 Cobertura de Testes</strong></h3>
+<p><strong>Estado Atual: 12% de Cobertura</strong></p>
+<pre><code>test/
+├── Media.test.js       ⚠️ Depende de userId hardcoded
+├── Role.test.js        ⚠️ Depende de userId hardcoded
+└── test-file.jpg       (arquivo de teste)
+
+FALTAM:
+├── unit/               ❌ 0% - Nenhum teste de modelo
+├── integration/        ❌ 0% - Apenas 2 arquivos com problemas
+└── e2e/                ❌ 0% - Nenhum teste de fluxo completo
+</code></pre>
+<p><strong>Problemas nos Testes Existentes:</strong></p>
+<pre><code class="language-javascript">// ❌ PROBLEMA 1: Hardcoded User ID
+adminUser = await User.findById('6836081382cf7e288f7ca468');
+// Testes falham se esse usuário não existir
+
+// ❌ PROBLEMA 2: Conexão com DB de produção
+await mongoose.connect(process.env.MONGO_URI, ...)
+// Deveria usar mongodb-memory-server para isolamento
+
+// ❌ PROBLEMA 3: Cleanup frágil
+await new Promise(r =&gt; setTimeout(r, 500));
+// Solução inadequada para race conditions
+</code></pre>
+<hr />
+<h2 id="parte-2-mapeamento-mvp1-vs-implementacao"><strong>PARTE 2: MAPEAMENTO MVP1 vs. IMPLEMENTAÇÃO</strong></h2>
+<h3 id="21-analise-cruzada-backlog-mvp1-68-us-x-codigo-atual"><strong>2.1 Análise Cruzada: Backlog MVP1 (68 US) x Código Atual</strong></h3>
+<h4 id="ep-001-user-authentication-profile-management-42-sp"><strong>EP-001: User Authentication &amp; Profile Management (42 SP)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>US</th>
+<th>Feature</th>
+<th>Status Implementação</th>
+<th>Gap de Desenvolvimento</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US-001</td>
+<td>Registro com validação de senha forte</td>
+<td>🟡 70%</td>
+<td>Adicionar requisitos de senha (8+ chars, maiúscula, número)</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-002</td>
+<td>Login com rate limiting</td>
+<td>🟡 80%</td>
+<td>Implementar express-rate-limit (5 tentativas/15min)</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-003</td>
+<td>Reset de senha via email</td>
+<td>❌ 0%</td>
+<td>Implementar fluxo completo (token + email + validação)</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-004</td>
+<td>Validação client+server com Joi</td>
+<td>❌ 0%</td>
+<td>Criar schemas Joi para todas as rotas</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-005</td>
+<td>Ver perfil atualizado</td>
+<td>🟡 50%</td>
+<td>GET /me deve buscar DB, não apenas decodificar token</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-006</td>
+<td>Editar perfil</td>
+<td>❌ 0%</td>
+<td>Criar PUT /users/:id com validações</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-007</td>
+<td>Avatar padrão</td>
+<td>❌ 0%</td>
+<td>Adicionar campo avatar no User model + default</td>
+<td>🟢 MÉDIO</td>
+</tr>
+<tr>
+<td>US-008</td>
+<td>Admin ver roles</td>
+<td>✅ 100%</td>
+<td>✅ Nenhuma ação necessária</td>
+<td>✅ OK</td>
+</tr>
+<tr>
+<td>US-009</td>
+<td>Atribuir role no registro</td>
+<td>🟡 90%</td>
+<td>Validar roleId existe no backend</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-010</td>
+<td>Admin gerenciar EcoPoints</td>
+<td>❌ 0%</td>
+<td>CRUD completo de EcoPoints (5 endpoints)</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-011</td>
+<td>Cooperative gerenciar conteúdo</td>
+<td>❌ 0%</td>
+<td>MVP2 - não prioritário</td>
+<td>🟢 BAIXO</td>
+</tr>
+<tr>
+<td>US-012</td>
+<td>Gerenciar sessões com refresh token</td>
+<td>🟡 60%</td>
+<td>Implementar POST /auth/refresh</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-013</td>
+<td>Auto logout após inatividade</td>
+<td>❌ 0%</td>
+<td>Frontend only - fora do escopo backend</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Status EP-001:</strong> 38% Completo | <strong>Esforço Restante:</strong> ~85 horas</p>
+<hr />
+<h4 id="ep-003-ecopoint-location-discovery-29-sp"><strong>EP-003: EcoPoint Location &amp; Discovery (29 SP)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>US</th>
+<th>Feature</th>
+<th>Status Implementação</th>
+<th>Gap de Desenvolvimento</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US-026</td>
+<td>Ver EcoPoints no mapa com geolocalização</td>
+<td>❌ 0%</td>
+<td>Criar modelo + GET /ecopoints com GeoJSON</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-027</td>
+<td>Ver localização do usuário</td>
+<td>-</td>
+<td>Frontend only</td>
+<td>-</td>
+</tr>
+<tr>
+<td>US-028</td>
+<td>Calcular distância até EcoPoints</td>
+<td>❌ 0%</td>
+<td>Implementar cálculo haversine + query $near</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-029</td>
+<td>Detalhes de EcoPoint ao clicar</td>
+<td>❌ 0%</td>
+<td>GET /ecopoints/:id com populate</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-030</td>
+<td>Lista de EcoPoints ordenada por distância</td>
+<td>❌ 0%</td>
+<td>GET /ecopoints?lat=X&amp;lng=Y&amp;sort=distance</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-031</td>
+<td>Toggle map/list view</td>
+<td>-</td>
+<td>Frontend only</td>
+<td>-</td>
+</tr>
+<tr>
+<td>US-032</td>
+<td>Buscar EcoPoints por nome/endereço</td>
+<td>❌ 0%</td>
+<td>GET /ecopoints?search=term com regex</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-033</td>
+<td>Visualizar detalhes completos</td>
+<td>❌ 0%</td>
+<td>Incluir openingHours, photos, acceptedMaterials</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-034</td>
+<td>Direções para EcoPoint</td>
+<td>-</td>
+<td>Backend fornece coordenadas apenas</td>
+<td>-</td>
+</tr>
+<tr>
+<td>US-035</td>
+<td>Lista de materiais aceitos</td>
+<td>❌ 0%</td>
+<td>Campo acceptedMaterials[] no schema</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-036</td>
+<td>Status operacional (Open/Closed/Full)</td>
+<td>❌ 0%</td>
+<td>Campo operationalStatus no schema</td>
+<td>🟡 ALTO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Status EP-003:</strong> 0% Completo | <strong>Esforço Restante:</strong> ~72 horas</p>
+<hr />
+<h4 id="ep-004-qr-code-access-kiosk-integration-21-sp"><strong>EP-004: QR Code Access &amp; Kiosk Integration (21 SP)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>US</th>
+<th>Feature</th>
+<th>Status Implementação</th>
+<th>Gap de Desenvolvimento</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US-037</td>
+<td>Escanear QR code para acessar EcoPoint</td>
+<td>❌ 0%</td>
+<td>POST /qr/validate com geração de session token</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-038</td>
+<td>Validar QR code com assinatura HMAC</td>
+<td>❌ 0%</td>
+<td>Serviço de validação + timestamp check (&lt;5min)</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-039</td>
+<td>Instruções de scan</td>
+<td>-</td>
+<td>Frontend only</td>
+<td>-</td>
+</tr>
+<tr>
+<td>US-040</td>
+<td>Entrada manual de código</td>
+<td>❌ 0%</td>
+<td>POST /ecopoint/manual-access alternativo</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-041</td>
+<td>Timeout de 5min em kiosks</td>
+<td>-</td>
+<td>JWT com expiração curta (300s)</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-042</td>
+<td>Timer de sessão visível</td>
+<td>-</td>
+<td>Frontend only</td>
+<td>-</td>
+</tr>
+<tr>
+<td>US-043</td>
+<td>Logout manual</td>
+<td>🟡 50%</td>
+<td>POST /auth/logout para revogar token</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-044</td>
+<td>Limpar dados após logout</td>
+<td>-</td>
+<td>Token blacklist (opcional com Redis)</td>
+<td>🟢 MÉDIO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Status EP-004:</strong> 10% Completo | <strong>Esforço Restante:</strong> ~52 horas</p>
+<hr />
+<h4 id="ep-005-donation-registration-validation-34-sp"><strong>EP-005: Donation Registration &amp; Validation (34 SP)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>US</th>
+<th>Feature</th>
+<th>Status Implementação</th>
+<th>Gap de Desenvolvimento</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US-045</td>
+<td>Registrar doação vinculada a EcoPoint</td>
+<td>🟡 40%</td>
+<td>Refatorar: autenticação + validação + vincular ecopointId</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-046</td>
+<td>Categorias de materiais predefinidas</td>
+<td>❌ 0%</td>
+<td>Enum no schema + GET /materials</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-047</td>
+<td>Feedback pós-submissão com impacto</td>
+<td>🟡 30%</td>
+<td>Calcular CO2, água economizada</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-048</td>
+<td>Validação completa (Joi + business rules)</td>
+<td>❌ 0%</td>
+<td>Validar peso &gt; 0, material válido, EcoPoint existe</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-049</td>
+<td>Detectar doação inválida</td>
+<td>❌ 0%</td>
+<td>PUT /donations/:id/invalidate (admin)</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-050</td>
+<td>Notificar usuário de invalidade</td>
+<td>❌ 0%</td>
+<td>Mensagem educativa no response</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-051</td>
+<td>Status de doação (pending/validated/rejected)</td>
+<td>❌ 0%</td>
+<td>Enum status no schema</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-052</td>
+<td>Histórico de doações do usuário</td>
+<td>❌ 0%</td>
+<td>GET /donations/my-history com paginação</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td>US-053</td>
+<td>Filtrar histórico (data, material, EcoPoint)</td>
+<td>❌ 0%</td>
+<td>Query params: dateFrom, dateTo, materialType</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-054</td>
+<td>Visualizar impacto total (CO2, kg)</td>
+<td>❌ 0%</td>
+<td>GET /users/me/impact com agregações</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-055</td>
+<td>Detalhes de doação específica</td>
+<td>❌ 0%</td>
+<td>GET /donations/:id com populate</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td>US-056</td>
+<td>Compartilhar doação em redes sociais</td>
+<td>❌ 0%</td>
+<td>Gerar imagem compartilhável (MVP2)</td>
+<td>🟢 BAIXO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Status EP-005:</strong> 15% Completo | <strong>Esforço Restante:</strong> ~78 horas</p>
+<hr />
+<h3 id="22-dashboard-progresso-por-epico"><strong>2.2 Dashboard: Progresso por Épico</strong></h3>
+<pre><code>┌────────────────────────────────────────────────────────────┐
+│ EP-001: Authentication &amp; Profile          [████████░░] 38% │
+│ EP-002: UI Backend APIs                   [░░░░░░░░░░]  0% │
+│ EP-003: EcoPoints &amp; Geolocation           [░░░░░░░░░░]  0% │
+│ EP-004: QR Code &amp; Kiosk                   [█░░░░░░░░░] 10% │
+│ EP-005: Donations &amp; Validation            [██░░░░░░░░] 15% │
+│ EP-010: Backend Core APIs                 [██████░░░░] 60% │
+├────────────────────────────────────────────────────────────┤
+│ TOTAL MVP1:                               [████░░░░░░] 22% │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="parte-3-plano-de-implementacao-consolidado"><strong>PARTE 3: PLANO DE IMPLEMENTAÇÃO CONSOLIDADO</strong></h2>
+<h3 id="31-roadmap-estrategico-8-12-semanas"><strong>3.1 Roadmap Estratégico (8-12 semanas)</strong></h3>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│ FASE 1: ESTABILIZAÇÃO &amp; SEGURANÇA     │ 2-3 semanas │ 61h  │
+├─────────────────────────────────────────────────────────────┤
+│ FASE 2: FEATURES CORE MVP1             │ 3-4 semanas │ 174h │
+├─────────────────────────────────────────────────────────────┤
+│ FASE 3: TESTES &amp; QUALIDADE             │ 1-2 semanas │ 55h  │
+├─────────────────────────────────────────────────────────────┤
+│ FASE 4: DEVOPS &amp; DEPLOYMENT            │ 1 semana    │ 45h  │
+├─────────────────────────────────────────────────────────────┤
+│ TOTAL:                                 │ 8-10 semanas│ 335h │
+└─────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h3 id="32-fase-1-estabilizacao-seguranca-2-3-semanas"><strong>3.2 FASE 1: Estabilização &amp; Segurança (2-3 semanas)</strong></h3>
+<p><strong>Objetivo:</strong> Tornar o código existente SEGURO, VALIDADO e TESTÁVEL</p>
+<h4 id="sprint-1-security-hardening-1-2-semanas-31h"><strong>Sprint 1: Security Hardening (1-2 semanas, 31h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Descrição</th>
+<th>Esforço</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instalar pacotes de segurança</td>
+<td><code>helmet</code>, <code>express-rate-limit</code>, <code>express-mongo-sanitize</code>, <code>joi</code>, <code>compression</code>, <code>morgan</code></td>
+<td>1h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Criar middleware de erro centralizado</td>
+<td><code>middlewares/errorHandler.js</code> - captura todos os erros</td>
+<td>4h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Criar schemas de validação Joi</td>
+<td>Para auth, donation, user, ecopoint</td>
+<td>6h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Aplicar validação em rotas existentes</td>
+<td>Adicionar <code>validate(schema)</code> em todas as rotas</td>
+<td>4h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Configurar rate limiting</td>
+<td>Auth (5/15min), API (100/15min), Upload (20/hora)</td>
+<td>3h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Configurar Helmet.js</td>
+<td>Headers HTTP seguros + CSP básico</td>
+<td>2h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Configurar sanitização NoSQL</td>
+<td>Remove <code>$</code> e <code>.</code> de req.body/query/params</td>
+<td>2h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Configurar CORS restrito</td>
+<td>Apenas origens permitidas (env var)</td>
+<td>2h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Atualizar server.js</td>
+<td>Integrar todos os middlewares na ordem correta</td>
+<td>3h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Refatorar auth routes</td>
+<td>Rate limiting + validação + mensagens uniformes</td>
+<td>4h</td>
+<td>🔴</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 1:</strong></p>
+<ul>
+<li>✅ Sistema protegido contra NoSQL injection</li>
+<li>✅ Rate limiting ativo em endpoints críticos</li>
+<li>✅ Validação Joi em todas as rotas</li>
+<li>✅ Middleware de erro centralizado</li>
+<li>✅ CORS restrito</li>
+<li>✅ Headers HTTP seguros</li>
+</ul>
+<hr />
+<h4 id="sprint-2-data-model-corrections-2-3-semanas-30h"><strong>Sprint 2: Data Model Corrections (2-3 semanas, 30h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Descrição</th>
+<th>Esforço</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Refatorar User model</td>
+<td>Consolidar phone, adicionar lastLogin, wasteSaved, carbonCredit, totalPickups, avatar</td>
+<td>3h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Refatorar Donation model</td>
+<td>userId como ObjectId, enum materialType, status, ecopointId</td>
+<td>4h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Criar EcoPoint model</td>
+<td>Schema completo com GeoJSON, acceptedMaterials[], operationalStatus</td>
+<td>6h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Criar Pickup model</td>
+<td>Schema conforme documentação</td>
+<td>4h</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>Adicionar indexes MongoDB</td>
+<td>GeoJSON 2dsphere, User.email/cpf, Donation.userId/status</td>
+<td>2h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Criar migration script</td>
+<td>Atualizar documentos existentes no DB</td>
+<td>4h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Atualizar donation routes</td>
+<td>Validação + autenticação obrigatória</td>
+<td>4h</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>Criar seed para EcoPoints</td>
+<td>Popular DB com EcoPoints de teste (UnB)</td>
+<td>3h</td>
+<td>🔴</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 2:</strong></p>
+<ul>
+<li>✅ Modelos de dados alinhados com documentação</li>
+<li>✅ GeoJSON index para queries de proximidade</li>
+<li>✅ Validações robustas nos schemas</li>
+<li>✅ Migration executado com sucesso</li>
+<li>✅ Seeds de teste funcionais</li>
+</ul>
+<hr />
+<h3 id="33-fase-2-features-core-mvp1-3-4-semanas-174h"><strong>3.3 FASE 2: Features Core MVP1 (3-4 semanas, 174h)</strong></h3>
+<h4 id="sprint-3-ecopoints-geolocation-3-4-semanas-36h"><strong>Sprint 3: EcoPoints &amp; Geolocation (3-4 semanas, 36h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Endpoints</th>
+<th>Esforço</th>
+<th>US</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar EcoPoint routes</td>
+<td><code>routes/ecopoints.js</code></td>
+<td>1h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CRUD completo Admin</td>
+<td>POST, PUT, DELETE /api/ecopoints</td>
+<td>9h</td>
+<td>US-010</td>
+</tr>
+<tr>
+<td>Listar com geolocalização</td>
+<td>GET /ecopoints?lat=X&amp;lng=Y</td>
+<td>6h</td>
+<td>US-026, US-030</td>
+</tr>
+<tr>
+<td>Buscar por ID</td>
+<td>GET /ecopoints/:id</td>
+<td>2h</td>
+<td>US-029, US-033</td>
+</tr>
+<tr>
+<td>Query por proximidade</td>
+<td>GET /ecopoints/nearby (haversine)</td>
+<td>6h</td>
+<td>US-028</td>
+</tr>
+<tr>
+<td>Busca por termo</td>
+<td>GET /ecopoints/search?q=term</td>
+<td>3h</td>
+<td>US-032</td>
+</tr>
+<tr>
+<td>Testes unitários</td>
+<td>EcoPoint model validations</td>
+<td>3h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes integração</td>
+<td>Supertest para todos os endpoints</td>
+<td>6h</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 3:</strong></p>
+<ul>
+<li>✅ Sistema de EcoPoints funcional</li>
+<li>✅ Queries geoespaciais operacionais</li>
+<li>✅ Admin pode gerenciar EcoPoints</li>
+<li>✅ API documentada com exemplos</li>
+</ul>
+<hr />
+<h4 id="sprint-4-qr-code-session-management-4-5-semanas-40h"><strong>Sprint 4: QR Code &amp; Session Management (4-5 semanas, 40h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Endpoints</th>
+<th>Esforço</th>
+<th>US</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar QR service</td>
+<td><code>services/qrService.js</code> - HMAC signature</td>
+<td>6h</td>
+<td>US-037, US-038</td>
+</tr>
+<tr>
+<td>Gerar QR (Admin)</td>
+<td>POST /api/qr/generate</td>
+<td>4h</td>
+<td>US-037</td>
+</tr>
+<tr>
+<td>Validar QR</td>
+<td>POST /api/qr/validate (timestamp + signature)</td>
+<td>6h</td>
+<td>US-038</td>
+</tr>
+<tr>
+<td>Acesso manual</td>
+<td>POST /api/ecopoint/access</td>
+<td>3h</td>
+<td>US-040</td>
+</tr>
+<tr>
+<td>Refresh token</td>
+<td>POST /api/auth/refresh</td>
+<td>6h</td>
+<td>US-012</td>
+</tr>
+<tr>
+<td>Logout</td>
+<td>POST /api/auth/logout</td>
+<td>4h</td>
+<td>US-043</td>
+</tr>
+<tr>
+<td>JWT diferenciado</td>
+<td>Kiosk: 5min, Personal: 7 dias</td>
+<td>3h</td>
+<td>US-041</td>
+</tr>
+<tr>
+<td>Testes QR service</td>
+<td>Unit + integration</td>
+<td>7h</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 4:</strong></p>
+<ul>
+<li>✅ QR codes assinados com HMAC</li>
+<li>✅ Validação com timestamp (&lt;5min)</li>
+<li>✅ Refresh token funcional</li>
+<li>✅ Sessions diferenciadas (kiosk vs personal)</li>
+</ul>
+<hr />
+<h4 id="sprint-5-donation-crud-completo-5-6-semanas-41h"><strong>Sprint 5: Donation CRUD Completo (5-6 semanas, 41h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Endpoints</th>
+<th>Esforço</th>
+<th>US</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Refatorar POST donation</td>
+<td>Autenticação + validação + vincular EcoPoint</td>
+<td>6h</td>
+<td>US-045, US-048</td>
+</tr>
+<tr>
+<td>Histórico do usuário</td>
+<td>GET /donations/my-history (paginado)</td>
+<td>4h</td>
+<td>US-052</td>
+</tr>
+<tr>
+<td>Detalhes de doação</td>
+<td>GET /donations/:id (com populate)</td>
+<td>3h</td>
+<td>US-055</td>
+</tr>
+<tr>
+<td>Listar todas (Admin)</td>
+<td>GET /donations</td>
+<td>3h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Atualizar doação</td>
+<td>PUT /donations/:id</td>
+<td>3h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Deletar doação</td>
+<td>DELETE /donations/:id (soft delete)</td>
+<td>2h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Invalidar doação</td>
+<td>PUT /donations/:id/invalidate</td>
+<td>3h</td>
+<td>US-049, US-050</td>
+</tr>
+<tr>
+<td>Lista de materiais</td>
+<td>GET /api/materials</td>
+<td>2h</td>
+<td>US-046</td>
+</tr>
+<tr>
+<td>Filtros de histórico</td>
+<td>Query params (data, material, EcoPoint)</td>
+<td>4h</td>
+<td>US-053</td>
+</tr>
+<tr>
+<td>Cálculo de impacto</td>
+<td>Service para CO2, água economizada</td>
+<td>5h</td>
+<td>US-047, US-054</td>
+</tr>
+<tr>
+<td>Testes integração</td>
+<td>Supertest para todos os endpoints</td>
+<td>6h</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 5:</strong></p>
+<ul>
+<li>✅ CRUD completo de doações</li>
+<li>✅ Histórico com filtros</li>
+<li>✅ Cálculo de impacto ambiental</li>
+<li>✅ Sistema de validação de doações</li>
+</ul>
+<hr />
+<h4 id="sprint-6-user-profile-dashboard-6-7-semanas-33h"><strong>Sprint 6: User Profile &amp; Dashboard (6-7 semanas, 33h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Endpoints</th>
+<th>Esforço</th>
+<th>US</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Refatorar GET /me</td>
+<td>Buscar dados atualizados do DB</td>
+<td>2h</td>
+<td>US-005</td>
+</tr>
+<tr>
+<td>Atualizar perfil</td>
+<td>PUT /users/:id</td>
+<td>5h</td>
+<td>US-006</td>
+</tr>
+<tr>
+<td>Deletar usuário</td>
+<td>DELETE /users/:id (soft delete)</td>
+<td>3h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Dashboard de estatísticas</td>
+<td>GET /users/dashboard</td>
+<td>6h</td>
+<td>US-020, US-054</td>
+</tr>
+<tr>
+<td>Últimas doações</td>
+<td>GET /donations/recent</td>
+<td>2h</td>
+<td>US-022</td>
+</tr>
+<tr>
+<td>Resumo de doações</td>
+<td>GET /donations/summary</td>
+<td>4h</td>
+<td>US-054</td>
+</tr>
+<tr>
+<td>Upload de avatar</td>
+<td>POST /users/avatar</td>
+<td>4h</td>
+<td>US-007</td>
+</tr>
+<tr>
+<td>Impacto de usuário</td>
+<td>GET /users/:id/impact</td>
+<td>3h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes integração</td>
+<td>Supertest para novos endpoints</td>
+<td>4h</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 6:</strong></p>
+<ul>
+<li>✅ Perfil completo e editável</li>
+<li>✅ Dashboard com estatísticas</li>
+<li>✅ Upload de avatar funcional</li>
+<li>✅ Métricas de impacto calculadas</li>
+</ul>
+<hr />
+<h4 id="sprint-7-password-reset-notifications-7-8-semanas-24h"><strong>Sprint 7: Password Reset &amp; Notifications (7-8 semanas, 24h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Endpoints</th>
+<th>Esforço</th>
+<th>US</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forgot password</td>
+<td>POST /api/auth/forgot-password</td>
+<td>6h</td>
+<td>US-003</td>
+</tr>
+<tr>
+<td>Reset password</td>
+<td>POST /api/auth/reset-password</td>
+<td>4h</td>
+<td>US-003</td>
+</tr>
+<tr>
+<td>PasswordReset model</td>
+<td>Token, userId, expiresAt, used</td>
+<td>2h</td>
+<td>US-003</td>
+</tr>
+<tr>
+<td>Serviço de email</td>
+<td>Nodemailer ou SendGrid</td>
+<td>4h</td>
+<td>US-003</td>
+</tr>
+<tr>
+<td>Templates de email</td>
+<td>HTML templates (reset, welcome)</td>
+<td>4h</td>
+<td>US-003</td>
+</tr>
+<tr>
+<td>Testes reset password</td>
+<td>Unit + integration</td>
+<td>4h</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 7:</strong></p>
+<ul>
+<li>✅ Reset de senha via email</li>
+<li>✅ Tokens seguros com expiração</li>
+<li>✅ Templates HTML responsivos</li>
+<li>✅ Integração com serviço de email</li>
+</ul>
+<hr />
+<h3 id="34-fase-3-testes-qualidade-1-2-semanas-55h"><strong>3.4 FASE 3: Testes &amp; Qualidade (1-2 semanas, 55h)</strong></h3>
+<h4 id="sprint-8-test-coverage-8-9-semanas-55h"><strong>Sprint 8: Test Coverage (8-9 semanas, 55h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Descrição</th>
+<th>Esforço</th>
+<th>Meta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Configurar mongodb-memory-server</td>
+<td>Setup para testes isolados</td>
+<td>3h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Criar helpers de teste</td>
+<td>Setup DB, factories, cleanup</td>
+<td>4h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes unitários Models</td>
+<td>User, EcoPoint, Donation, Pickup</td>
+<td>8h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes unitários Services</td>
+<td>QR, Impact Calculator, Email</td>
+<td>6h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes integração Auth</td>
+<td>Register, login, logout, refresh, reset</td>
+<td>8h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes integração EcoPoints</td>
+<td>CRUD + geolocation queries</td>
+<td>6h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes integração Donations</td>
+<td>CRUD + histórico + filtros</td>
+<td>6h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes integração Roles</td>
+<td>GET, PUT edit role</td>
+<td>4h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Refatorar testes existentes</td>
+<td>Remover hardcoded IDs, usar factories</td>
+<td>4h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Testes E2E user journeys</td>
+<td>Registro → login → doação → histórico</td>
+<td>8h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Configurar coverage report</td>
+<td>Jest coverage, target 70%</td>
+<td>2h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Corrigir falhas de testes</td>
+<td>Debug e fix</td>
+<td>8h</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 8:</strong></p>
+<ul>
+<li>✅ Cobertura de testes ≥ 70%</li>
+<li>✅ Testes isolados (não dependem de DB de produção)</li>
+<li>✅ Zero testes com hardcoded IDs</li>
+<li>✅ CI roda testes automaticamente</li>
+<li>✅ Todos os testes passam (green build)</li>
+</ul>
+<hr />
+<h3 id="35-fase-4-devops-deployment-1-semana-45h"><strong>3.5 FASE 4: DevOps &amp; Deployment (1 semana, 45h)</strong></h3>
+<h4 id="sprint-9-production-ready-9-10-semanas-45h"><strong>Sprint 9: Production Ready (9-10 semanas, 45h)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Descrição</th>
+<th>Esforço</th>
+<th>Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adicionar paginação</td>
+<td>Todas as listagens (limit, skip, total)</td>
+<td>6h</td>
+<td>Performance</td>
+</tr>
+<tr>
+<td>Otimizar queries</td>
+<td>.select(), .lean(), indexes</td>
+<td>4h</td>
+<td>Performance</td>
+</tr>
+<tr>
+<td>Implementar compression</td>
+<td>Gzip responses</td>
+<td>1h</td>
+<td>Performance</td>
+</tr>
+<tr>
+<td>Configurar Morgan logging</td>
+<td>HTTP request logs</td>
+<td>2h</td>
+<td>Observability</td>
+</tr>
+<tr>
+<td>Criar health check</td>
+<td>GET /health (DB status, disk)</td>
+<td>2h</td>
+<td>Monitoring</td>
+</tr>
+<tr>
+<td>Criar Dockerfile</td>
+<td>Multi-stage build otimizado</td>
+<td>4h</td>
+<td>Deployment</td>
+</tr>
+<tr>
+<td>Criar docker-compose</td>
+<td>Backend + MongoDB + Redis</td>
+<td>3h</td>
+<td>Deployment</td>
+</tr>
+<tr>
+<td>Configurar GitHub Actions</td>
+<td>CI: lint, test, build</td>
+<td>6h</td>
+<td>CI/CD</td>
+</tr>
+<tr>
+<td>Documentação API (Swagger)</td>
+<td>OpenAPI spec completa</td>
+<td>8h</td>
+<td>Documentation</td>
+</tr>
+<tr>
+<td>README atualizado</td>
+<td>Setup, deploy, troubleshooting</td>
+<td>3h</td>
+<td>Documentation</td>
+</tr>
+<tr>
+<td>Load testing</td>
+<td>k6 ou Artillery</td>
+<td>6h</td>
+<td>Performance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entregas Sprint 9:</strong></p>
+<ul>
+<li>✅ Sistema containerizado (Docker)</li>
+<li>✅ CI/CD pipeline funcional</li>
+<li>✅ Documentação API completa (Swagger)</li>
+<li>✅ Health checks implementados</li>
+<li>✅ Load tests passam sem erros</li>
+<li>✅ README com instruções claras</li>
+</ul>
+<hr />
+<h2 id="parte-4-gestao-de-riscos-e-dependencias"><strong>PARTE 4: GESTÃO DE RISCOS E DEPENDÊNCIAS</strong></h2>
+<h3 id="41-riscos-identificados"><strong>4.1 Riscos Identificados</strong></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Risco</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Mitigação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td><strong>Alteração no schema quebra dados existentes</strong></td>
+<td>🟡 Média</td>
+<td>🔴 Alto</td>
+<td>Migration scripts + testes de rollback + backup antes da execução</td>
+</tr>
+<tr>
+<td>R2</td>
+<td><strong>Integração com serviço de email falha</strong></td>
+<td>🟡 Média</td>
+<td>🟡 Médio</td>
+<td>Usar SendGrid (free tier) + queue com fallback para retry</td>
+</tr>
+<tr>
+<td>R3</td>
+<td><strong>Performance de queries GeoJSON é lenta</strong></td>
+<td>🟢 Baixa</td>
+<td>🟡 Médio</td>
+<td>Indexes 2dsphere + cache com Redis se necessário</td>
+</tr>
+<tr>
+<td>R4</td>
+<td><strong>Cobertura de testes não atinge 70%</strong></td>
+<td>🟡 Média</td>
+<td>🟡 Médio</td>
+<td>Priorizar testes E2E dos fluxos críticos</td>
+</tr>
+<tr>
+<td>R5</td>
+<td><strong>Deploy complexo causa downtime</strong></td>
+<td>🟢 Baixa</td>
+<td>🟡 Médio</td>
+<td>Docker + documentação detalhada + testes em staging</td>
+</tr>
+<tr>
+<td>R6</td>
+<td><strong>Time subestima esforço de refatoração</strong></td>
+<td>🟡 Média</td>
+<td>🟡 Médio</td>
+<td>Buffer de 20% no cronograma + sprints curtos</td>
+</tr>
+<tr>
+<td>R7</td>
+<td><strong>Dependência de frontend bloqueia testes E2E</strong></td>
+<td>🟡 Média</td>
+<td>🟢 Baixo</td>
+<td>Mockar responses do frontend + testes isolados de API</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="42-dependencias-criticas"><strong>4.2 Dependências Críticas</strong></h3>
+<pre><code class="language-mermaid">graph TD
+    A[Sprint 1: Segurança] --&gt; B[Sprint 2: Modelos]
+    B --&gt; C[Sprint 3: EcoPoints]
+    B --&gt; D[Sprint 4: QR Code]
+    B --&gt; E[Sprint 5: Donations]
+    C --&gt; F[Sprint 6: Dashboard]
+    D --&gt; F
+    E --&gt; F
+    F --&gt; G[Sprint 7: Reset Senha]
+    G --&gt; H[Sprint 8: Testes]
+    H --&gt; I[Sprint 9: DevOps]
+</code></pre>
+<p><strong>Dependências Externas:</strong></p>
+<ul>
+<li>MongoDB Atlas (configurado ✅)</li>
+<li>Serviço de Email (SendGrid ou Nodemailer)</li>
+<li>GitHub (repositório existente ✅)</li>
+<li>Docker Hub (para deployment)</li>
+</ul>
+<hr />
+<h2 id="parte-5-metricas-e-kpis"><strong>PARTE 5: MÉTRICAS E KPIs</strong></h2>
+<h3 id="51-criterios-de-aceitacao-por-fase"><strong>5.1 Critérios de Aceitação por Fase</strong></h3>
+<h4 id="fase-1-estabilizacao"><strong>Fase 1: Estabilização ✅</strong></h4>
+<ul>
+<li>[ ] Todas as rotas possuem validação Joi</li>
+<li>[ ] Rate limiting ativo em auth e upload</li>
+<li>[ ] CORS restrito a origens permitidas</li>
+<li>[ ] Helmet.js configurado com CSP</li>
+<li>[ ] Sanitização NoSQL ativa</li>
+<li>[ ] Middleware de erro captura todos os erros</li>
+<li>[ ] Models refatorados conforme análise</li>
+<li>[ ] Indexes criados no MongoDB</li>
+<li>[ ] <code>npm audit</code> sem vulnerabilidades críticas</li>
+</ul>
+<h4 id="fase-2-features-core"><strong>Fase 2: Features Core ✅</strong></h4>
+<ul>
+<li>[ ] CRUD completo de EcoPoints (admin)</li>
+<li>[ ] Query de proximidade funcional</li>
+<li>[ ] QR codes geram e validam tokens</li>
+<li>[ ] Donations vinculadas a EcoPoints e usuários</li>
+<li>[ ] Histórico com filtros operacional</li>
+<li>[ ] Dashboard calcula impacto</li>
+<li>[ ] Reset de senha envia emails</li>
+<li>[ ] Refresh token implementado</li>
+</ul>
+<h4 id="fase-3-testes"><strong>Fase 3: Testes ✅</strong></h4>
+<ul>
+<li>[ ] Cobertura ≥ 70%</li>
+<li>[ ] Testes unitários para todos os models</li>
+<li>[ ] Testes integração para todos os endpoints</li>
+<li>[ ] Testes E2E para fluxos principais</li>
+<li>[ ] mongodb-memory-server configurado</li>
+<li>[ ] CI roda testes automaticamente</li>
+<li>[ ] Todos os testes passam (green build)</li>
+</ul>
+<h4 id="fase-4-devops"><strong>Fase 4: DevOps ✅</strong></h4>
+<ul>
+<li>[ ] Paginação em todas as listagens</li>
+<li>[ ] Compression ativo</li>
+<li>[ ] Morgan logging configurado</li>
+<li>[ ] Health check responde</li>
+<li>[ ] Dockerfile funcional</li>
+<li>[ ] docker-compose sobe stack</li>
+<li>[ ] GitHub Actions configurado</li>
+<li>[ ] Swagger documentation completa</li>
+<li>[ ] README atualizado</li>
+</ul>
+<hr />
+<h3 id="52-definicao-de-done"><strong>5.2 Definição de "Done"</strong></h3>
+<p>Uma feature é considerada <strong>concluída</strong> quando:</p>
+<ol>
+<li>✅ <strong>Código implementado</strong> e funcional</li>
+<li>✅ <strong>Validação Joi</strong> presente</li>
+<li>✅ <strong>Testes unitários</strong> escritos</li>
+<li>✅ <strong>Testes integração</strong> escritos</li>
+<li>✅ <strong>Documentação API</strong> atualizada</li>
+<li>✅ <strong>Code review</strong> aprovado</li>
+<li>✅ <strong>CI/CD</strong> passa (green build)</li>
+<li>✅ <strong>Demo</strong> apresentada ao time</li>
+</ol>
+<hr />
+<h3 id="53-kpis-de-sucesso"><strong>5.3 KPIs de Sucesso</strong></h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Meta</th>
+<th>Medição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cobertura de Testes</strong></td>
+<td>≥ 70%</td>
+<td>Jest coverage report</td>
+</tr>
+<tr>
+<td><strong>Vulnerabilidades Críticas</strong></td>
+<td>0</td>
+<td><code>npm audit</code></td>
+</tr>
+<tr>
+<td><strong>Performance API</strong></td>
+<td>&lt;200ms (p95)</td>
+<td>Load testing com k6</td>
+</tr>
+<tr>
+<td><strong>Uptime</strong></td>
+<td>&gt;99.5%</td>
+<td>Health checks</td>
+</tr>
+<tr>
+<td><strong>Tamanho de Build</strong></td>
+<td>&lt;150MB</td>
+<td>Docker image size</td>
+</tr>
+<tr>
+<td><strong>Documentação API</strong></td>
+<td>100%</td>
+<td>Swagger completeness</td>
+</tr>
+<tr>
+<td><strong>Code Quality</strong></td>
+<td>A rating</td>
+<td>SonarQube ou ESLint</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="parte-6-estrutura-final-do-projeto"><strong>PARTE 6: ESTRUTURA FINAL DO PROJETO</strong></h2>
+<h3 id="61-arvore-de-diretorios"><strong>6.1 Árvore de Diretórios</strong></h3>
+<pre><code>ecolink-backend/
+├── config/
+│   ├── db.js                  ✅ Existente
+│   ├── multer.js              ✅ Existente
+│   ├── security.js            ❌ Criar (Sprint 1)
+│   └── email.js               ❌ Criar (Sprint 7)
+├── middlewares/
+│   ├── authMiddleware.js      ✅ Existente
+│   ├── errorHandler.js        ❌ Criar (Sprint 1)
+│   └── validation.js          ❌ Criar (Sprint 1)
+├── models/
+│   ├── User.js                ⚠️ Refatorar (Sprint 2)
+│   ├── Donation.js            ⚠️ Refatorar (Sprint 2)
+│   ├── EcoPoint.js            ❌ Criar (Sprint 2)
+│   ├── Pickup.js              ⚠️ Implementar (Sprint 2)
+│   ├── PasswordReset.js       ❌ Criar (Sprint 7)
+│   ├── Role.js                ✅ Existente
+│   └── Media.js               ✅ Existente
+├── routes/
+│   ├── auth.js                ⚠️ Refatorar (Sprint 1)
+│   ├── users.js               ⚠️ Expandir (Sprint 6)
+│   ├── donation.js            ⚠️ Refatorar (Sprint 5)
+│   ├── ecopoints.js           ❌ Criar (Sprint 3)
+│   ├── qr.js                  ❌ Criar (Sprint 4)
+│   ├── pickups.js             ⚠️ Implementar (futuro)
+│   ├── roles.js               ✅ Existente
+│   └── media.js               ✅ Existente
+├── services/
+│   ├── qrService.js           ❌ Criar (Sprint 4)
+│   ├── impactCalculator.js   ❌ Criar (Sprint 5)
+│   └── emailService.js        ❌ Criar (Sprint 7)
+├── utils/
+│   ├── haversine.js           ❌ Criar (Sprint 3)
+│   └── validators.js          ❌ Criar (Sprint 1)
+├── test/
+│   ├── setup/
+│   │   └── testDb.js          ❌ Criar (Sprint 8)
+│   ├── unit/
+│   │   ├── models/            ❌ Criar (Sprint 8)
+│   │   └── services/          ❌ Criar (Sprint 8)
+│   ├── integration/
+│   │   ├── auth.test.js       ❌ Criar (Sprint 8)
+│   │   ├── ecopoints.test.js  ❌ Criar (Sprint 8)
+│   │   ├── donations.test.js  ❌ Criar (Sprint 8)
+│   │   └── users.test.js      ❌ Criar (Sprint 8)
+│   ├── e2e/
+│   │   └── userJourney.test.js ❌ Criar (Sprint 8)
+│   ├── Media.test.js          ⚠️ Refatorar (Sprint 8)
+│   └── Role.test.js           ⚠️ Refatorar (Sprint 8)
+├── seeds/
+│   ├── rolesSeeder.js         ✅ Existente
+│   └── ecopointsSeeder.js     ❌ Criar (Sprint 2)
+├── migrations/
+│   └── 001_update_schemas.js  ❌ Criar (Sprint 2)
+├── .github/
+│   └── workflows/
+│       └── ci.yml             ❌ Criar (Sprint 9)
+├── docs/
+│   └── swagger.yaml           ❌ Criar (Sprint 9)
+├── Dockerfile                 ❌ Criar (Sprint 9)
+├── docker-compose.yml         ❌ Criar (Sprint 9)
+├── .env.example               ✅ Existente
+├── server.js                  ⚠️ Refatorar (Sprint 1)
+├── package.json               ✅ Existente
+└── README.md                  ⚠️ Atualizar (Sprint 9)
+</code></pre>
+<hr />
+<h3 id="62-pacotes-npm-a-instalar"><strong>6.2 Pacotes NPM a Instalar</strong></h3>
+<h4 id="sprint-1-seguranca"><strong>Sprint 1 (Segurança):</strong></h4>
+<pre><code class="language-bash">npm install --save helmet express-rate-limit express-mongo-sanitize joi compression morgan
+</code></pre>
+<h4 id="sprint-7-email"><strong>Sprint 7 (Email):</strong></h4>
+<pre><code class="language-bash">npm install --save nodemailer
+# OU
+npm install --save @sendgrid/mail
+</code></pre>
+<h4 id="sprint-9-devops"><strong>Sprint 9 (DevOps):</strong></h4>
+<pre><code class="language-bash">npm install --save-dev swagger-jsdoc swagger-ui-express
+</code></pre>
+<hr />
+<h2 id="parte-7-cronograma-e-recursos"><strong>PARTE 7: CRONOGRAMA E RECURSOS</strong></h2>
+<h3 id="71-distribuicao-de-esforco-por-fase"><strong>7.1 Distribuição de Esforço por Fase</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Duração</th>
+<th>Horas</th>
+<th>Dias Úteis</th>
+<th>% do Total</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fase 1: Estabilização</strong></td>
+<td>2-3 semanas</td>
+<td>61h</td>
+<td>~8 dias</td>
+<td>18%</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td><strong>Fase 2: Features Core</strong></td>
+<td>3-4 semanas</td>
+<td>174h</td>
+<td>~22 dias</td>
+<td>52%</td>
+<td>🔴 CRÍTICO</td>
+</tr>
+<tr>
+<td><strong>Fase 3: Testes</strong></td>
+<td>1-2 semanas</td>
+<td>55h</td>
+<td>~7 dias</td>
+<td>16%</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td><strong>Fase 4: DevOps</strong></td>
+<td>1 semana</td>
+<td>45h</td>
+<td>~6 dias</td>
+<td>14%</td>
+<td>🟡 ALTO</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><strong>8-10 semanas</strong></td>
+<td><strong>335h</strong></td>
+<td><strong>~43 dias</strong></td>
+<td><strong>100%</strong></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="72-alocacao-de-recursos"><strong>7.2 Alocação de Recursos</strong></h3>
+<p><strong>Cenário Ideal:</strong></p>
+<ul>
+<li><strong>1 Backend Developer Full-Time:</strong> 8h/dia × 5 dias/semana = 40h/semana</li>
+<li><strong>Duração:</strong> 335h ÷ 40h/semana = <strong>~8.5 semanas</strong></li>
+</ul>
+<p><strong>Cenário Realista:</strong></p>
+<ul>
+<li><strong>1 Backend Developer Part-Time:</strong> 4h/dia × 5 dias/semana = 20h/semana</li>
+<li><strong>Duração:</strong> 335h ÷ 20h/semana = <strong>~17 semanas (4 meses)</strong></li>
+</ul>
+<p><strong>Cenário Acelerado:</strong></p>
+<ul>
+<li><strong>2 Backend Developers Full-Time:</strong> 80h/semana</li>
+<li><strong>Duração:</strong> 335h ÷ 80h/semana = <strong>~4.5 semanas</strong></li>
+</ul>
+<hr />
+<h3 id="73-timeline-visual"><strong>7.3 Timeline Visual</strong></h3>
+<pre><code>Semana 1-2:  [██████████] Sprint 1: Security Hardening
+Semana 2-3:  [██████████] Sprint 2: Data Models
+Semana 3-4:  [██████████] Sprint 3: EcoPoints
+Semana 4-5:  [██████████] Sprint 4: QR Code
+Semana 5-6:  [██████████] Sprint 5: Donations
+Semana 6-7:  [██████████] Sprint 6: Dashboard
+Semana 7-8:  [██████████] Sprint 7: Reset Senha
+Semana 8-9:  [██████████] Sprint 8: Testes
+Semana 9-10: [██████████] Sprint 9: DevOps
+
+MILESTONE:   [🚀] MVP1 COMPLETE
+</code></pre>
+<hr />
+<h2 id="parte-8-recomendacoes-finais"><strong>PARTE 8: RECOMENDAÇÕES FINAIS</strong></h2>
+<h3 id="81-acoes-imediatas-esta-semana"><strong>8.1 Ações Imediatas (Esta Semana)</strong></h3>
+<ol>
+<li><strong>🔴 CRÍTICO:</strong> Revisar e aprovar este plano com o time</li>
+<li><strong>🔴 CRÍTICO:</strong> Criar branch <code>feature/security-hardening</code></li>
+<li><strong>🔴 CRÍTICO:</strong> Instalar pacotes de segurança</li>
+<li><strong>🔴 CRÍTICO:</strong> Implementar Sprint 1 completo (31h)</li>
+<li><strong>🔴 CRÍTICO:</strong> Abrir PR para review de segurança</li>
+</ol>
+<h3 id="82-decisoes-tecnicas-necessarias"><strong>8.2 Decisões Técnicas Necessárias</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Decisão</th>
+<th>Opções</th>
+<th>Recomendação</th>
+<th>Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Renomear Donation → WasteCollection?</strong></td>
+<td>Sim / Não</td>
+<td>✅ <strong>SIM</strong></td>
+<td>Alinha com documentação técnica</td>
+</tr>
+<tr>
+<td><strong>Biblioteca de validação</strong></td>
+<td>Joi / express-validator / Zod</td>
+<td>✅ <strong>Joi</strong></td>
+<td>Mais popular, melhor documentação</td>
+</tr>
+<tr>
+<td><strong>Estratégia de testes</strong></td>
+<td>Jest+Supertest / Mocha+Chai</td>
+<td>✅ <strong>Jest</strong></td>
+<td>Já configurado, mais moderno</td>
+</tr>
+<tr>
+<td><strong>Versionamento de API</strong></td>
+<td><code>/api/v1/...</code> / Sem versão</td>
+<td>✅ <strong>v1</strong></td>
+<td>Facilita evolução futura</td>
+</tr>
+<tr>
+<td><strong>Upload de imagens</strong></td>
+<td>Filesystem / S3 / Cloudflare R2</td>
+<td>⚠️ <strong>Filesystem (MVP)</strong></td>
+<td>S3 para produção</td>
+</tr>
+<tr>
+<td><strong>Logging</strong></td>
+<td>Winston / Pino / Morgan</td>
+<td>✅ <strong>Morgan + Winston</strong></td>
+<td>Morgan para HTTP, Winston para app</td>
+</tr>
+<tr>
+<td><strong>Real-time</strong></td>
+<td>WebSockets / Polling / SSE</td>
+<td>⚠️ <strong>Polling (MVP1)</strong></td>
+<td>WebSockets para MVP2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="83-proximos-passos"><strong>8.3 Próximos Passos</strong></h3>
+<p><strong>Semana 1:</strong></p>
+<ul>
+<li>✅ Reunião de kickoff (apresentar plano)</li>
+<li>✅ Setup de ambiente de desenvolvimento</li>
+<li>✅ Instalação de pacotes de segurança</li>
+<li>✅ Implementação de Sprint 1</li>
+</ul>
+<p><strong>Semana 2:</strong></p>
+<ul>
+<li>✅ Code review de Sprint 1</li>
+<li>✅ Merge para main</li>
+<li>✅ Início de Sprint 2 (modelos)</li>
+</ul>
+<p><strong>Semanas 3-8:</strong></p>
+<ul>
+<li>✅ Execução dos Sprints 3-8</li>
+<li>✅ Daily standups (15min)</li>
+<li>✅ Sprint reviews semanais</li>
+</ul>
+<p><strong>Semanas 9-10:</strong></p>
+<ul>
+<li>✅ Sprint 9 (DevOps)</li>
+<li>✅ Deploy em staging</li>
+<li>✅ Testes de aceitação</li>
+<li>✅ Deploy em produção</li>
+</ul>
+<hr />
+<h2 id="conclusao"><strong>CONCLUSÃO</strong></h2>
+<h3 id="resumo-da-situacao"><strong>Resumo da Situação</strong></h3>
+<p>O <strong>Ecolink Backend</strong> está em <strong>estágio inicial de desenvolvimento (42% completo)</strong> com uma <strong>base sólida mas insegura</strong>. O sistema possui:</p>
+<p><strong>✅ Pontos Fortes:</strong></p>
+<ul>
+<li>Autenticação JWT funcional</li>
+<li>RBAC bem implementado</li>
+<li>Estrutura de código organizada</li>
+<li>Upload de mídia operacional</li>
+</ul>
+<p><strong>🔴 Gaps Críticos:</strong></p>
+<ul>
+<li><strong>Segurança:</strong> Vulnerável a NoSQL injection, brute force, sem validação</li>
+<li><strong>Features:</strong> 58% do MVP1 não implementado (EcoPoints, QR Code, histórico)</li>
+<li><strong>Testes:</strong> Apenas 12% de cobertura</li>
+<li><strong>DevOps:</strong> Não containerizado, sem CI/CD</li>
+</ul>
+<h3 id="veredicto-final"><strong>Veredicto Final</strong></h3>
+<p><strong>Status:</strong> 🔴 <strong>NÃO PRONTO PARA PRODUÇÃO</strong></p>
+<p><strong>Tempo Estimado para MVP1:</strong> <strong>8-12 semanas</strong> (2-3 meses)</p>
+<p><strong>Próximo Milestone:</strong> Sprint 1 (Security Hardening) - <strong>31 horas</strong></p>
+<h3 id="prioridades-absolutas"><strong>Prioridades Absolutas</strong></h3>
+<ol>
+<li>🔴 <strong>SEGURANÇA</strong> - Implementar Sprint 1 completo (esta semana)</li>
+<li>🔴 <strong>MODELOS</strong> - Refatorar schemas (próxima semana)</li>
+<li>🔴 <strong>ECOPOINTS</strong> - Implementar feature central (semana 3-4)</li>
+<li>🔴 <strong>DONATIONS</strong> - Completar CRUD (semana 5-6)</li>
+</ol>
+<p><strong>Recomendação Estratégica:</strong><br />
+<strong>ESTABILIZAR ANTES DE EXPANDIR</strong> - Focar em tornar as features existentes seguras e robustas antes de adicionar novas funcionalidades.</p>
+<hr />
+<h2 id="anexos"><strong>ANEXOS</strong></h2>
+<h3 id="anexo-a-checklist-de-implementacao"><strong>Anexo A: Checklist de Implementação</strong></h3>
+<pre><code>FASE 1: ESTABILIZAÇÃO
+[ ] Instalar pacotes de segurança
+[ ] Criar middleware de erro
+[ ] Criar schemas Joi
+[ ] Aplicar validação em rotas
+[ ] Configurar rate limiting
+[ ] Configurar Helmet.js
+[ ] Configurar sanitização NoSQL
+[ ] Configurar CORS restrito
+[ ] Atualizar server.js
+[ ] Refatorar auth routes
+[ ] Refatorar User model
+[ ] Refatorar Donation model
+[ ] Criar EcoPoint model
+[ ] Criar Pickup model
+[ ] Adicionar indexes
+[ ] Criar migration script
+[ ] Atualizar donation routes
+[ ] Criar seed EcoPoints
+
+FASE 2: FEATURES CORE
+[ ] CRUD EcoPoints
+[ ] Query geolocalização
+[ ] Sistema QR Code
+[ ] Refresh token
+[ ] Logout
+[ ] CRUD Donations completo
+[ ] Histórico com filtros
+[ ] Dashboard estatísticas
+[ ] Reset de senha
+
+FASE 3: TESTES
+[ ] Configurar mongodb-memory-server
+[ ] Testes unitários models
+[ ] Testes unitários services
+[ ] Testes integração auth
+[ ] Testes integração ecopoints
+[ ] Testes integração donations
+[ ] Testes E2E
+[ ] Cobertura ≥ 70%
+
+FASE 4: DEVOPS
+[ ] Paginação
+[ ] Compression
+[ ] Morgan logging
+[ ] Health check
+[ ] Dockerfile
+[ ] docker-compose
+[ ] GitHub Actions
+[ ] Swagger
+[ ] Load testing
+</code></pre>
+<hr />
+<h3 id="anexo-b-recursos-e-referencias"><strong>Anexo B: Recursos e Referências</strong></h3>
+<p><strong>Documentação Técnica:</strong></p>
+<ul>
+<li>API Documentation</li>
+<li>Database Schema</li>
+<li>Architecture</li>
+<li>MVP1 Backlog</li>
+</ul>
+<p><strong>Pacotes Utilizados:</strong></p>
+<ul>
+<li><a href="https://helmetjs.github.io/">Helmet.js</a></li>
+<li><a href="https://github.com/express-rate-limit/express-rate-limit">Express Rate Limit</a></li>
+<li><a href="https://github.com/fiznool/express-mongo-sanitize">Express Mongo Sanitize</a></li>
+<li><a href="https://joi.dev/">Joi</a></li>
+<li><a href="https://jestjs.io/">Jest</a></li>
+<li><a href="https://github.com/ladjs/supertest">Supertest</a></li>
+</ul>
+<p><strong>Ferramentas de Testes:</strong></p>
+<ul>
+<li><a href="https://github.com/nodkz/mongodb-memory-server">MongoDB Memory Server</a></li>
+<li><a href="https://k6.io/">k6</a> - Load testing</li>
+</ul>
+<h2 id="historico-de-revisoes"><strong>Histórico de Revisões</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Autor</th>
+<th>Alterações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10-07</td>
+<td>1.0</td>
+<td><a href="https://github.com/matix0">Mateus Vieira</a></td>
+<td>Relatório final consolidado - Análise + Plano</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ErasmusEgalitarian/ecolink-docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://instagram.com/ecolink_project" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "toc.integrate", "toc.collapse", "navigation.expand", "navigation.instant", "navigation.top", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

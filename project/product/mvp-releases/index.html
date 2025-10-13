@@ -1,0 +1,3996 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Technical Documentation for Ecolink Project">
+      
+      
+        <meta name="author" content="Cainã Freitas">
+      
+      
+      
+        <link rel="prev" href="../product-backlog/">
+      
+      
+        <link rel="next" href="../mvp1-backlog/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>MVP Releases - Ecolink</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-XXXXX-Y"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-XXXXX-Y",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mvp-release-planning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Ecolink" class="md-header__button md-logo" aria-label="Ecolink" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ecolink
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MVP Releases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ErasmusEgalitarian/ecolink-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../egalitarian/egalitarian/" class="md-tabs__link">
+          
+  
+    
+  
+  Egalitarian
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../management/roadmap/" class="md-tabs__link">
+          
+  
+    
+  
+  Management
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/lifecycle/" class="md-tabs__link">
+          
+  
+    
+  
+  Development Process
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../setup/mkdocs-configuration/" class="md-tabs__link">
+          
+  
+    
+  
+  Setup & Configuration
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../references/" class="md-tabs__link">
+        
+  
+    
+  
+  References
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Ecolink" class="md-nav__button md-logo" aria-label="Ecolink" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Ecolink
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ErasmusEgalitarian/ecolink-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Vision & Objectives
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Vision & Objectives
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vision-objectives/vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Vision
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vision-objectives/objectives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Objectives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stakeholders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stakeholders
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Product
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Product
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MVP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            MVP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MVP Releases
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    MVP Releases
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mvp-philosophy-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. MVP Philosophy &amp; Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. MVP Philosophy &amp; Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-definition-of-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Definition of MVP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-mvp-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. MVP Success Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-release-cadence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Release Cadence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mvp1-core-platform-foundation-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. MVP1 - Core Platform (Foundation Release)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. MVP1 - Core Platform (Foundation Release)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vision-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Vision Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-target-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Target Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-core-hypotheses-to-validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Core Hypotheses to Validate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-in-scope-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4. In-Scope Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4. In-Scope Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epic-level-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic-Level Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-level-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature-Level Breakdown
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-out-of-scope-deferred-to-mvp2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5. Out-of-Scope (Deferred to MVP2+)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6. Technical Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6. Technical Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Targets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Browser Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-acceptance-criteria-mvp1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7. Acceptance Criteria (MVP1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-release-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8. Release Deliverables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-sprint-breakdown-mvp1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9. Sprint Breakdown (MVP1)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.9. Sprint Breakdown (MVP1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-1-2-foundation-authentication-4-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 1-2: Foundation &amp; Authentication (4 weeks)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-3-4-ecopoint-discovery-ui-core-4-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 3-4: EcoPoint Discovery &amp; UI Core (4 weeks)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-5-6-donation-flow-finalization-4-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 5-6: Donation Flow &amp; Finalization (4 weeks)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-success-metrics-mvp1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.10. Success Metrics (MVP1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mvp2-gamification-education-engagement-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. MVP2 - Gamification &amp; Education (Engagement Release)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. MVP2 - Gamification &amp; Education (Engagement Release)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-vision-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Vision Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-target-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Target Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-core-hypotheses-to-validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Core Hypotheses to Validate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-in-scope-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4. In-Scope Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4. In-Scope Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epic-level-scope_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic-Level Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-level-breakdown_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature-Level Breakdown
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-out-of-scope-deferred-to-mvp3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5. Out-of-Scope (Deferred to MVP3+)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6. Technical Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6. Technical Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-targets_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Targets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-acceptance-criteria-mvp2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7. Acceptance Criteria (MVP2)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-release-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.8. Release Deliverables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-sprint-breakdown-mvp2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.9. Sprint Breakdown (MVP2)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.9. Sprint Breakdown (MVP2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-7-8-points-credit-system-4-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 7-8: Points &amp; Credit System (4 weeks)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-9-10-gamification-rankings-badges-4-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 9-10: Gamification (Rankings &amp; Badges) (4 weeks)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-11-12-educational-content-finalization-4-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint 11-12: Educational Content &amp; Finalization (4 weeks)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#410-success-metrics-mvp2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.10. Success Metrics (MVP2)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-mvp3-advanced-features-optimization-future" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. MVP3 - Advanced Features &amp; Optimization (Future)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. MVP3 - Advanced Features &amp; Optimization (Future)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-vision-statement-preliminary" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Vision Statement (Preliminary)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-potential-features-subject-to-prioritization" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Potential Features (Subject to Prioritization)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-prioritization-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Prioritization Approach
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Risk Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mvp1-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1. MVP1 Risks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-mvp2-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2. MVP2 Risks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-cross-mvp-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3. Cross-MVP Risks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-gono-go-decision-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Go/No-Go Decision Criteria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Go/No-Go Decision Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-mvp1-launch-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. MVP1 Launch Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-mvp2-launch-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. MVP2 Launch Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-post-launch-support-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Post-Launch Support Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Post-Launch Support Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-monitoring-alerting" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1. Monitoring &amp; Alerting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-support-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2. Support Channels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-update-cadence" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3. Update Cadence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-feedback-iteration-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Feedback &amp; Iteration Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Feedback &amp; Iteration Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-data-collection-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1. Data Collection Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-iteration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2. Iteration Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-pivot-triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3. Pivot Triggers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-stakeholder-communication-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Stakeholder Communication Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Stakeholder Communication Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-internal-team-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1. Internal Team Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-external-stakeholder-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2. External Stakeholder Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-success-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Success Definition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Success Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-mvp1-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1. MVP1 Success Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-mvp2-success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2. MVP2 Success Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Revision History
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp1-backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MVP1 Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp1-tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MVP1 Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backend-report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reports
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Egalitarian
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Egalitarian
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/egalitarian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cycles
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cycles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2023-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2024-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2024-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../egalitarian/cycles/2025-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/issue-tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issue Tracking & Task Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/deliverables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Deliverables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/meetings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meeting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/lessons-learned/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lessons Learned
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/sprints/sprint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/sprints/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Development Process
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Development Process
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/lifecycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Development Lifecycle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/technical/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/technical/architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/technical/database-schema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database Schema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools & Dependencies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup & Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Setup & Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MkDocs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            MkDocs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/mkdocs-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/mkdocs-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Environment Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Environment Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/python-venv-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Virtual Environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/publishing-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Publishing Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="mvp-release-planning">MVP Release Planning</h1>
+<h2 id="1-overview">1. Overview</h2>
+<p><a href="../overview/">← Back to Product</a> | <a href="../../../">← Back to Main Page</a></p>
+<p>This document defines the <strong>Minimum Viable Product (MVP)</strong> releases for the Ecolink project, detailing the scope, objectives, deliverables, and success criteria for each release phase. The MVP strategy follows an iterative approach, delivering incremental value while validating core hypotheses and gathering user feedback.</p>
+<p><strong>Release Strategy:</strong>
+- <strong>MVP1:</strong> Core platform functionality enabling basic recycling operations
+- <strong>MVP2:</strong> Gamification and educational content to drive engagement and behavior change
+- <strong>Future Releases:</strong> Advanced features, integrations, and optimizations</p>
+<hr />
+<h2 id="2-mvp-philosophy-approach">2. MVP Philosophy &amp; Approach</h2>
+<h3 id="21-definition-of-mvp">2.1. Definition of MVP</h3>
+<p>An MVP is the smallest version of the product that delivers tangible value to users while enabling the team to:
+- Validate core assumptions about user behavior
+- Gather meaningful feedback for iterations
+- Minimize time-to-market and development risk
+- Establish technical foundation for future features</p>
+<h3 id="22-mvp-success-criteria">2.2. MVP Success Criteria</h3>
+<p>Each MVP must meet the following criteria before release:
+- ✅ All critical user stories completed and tested
+- ✅ No critical or high-severity bugs in scope
+- ✅ Performance meets non-functional requirements
+- ✅ Security audit passed
+- ✅ User acceptance testing (UAT) completed
+- ✅ Documentation updated (user guides, API docs)
+- ✅ Deployment to production environment successful</p>
+<h3 id="23-release-cadence">2.3. Release Cadence</h3>
+<table>
+<thead>
+<tr>
+<th>Release</th>
+<th>Duration</th>
+<th>Sprints</th>
+<th>Target Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MVP1</td>
+<td>12 weeks</td>
+<td>6 sprints (2 weeks each)</td>
+<td>Q1 2026</td>
+</tr>
+<tr>
+<td>MVP2</td>
+<td>12 weeks</td>
+<td>6 sprints (2 weeks each)</td>
+<td>Q2 2026</td>
+</tr>
+<tr>
+<td>MVP3</td>
+<td>8 weeks</td>
+<td>4 sprints (2 weeks each)</td>
+<td>Q3 2026</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-mvp1-core-platform-foundation-release">3. MVP1 - Core Platform (Foundation Release)</h2>
+<h3 id="31-vision-statement">3.1. Vision Statement</h3>
+<p><strong>"Enable UnB students and community members to register recyclable donations at smart EcoPoints and track their environmental impact through an intuitive mobile-first platform."</strong></p>
+<h3 id="32-target-users">3.2. Target Users</h3>
+<ul>
+<li><strong>Primary:</strong> UnB students seeking to contribute to sustainability initiatives</li>
+<li><strong>Secondary:</strong> Community members in the Federal District interested in proper recycling</li>
+<li><strong>Tertiary:</strong> System administrators managing EcoPoints and user accounts</li>
+</ul>
+<h3 id="33-core-hypotheses-to-validate">3.3. Core Hypotheses to Validate</h3>
+<ol>
+<li><strong>H1:</strong> Users will adopt a QR-code-based donation system if the process takes &lt;2 minutes</li>
+<li><strong>H2:</strong> A simple, visual EcoPoint map will increase recycling station usage by &gt;20%</li>
+<li><strong>H3:</strong> Seeing donation history and environmental impact will motivate continued engagement</li>
+<li><strong>H4:</strong> Mobile-first design will be the primary access method (&gt;80% of users)</li>
+</ol>
+<h3 id="34-in-scope-features">3.4. In-Scope Features</h3>
+<h4 id="epic-level-scope"><strong>Epic-Level Scope</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Epic ID</th>
+<th>Epic Name</th>
+<th>Priority</th>
+<th>Story Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EP-001</td>
+<td>User Authentication &amp; Profile Management</td>
+<td>Critical</td>
+<td>34</td>
+</tr>
+<tr>
+<td>EP-002</td>
+<td>User Interface &amp; Experience Design</td>
+<td>Critical</td>
+<td>37</td>
+</tr>
+<tr>
+<td>EP-003</td>
+<td>EcoPoint Location &amp; Discovery</td>
+<td>Critical</td>
+<td>29</td>
+</tr>
+<tr>
+<td>EP-004</td>
+<td>QR Code Access &amp; Kiosk Integration</td>
+<td>Critical</td>
+<td>21</td>
+</tr>
+<tr>
+<td>EP-005</td>
+<td>Donation Registration &amp; Validation</td>
+<td>Critical</td>
+<td>34</td>
+</tr>
+<tr>
+<td>EP-010</td>
+<td>Backend Services &amp; API</td>
+<td>Critical</td>
+<td>55</td>
+</tr>
+<tr>
+<td>EP-011</td>
+<td>Frontend Architecture &amp; State Management</td>
+<td>Critical</td>
+<td>21</td>
+</tr>
+<tr>
+<td>EP-012</td>
+<td>Security &amp; Data Protection</td>
+<td>Critical</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total Story Points:</strong> 252</p>
+<h4 id="feature-level-breakdown"><strong>Feature-Level Breakdown</strong></h4>
+<p><strong>🔐 Authentication &amp; Access</strong>
+- Email/password registration and login
+- Password reset functionality
+- User profile viewing and editing
+- Role-based access control (User, Admin, Cooperative Member)
+- JWT-based session management with 5-minute timeout at kiosks</p>
+<p><strong>🎨 User Interface</strong>
+- Login/registration screens
+- Responsive navigation (mobile bottom nav, desktop sidebar)
+- User dashboard with recycling summary
+- Donation history screen
+- EcoPoint map and list views
+- EcoPoint detail screen
+- Profile management screen
+- QR code scanning interface
+- Donation registration form</p>
+<p><strong>📍 EcoPoint Discovery</strong>
+- Interactive map with EcoPoint markers
+- List view with sorting by distance
+- Search and filter functionality
+- Distance calculation from user location
+- EcoPoint details (address, materials accepted, hours, status)
+- Navigation integration (Google Maps/Apple Maps)</p>
+<p><strong>📱 Donation Flow</strong>
+- QR code scanning at EcoPoint stations
+- Material type selection (Plastic, Glass, Paper, Metal, Electronics)
+- Weight/quantity input
+- Optional photo upload
+- Real-time validation
+- Success confirmation with donation summary
+- Invalid donation detection and feedback</p>
+<p><strong>📊 History &amp; Tracking</strong>
+- Complete donation history with filters
+- Aggregate statistics (total kg, donation count)
+- Environmental impact metrics (CO2 saved, water conserved)
+- Individual donation details</p>
+<p><strong>🛠 Technical Infrastructure</strong>
+- RESTful API with authentication middleware
+- MongoDB/PostgreSQL database with optimized schema
+- React frontend with component architecture
+- State management (Context API/Redux)
+- Security hardening (encryption, input validation, CORS)
+- API documentation (Swagger/OpenAPI)
+- CI/CD pipeline (automated testing, deployment)</p>
+<h3 id="35-out-of-scope-deferred-to-mvp2">3.5. Out-of-Scope (Deferred to MVP2+)</h3>
+<ul>
+<li>❌ Points and credit system</li>
+<li>❌ Gamification (badges, rankings, leaderboards)</li>
+<li>❌ Educational content CMS and library</li>
+<li>❌ Social sharing features</li>
+<li>❌ Advanced analytics dashboard</li>
+<li>❌ Multi-language support (only PT-BR in MVP1)</li>
+<li>❌ Push notifications</li>
+<li>❌ Offline mode/PWA functionality</li>
+</ul>
+<h3 id="36-technical-requirements">3.6. Technical Requirements</h3>
+<h4 id="performance-targets"><strong>Performance Targets</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Target</th>
+<th>Measurement Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API Response Time (p95)</td>
+<td>&lt;500ms</td>
+<td>Application Performance Monitoring</td>
+</tr>
+<tr>
+<td>Page Load Time (FCP)</td>
+<td>&lt;2s</td>
+<td>Lighthouse/WebPageTest</td>
+</tr>
+<tr>
+<td>Database Query Time (p95)</td>
+<td>&lt;100ms</td>
+<td>Query profiling</td>
+</tr>
+<tr>
+<td>QR Code Scan Recognition</td>
+<td>&lt;2s</td>
+<td>User testing</td>
+</tr>
+<tr>
+<td>Concurrent Users Support</td>
+<td>1,000</td>
+<td>Load testing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="security-requirements"><strong>Security Requirements</strong></h4>
+<ul>
+<li>✅ HTTPS/TLS 1.3 for all communications</li>
+<li>✅ Password hashing with bcrypt (10+ rounds)</li>
+<li>✅ JWT token expiration (7 days standard, 5 minutes at kiosks)</li>
+<li>✅ Input validation and sanitization (frontend + backend)</li>
+<li>✅ OWASP Top 10 vulnerability protection</li>
+<li>✅ LGPD compliance (data privacy, consent, export, deletion)</li>
+</ul>
+<h4 id="browser-support"><strong>Browser Support</strong></h4>
+<ul>
+<li>Chrome (last 2 versions)</li>
+<li>Firefox (last 2 versions)</li>
+<li>Safari (last 2 versions)</li>
+<li>Edge (last 2 versions)</li>
+<li>Mobile: iOS Safari 14+, Chrome Android 90+</li>
+</ul>
+<h3 id="37-acceptance-criteria-mvp1">3.7. Acceptance Criteria (MVP1)</h3>
+<p><strong>Functional Acceptance:</strong>
+- [ ] A new user can register with email/password in &lt;2 minutes
+- [ ] A registered user can log in and access their dashboard
+- [ ] A user can locate the nearest EcoPoint on a map
+- [ ] A user can scan a QR code at an EcoPoint within 10 seconds
+- [ ] A user can register a donation with material type and weight in &lt;90 seconds
+- [ ] A user can view complete donation history with filters
+- [ ] Invalid donations are detected and do not appear in successful donation history
+- [ ] Admin users can manage EcoPoints (CRUD operations)
+- [ ] Kiosk sessions automatically timeout after 5 minutes of inactivity</p>
+<p><strong>Technical Acceptance:</strong>
+- [ ] All API endpoints respond within 500ms (p95)
+- [ ] Frontend loads in &lt;2s on 4G connection
+- [ ] No critical security vulnerabilities (OWASP scan passed)
+- [ ] 100% of critical user journeys covered by automated tests
+- [ ] API documentation is complete and accurate
+- [ ] Application deployed to production with zero downtime</p>
+<p><strong>User Experience Acceptance:</strong>
+- [ ] System achieves &gt;70% task completion rate in usability testing
+- [ ] Mobile responsiveness verified on iOS and Android devices
+- [ ] Accessibility audit shows WCAG 2.1 Level A compliance (minimum)
+- [ ] User satisfaction score &gt;4.0/5.0 in UAT</p>
+<h3 id="38-release-deliverables">3.8. Release Deliverables</h3>
+<p><strong>Software Components:</strong>
+- ✅ Web application (React frontend)
+- ✅ Backend API (Node.js)
+- ✅ Database (MongoDB/PostgreSQL)
+- ✅ Deployment infrastructure (staging + production environments)</p>
+<p><strong>Documentation:</strong>
+- ✅ User Guide (onboarding, key features, troubleshooting)
+- ✅ API Documentation (OpenAPI/Swagger)
+- ✅ Admin Manual (EcoPoint management, user administration)
+- ✅ Technical Architecture Document
+- ✅ Database Schema Documentation
+- ✅ Deployment Guide</p>
+<p><strong>Testing Artifacts:</strong>
+- ✅ Test Plan and Test Cases
+- ✅ UAT Results Report
+- ✅ Performance Test Results
+- ✅ Security Audit Report</p>
+<h3 id="39-sprint-breakdown-mvp1">3.9. Sprint Breakdown (MVP1)</h3>
+<h4 id="sprint-1-2-foundation-authentication-4-weeks"><strong>Sprint 1-2: Foundation &amp; Authentication (4 weeks)</strong></h4>
+<p><strong>Goals:</strong>
+- Set up development environment and CI/CD pipeline
+- Implement backend API structure and database schema
+- Build authentication system (registration, login, password reset)
+- Create login/registration UI screens</p>
+<p><strong>Key Deliverables:</strong>
+- Backend API boilerplate with authentication endpoints
+- Database schema with users, sessions tables
+- Login and registration screens (responsive)
+- JWT authentication working end-to-end</p>
+<p><strong>Story Points:</strong> 42 | <strong>Risk:</strong> Medium (technical setup)</p>
+<hr />
+<h4 id="sprint-3-4-ecopoint-discovery-ui-core-4-weeks"><strong>Sprint 3-4: EcoPoint Discovery &amp; UI Core (4 weeks)</strong></h4>
+<p><strong>Goals:</strong>
+- Implement EcoPoint management (admin CRUD)
+- Build EcoPoint map with location services
+- Create main navigation and dashboard
+- Develop EcoPoint list and detail views</p>
+<p><strong>Key Deliverables:</strong>
+- EcoPoint CRUD API endpoints
+- Interactive map with EcoPoint markers
+- User dashboard with placeholder statistics
+- EcoPoint detail screen with navigation integration</p>
+<p><strong>Story Points:</strong> 84 | <strong>Risk:</strong> Medium (map API integration)</p>
+<hr />
+<h4 id="sprint-5-6-donation-flow-finalization-4-weeks"><strong>Sprint 5-6: Donation Flow &amp; Finalization (4 weeks)</strong></h4>
+<p><strong>Goals:</strong>
+- Implement QR code scanning
+- Build donation registration flow
+- Create donation history and tracking
+- Finalize security hardening
+- Conduct UAT and fix critical bugs</p>
+<p><strong>Key Deliverables:</strong>
+- QR code scanner with EcoPoint validation
+- Donation registration form and API
+- Donation history with filtering
+- Security audit completed
+- Production deployment</p>
+<p><strong>Story Points:</strong> 126 | <strong>Risk:</strong> High (QR code hardware integration, UAT feedback)</p>
+<hr />
+<h3 id="310-success-metrics-mvp1">3.10. Success Metrics (MVP1)</h3>
+<p><strong>Adoption Metrics (First 30 Days):</strong>
+| Metric | Target | Stretch Goal |
+|--------|--------|--------------|
+| User Registrations | 200 | 500 |
+| Active Users (Weekly) | 50 | 150 |
+| Donations Registered | 300 | 800 |
+| EcoPoints with Activity | 5/10 (50%) | 8/10 (80%) |</p>
+<p><strong>Engagement Metrics:</strong>
+| Metric | Target | Stretch Goal |
+|--------|--------|--------------|
+| Average Donations per User | 2 | 5 |
+| Session Duration (avg) | 3 minutes | 5 minutes |
+| Return User Rate (Week 2) | 30% | 50% |
+| QR Scan Success Rate | 90% | 95% |</p>
+<p><strong>Technical Metrics:</strong>
+| Metric | Target | Acceptable Range |
+|--------|--------|------------------|
+| System Uptime | 99.5% | 99.0% - 99.9% |
+| API Response Time (p95) | &lt;500ms | &lt;800ms |
+| Error Rate | &lt;1% | &lt;2% |
+| Mobile Users | &gt;70% | 60% - 90% |</p>
+<p><strong>Qualitative Feedback:</strong>
+- Conduct user interviews (n=10) within first 2 weeks
+- System Usability Scale (SUS) score &gt;70
+- Net Promoter Score (NPS) &gt;30</p>
+<hr />
+<h2 id="4-mvp2-gamification-education-engagement-release">4. MVP2 - Gamification &amp; Education (Engagement Release)</h2>
+<h3 id="41-vision-statement">4.1. Vision Statement</h3>
+<p><strong>"Transform recycling into an engaging, rewarding experience through gamification and educational content, converting environmental action into academic recognition and community knowledge."</strong></p>
+<h3 id="42-target-users">4.2. Target Users</h3>
+<ul>
+<li><strong>Primary:</strong> UnB students motivated by academic credit incentives</li>
+<li><strong>Secondary:</strong> Competitive users seeking recognition through rankings</li>
+<li><strong>Tertiary:</strong> Waste picker cooperative members sharing educational content</li>
+<li><strong>Quaternary:</strong> Community learners seeking recycling knowledge</li>
+</ul>
+<h3 id="43-core-hypotheses-to-validate">4.3. Core Hypotheses to Validate</h3>
+<ol>
+<li><strong>H5:</strong> Academic credit incentive will increase donation frequency by &gt;50%</li>
+<li><strong>H6:</strong> Leaderboards will create competitive dynamics driving &gt;30% more donations</li>
+<li><strong>H7:</strong> Badge achievements will increase user retention by &gt;25%</li>
+<li><strong>H8:</strong> Educational content co-created with cooperatives will be accessed by &gt;60% of users</li>
+<li><strong>H9:</strong> Users who consume educational content will have &gt;40% lower invalid donation rates</li>
+</ol>
+<h3 id="44-in-scope-features">4.4. In-Scope Features</h3>
+<h4 id="epic-level-scope_1"><strong>Epic-Level Scope</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Epic ID</th>
+<th>Epic Name</th>
+<th>Priority</th>
+<th>Story Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EP-006</td>
+<td>Credit &amp; Points System</td>
+<td>High</td>
+<td>39</td>
+</tr>
+<tr>
+<td>EP-007</td>
+<td>Ranking &amp; Leaderboards</td>
+<td>Medium</td>
+<td>18</td>
+</tr>
+<tr>
+<td>EP-008</td>
+<td>Badges &amp; Achievements</td>
+<td>Medium</td>
+<td>18</td>
+</tr>
+<tr>
+<td>EP-009</td>
+<td>Content Management System</td>
+<td>High</td>
+<td>34</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total Story Points:</strong> 109</p>
+<h4 id="feature-level-breakdown_1"><strong>Feature-Level Breakdown</strong></h4>
+<p><strong>🏆 Points &amp; Credits System</strong>
+- Automatic point calculation based on donation weight and material type
+- Point multipliers by material (e.g., Electronics: 2.0x, Glass: 1.2x)
+- Point deduction for invalid donations (-10 points)
+- Total points display on profile and dashboard
+- Points transaction history (earned/deducted)
+- Academic credit conversion (1000 points = 1 credit)
+- Credit request submission with student ID validation
+- Credit request approval workflow for admins
+- Credit request status tracking (Pending, Approved, Rejected)</p>
+<p><strong>📊 Rankings &amp; Leaderboards</strong>
+- Global leaderboard (top 100 users)
+- University-specific leaderboard
+- Time-based filters (All Time, This Month, This Week)
+- User rank display with position change indicators
+- EcoPoint activity rankings
+- Privacy controls (opt-out of public rankings, anonymous mode)</p>
+<p><strong>🎖 Badges &amp; Achievements</strong>
+- Achievement system with multiple badge categories:
+  - Milestone badges (First Donation, 10 Donations, 50kg Donated)
+  - Ranking badges (Top 10, Top 3, Monthly Champion)
+  - Specialty badges (Material Specialist, Weekly Warrior)
+- Badge collection display on profile (earned in color, locked in grayscale)
+- Achievement progress tracking with percentage completion
+- Notification system for badge unlocks
+- Social sharing of badges</p>
+<p><strong>📚 Educational Content</strong>
+- Content Management System (CMS) for cooperative members
+- Rich text editor with media support (images, videos, embeds)
+- Draft/publish workflow with admin review
+- Content categories (Getting Started, Material Types, Preparation Tips, Impact Stories, Cooperative Insights)
+- Content library with search and filtering
+- Video tutorials with embedded player
+- Article reading interface with related content
+- Bookmark functionality
+- Content rating system (5-star reviews)
+- Content analytics (views, ratings, engagement metrics)</p>
+<h3 id="45-out-of-scope-deferred-to-mvp3">4.5. Out-of-Scope (Deferred to MVP3+)</h3>
+<ul>
+<li>❌ Team/group challenges and competitions</li>
+<li>❌ Social features (following users, comments, community feed)</li>
+<li>❌ Advanced content types (quizzes, interactive tutorials)</li>
+<li>❌ Push notifications for achievements and rankings</li>
+<li>❌ Integration with external gamification platforms</li>
+<li>❌ Cryptocurrency/blockchain-based rewards</li>
+<li>❌ Merchandise redemption store</li>
+<li>❌ Augmented reality (AR) recycling guides</li>
+</ul>
+<h3 id="46-technical-requirements">4.6. Technical Requirements</h3>
+<h4 id="performance-targets_1"><strong>Performance Targets</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Target</th>
+<th>Measurement Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points Calculation Time</td>
+<td>&lt;100ms</td>
+<td>Backend profiling</td>
+</tr>
+<tr>
+<td>Leaderboard Load Time</td>
+<td>&lt;1s</td>
+<td>Frontend performance monitoring</td>
+</tr>
+<tr>
+<td>Content Page Load Time</td>
+<td>&lt;2s</td>
+<td>Lighthouse</td>
+</tr>
+<tr>
+<td>CMS Editor Responsiveness</td>
+<td>&lt;200ms</td>
+<td>User interaction timing</td>
+</tr>
+<tr>
+<td>Video Playback Start Time</td>
+<td>&lt;3s</td>
+<td>Media performance testing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="data-requirements"><strong>Data Requirements</strong></h4>
+<ul>
+<li>Points algorithm must be transparent and auditable</li>
+<li>Credit conversion must create immutable transaction records</li>
+<li>Content versioning for draft/published states</li>
+<li>Badge award events must be logged for analytics</li>
+<li>Leaderboard calculations must be cached and updated hourly</li>
+</ul>
+<h3 id="47-acceptance-criteria-mvp2">4.7. Acceptance Criteria (MVP2)</h3>
+<p><strong>Functional Acceptance:</strong>
+- [ ] Users automatically earn points based on donations with correct multipliers
+- [ ] Users can view points history with all transactions
+- [ ] Students can submit credit requests when threshold is met (1000 points)
+- [ ] Admins can approve/reject credit requests with notifications sent
+- [ ] Global leaderboard displays top 100 users sorted by points
+- [ ] Users can filter leaderboards by time period and university
+- [ ] Users receive notifications when badges are unlocked
+- [ ] Users can view badge collection with progress indicators
+- [ ] Cooperative members can create and publish educational articles
+- [ ] Users can browse, search, and bookmark educational content
+- [ ] Video content plays smoothly with playback controls
+- [ ] Content ratings are recorded and displayed accurately</p>
+<p><strong>Technical Acceptance:</strong>
+- [ ] Points calculation is consistent and reproducible
+- [ ] Credit transaction audit trail is complete and tamper-proof
+- [ ] Leaderboard updates reflect real-time data (max 1-hour delay)
+- [ ] Badge achievement logic is tested for all conditions
+- [ ] CMS supports rich media without performance degradation
+- [ ] Content is properly indexed for search functionality</p>
+<p><strong>User Experience Acceptance:</strong>
+- [ ] Points system is intuitive and motivating (feedback from UAT)
+- [ ] Leaderboards drive competitive behavior (tracked via analytics)
+- [ ] Badge unlocks create moments of delight (user feedback &gt;4/5)
+- [ ] Educational content is engaging and accessible (&gt;60% visit rate)
+- [ ] CMS is usable by non-technical cooperative members (SUS &gt;70)</p>
+<h3 id="48-release-deliverables">4.8. Release Deliverables</h3>
+<p><strong>Software Components:</strong>
+- ✅ Points calculation engine
+- ✅ Credit management system
+- ✅ Leaderboard service with caching
+- ✅ Badge achievement engine
+- ✅ Content Management System (CMS)
+- ✅ Content library and reader interface</p>
+<p><strong>Documentation:</strong>
+- ✅ Points &amp; Credits User Guide
+- ✅ Gamification Mechanics Documentation
+- ✅ CMS User Manual for Content Creators
+- ✅ Badge Achievement Catalog
+- ✅ Content Moderation Guidelines</p>
+<p><strong>Testing Artifacts:</strong>
+- ✅ Gamification Logic Test Suite
+- ✅ Content Workflow Test Cases
+- ✅ Integration Test Results (credits, rankings, badges)</p>
+<h3 id="49-sprint-breakdown-mvp2">4.9. Sprint Breakdown (MVP2)</h3>
+<h4 id="sprint-7-8-points-credit-system-4-weeks"><strong>Sprint 7-8: Points &amp; Credit System (4 weeks)</strong></h4>
+<p><strong>Goals:</strong>
+- Implement points calculation algorithm
+- Build credit request and approval system
+- Create points display throughout UI
+- Integrate with UnB systems (if applicable)</p>
+<p><strong>Key Deliverables:</strong>
+- Points calculation service with material multipliers
+- Credit request API and admin approval workflow
+- Points dashboard widget
+- Transaction history screen</p>
+<p><strong>Story Points:</strong> 39 | <strong>Risk:</strong> Medium (UnB system integration)</p>
+<hr />
+<h4 id="sprint-9-10-gamification-rankings-badges-4-weeks"><strong>Sprint 9-10: Gamification (Rankings &amp; Badges) (4 weeks)</strong></h4>
+<p><strong>Goals:</strong>
+- Build leaderboard system with caching
+- Implement badge achievement engine
+- Create ranking and badge UI components
+- Set up notification system for achievements</p>
+<p><strong>Key Deliverables:</strong>
+- Leaderboard API with filters and caching
+- Badge definition system and award logic
+- Leaderboard screens (global, university-specific)
+- Badge collection interface
+- Achievement notification system</p>
+<p><strong>Story Points:</strong> 36 | <strong>Risk:</strong> Low</p>
+<hr />
+<h4 id="sprint-11-12-educational-content-finalization-4-weeks"><strong>Sprint 11-12: Educational Content &amp; Finalization (4 weeks)</strong></h4>
+<p><strong>Goals:</strong>
+- Build CMS for content creation
+- Implement content library and reader
+- Create search and bookmark functionality
+- Conduct UAT for gamification and content features
+- Fix bugs and optimize performance</p>
+<p><strong>Key Deliverables:</strong>
+- CMS with rich text editor and media upload
+- Content library with search and categories
+- Video player integration
+- Content rating and analytics
+- Complete MVP2 production deployment</p>
+<p><strong>Story Points:</strong> 34 | <strong>Risk:</strong> Medium (content moderation workflow)</p>
+<hr />
+<h3 id="410-success-metrics-mvp2">4.10. Success Metrics (MVP2)</h3>
+<p><strong>Gamification Adoption (First 30 Days Post-Launch):</strong>
+| Metric | Target | Stretch Goal |
+|--------|--------|--------------|
+| Users Earning Points | 90% | 95% |
+| Credit Requests Submitted | 20 | 50 |
+| Leaderboard Page Views | 500 | 1,200 |
+| Badges Unlocked (total) | 300 | 800 |
+| Users with 3+ Badges | 30 | 80 |</p>
+<p><strong>Engagement Impact:</strong>
+| Metric | Target | Stretch Goal |
+|--------|--------|--------------|
+| Donation Frequency Increase | +50% | +80% |
+| Return User Rate Increase | +25% | +40% |
+| Average Session Duration | 5 minutes | 8 minutes |
+| Social Shares of Achievements | 50 | 150 |</p>
+<p><strong>Educational Content Metrics:</strong>
+| Metric | Target | Stretch Goal |
+|--------|--------|--------------|
+| Content Library Visits | 60% of users | 80% of users |
+| Articles Published | 20 | 40 |
+| Video Views | 300 | 800 |
+| Content Bookmarks | 100 | 300 |
+| Average Content Rating | 4.0/5.0 | 4.5/5.0 |</p>
+<p><strong>Behavioral Impact:</strong>
+| Metric | Target | Measurement |
+|--------|--------|-------------|
+| Invalid Donation Rate Reduction | -40% | Compare users who viewed content vs. those who didn't |
+| Material Diversity per User | +30% | Track variety of materials donated |
+| Competitive Recycling Behavior | Observable | Qualitative analysis of leaderboard impact |</p>
+<hr />
+<h2 id="5-mvp3-advanced-features-optimization-future">5. MVP3 - Advanced Features &amp; Optimization (Future)</h2>
+<h3 id="51-vision-statement-preliminary">5.1. Vision Statement (Preliminary)</h3>
+<p><strong>"Scale the Ecolink ecosystem beyond UnB through advanced features, multi-institutional support, and data-driven optimization for maximum environmental impact."</strong></p>
+<h3 id="52-potential-features-subject-to-prioritization">5.2. Potential Features (Subject to Prioritization)</h3>
+<p><strong>🌐 Platform Expansion</strong>
+- Multi-university support (expand beyond UnB)
+- Multi-language support (Spanish, English)
+- Progressive Web App (PWA) with offline functionality
+- Native mobile apps (iOS, Android)</p>
+<p><strong>🔔 Engagement &amp; Communication</strong>
+- Push notification system
+- In-app messaging
+- Email campaigns and newsletters
+- SMS reminders for inactive users</p>
+<p><strong>👥 Social Features</strong>
+- User profiles with social elements
+- Following/followers system
+- Community feed
+- Group challenges and team competitions
+- Comments and discussions on content</p>
+<p><strong>📈 Advanced Analytics</strong>
+- Personal impact dashboard with data visualizations
+- Predictive analytics for donation patterns
+- EcoPoint optimization recommendations
+- Environmental impact calculator with detailed metrics</p>
+<p><strong>🤖 AI &amp; Automation</strong>
+- Image recognition for material classification
+- Chatbot for recycling questions
+- Personalized content recommendations
+- Automated content moderation</p>
+<p><strong>🏪 Rewards &amp; Partnerships</strong>
+- Merchandise redemption store
+- Partnership with local businesses for discounts
+- Donation to environmental NGOs
+- Carbon offset certificate generation</p>
+<p><strong>🔬 Hardware Integration</strong>
+- Smart EcoPoint prototype with sensors
+- Weight measurement automation
+- Material identification via sensors
+- IoT dashboard for EcoPoint monitoring</p>
+<h3 id="53-prioritization-approach">5.3. Prioritization Approach</h3>
+<p>Future features will be prioritized based on:
+1. <strong>User feedback</strong> from MVP1 and MVP2
+2. <strong>Data-driven insights</strong> from analytics
+3. <strong>Strategic partnerships</strong> and institutional support
+4. <strong>Technical feasibility</strong> and resource availability
+5. <strong>Environmental impact potential</strong></p>
+<hr />
+<h2 id="6-risk-management">6. Risk Management</h2>
+<h3 id="61-mvp1-risks">6.1. MVP1 Risks</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Probability</th>
+<th>Impact</th>
+<th>Mitigation Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QR code hardware unavailable/incompatible</td>
+<td>Medium</td>
+<td>High</td>
+<td>Develop manual code entry fallback; partner identification early</td>
+</tr>
+<tr>
+<td>Low user adoption due to complexity</td>
+<td>Low</td>
+<td>High</td>
+<td>Extensive usability testing; iterative UI improvements</td>
+</tr>
+<tr>
+<td>Performance issues under load</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Load testing before launch; scalable infrastructure</td>
+</tr>
+<tr>
+<td>Security vulnerabilities discovered</td>
+<td>Low</td>
+<td>Critical</td>
+<td>Security audit before production; bug bounty program</td>
+</tr>
+<tr>
+<td>Database schema changes needed</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Use migration tools; plan for downtime windows</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62-mvp2-risks">6.2. MVP2 Risks</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Probability</th>
+<th>Impact</th>
+<th>Mitigation Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UnB credit integration delays/rejection</td>
+<td>Medium</td>
+<td>High</td>
+<td>Engage with university early; have manual approval process backup</td>
+</tr>
+<tr>
+<td>Gaming/cheating of points system</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Implement fraud detection; human review for credit requests</td>
+</tr>
+<tr>
+<td>Low cooperative engagement in content creation</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Provide training and support; incentivize with recognition</td>
+</tr>
+<tr>
+<td>Content moderation bottleneck</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Clear moderation guidelines; escalation process</td>
+</tr>
+<tr>
+<td>Leaderboard performance degradation</td>
+<td>Low</td>
+<td>Low</td>
+<td>Implement caching; optimize database queries</td>
+</tr>
+</tbody>
+</table>
+<h3 id="63-cross-mvp-risks">6.3. Cross-MVP Risks</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Probability</th>
+<th>Impact</th>
+<th>Mitigation Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team velocity below estimates</td>
+<td>Medium</td>
+<td>High</td>
+<td>Build buffer into sprints; prioritize ruthlessly</td>
+</tr>
+<tr>
+<td>Key personnel unavailability</td>
+<td>Low</td>
+<td>High</td>
+<td>Documentation; knowledge sharing; cross-training</td>
+</tr>
+<tr>
+<td>Technology stack limitations</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Proof-of-concept critical features early</td>
+</tr>
+<tr>
+<td>Budget constraints</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>MVP scope flexibility; phased hardware investment</td>
+</tr>
+<tr>
+<td>Regulatory/compliance changes (LGPD)</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Legal consultation; compliance monitoring</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-gono-go-decision-criteria">7. Go/No-Go Decision Criteria</h2>
+<h3 id="71-mvp1-launch-criteria">7.1. MVP1 Launch Criteria</h3>
+<p><strong>Must-Have (Blockers):</strong>
+- ✅ All critical bugs resolved (P0, P1)
+- ✅ Security audit passed (no critical vulnerabilities)
+- ✅ Performance benchmarks met (API &lt;500ms, Page load &lt;2s)
+- ✅ UAT completed with &gt;70% task success rate
+- ✅ Production environment stable and monitored
+- ✅ Rollback plan documented and tested
+- ✅ User support process established</p>
+<p><strong>Nice-to-Have (Non-Blockers):</strong>
+- ⚠️ All P2 bugs resolved (can defer to patch release)
+- ⚠️ WCAG 2.1 AA compliance (Level A acceptable for MVP1)
+- ⚠️ Admin analytics dashboard (manual reporting acceptable)</p>
+<h3 id="72-mvp2-launch-criteria">7.2. MVP2 Launch Criteria</h3>
+<p><strong>Must-Have (Blockers):</strong>
+- ✅ Points system tested and accurate
+- ✅ Credit approval workflow functional
+- ✅ No regression in MVP1 features
+- ✅ Content moderation process operational
+- ✅ Performance impact assessed and acceptable
+- ✅ UAT for gamification features passed</p>
+<p><strong>Nice-to-Have (Non-Blockers):</strong>
+- ⚠️ All badge types implemented (can add more post-launch)
+- ⚠️ Advanced content analytics (basic metrics acceptable)
+- ⚠️ Social sharing for all achievement types</p>
+<hr />
+<h2 id="8-post-launch-support-plan">8. Post-Launch Support Plan</h2>
+<h3 id="81-monitoring-alerting">8.1. Monitoring &amp; Alerting</h3>
+<p><strong>System Health Monitoring:</strong>
+- Uptime monitoring (Pingdom/UptimeRobot)
+- Error tracking (Sentry)
+- Performance monitoring (APM)
+- Database performance metrics
+- User activity dashboards</p>
+<p><strong>Alert Thresholds:</strong>
+- 🚨 Critical: Downtime, database connection failures, authentication failures
+- ⚠️ Warning: Response time &gt;1s, error rate &gt;2%, low disk space
+- ℹ️ Info: High traffic, new user signups, feature usage patterns</p>
+<h3 id="82-support-channels">8.2. Support Channels</h3>
+<p><strong>User Support:</strong>
+- In-app help documentation
+- Email support: support@ecolink.com.br
+- FAQ section
+- Office hours (TBD based on resources)</p>
+<p><strong>Technical Support:</strong>
+- Developer on-call rotation
+- Incident response playbook
+- Escalation matrix
+- Post-incident review process</p>
+<h3 id="83-update-cadence">8.3. Update Cadence</h3>
+<p><strong>Release Schedule:</strong>
+- <strong>Hotfixes:</strong> As needed for critical issues (&lt;24 hour turnaround)
+- <strong>Patch Releases:</strong> Bi-weekly for bug fixes and minor improvements
+- <strong>Minor Releases:</strong> Monthly for new features post-MVP
+- <strong>Major Releases:</strong> Quarterly for significant updates</p>
+<hr />
+<h2 id="9-feedback-iteration-strategy">9. Feedback &amp; Iteration Strategy</h2>
+<h3 id="91-data-collection-methods">9.1. Data Collection Methods</h3>
+<p><strong>Quantitative Data:</strong>
+- Google Analytics / Mixpanel for user behavior
+- Application logs for technical issues
+- Performance metrics from APM tools
+- A/B test results for UI/UX variations</p>
+<p><strong>Qualitative Data:</strong>
+- User interviews (n=10 per month)
+- In-app feedback forms
+- Net Promoter Score (NPS) surveys
+- System Usability Scale (SUS) surveys
+- Social media sentiment analysis</p>
+<h3 id="92-iteration-process">9.2. Iteration Process</h3>
+<ol>
+<li><strong>Weekly:</strong> Review analytics dashboards and support tickets</li>
+<li><strong>Bi-weekly:</strong> Sprint retrospective with team learnings</li>
+<li><strong>Monthly:</strong> User feedback synthesis and roadmap adjustment</li>
+<li><strong>Quarterly:</strong> Strategic review and long-term planning</li>
+</ol>
+<h3 id="93-pivot-triggers">9.3. Pivot Triggers</h3>
+<p>Consider pivoting or significantly adjusting strategy if:
+- User adoption &lt;50% of target after 60 days
+- Retention rate &lt;20% at Week 4
+- Critical hypothesis invalidated (e.g., users don't value credits)
+- Technical debt becomes unsustainable
+- Strategic partnership opportunities arise requiring scope change</p>
+<hr />
+<h2 id="10-stakeholder-communication-plan">10. Stakeholder Communication Plan</h2>
+<h3 id="101-internal-team-communication">10.1. Internal Team Communication</h3>
+<p><strong>Daily:</strong>
+- Stand-up meetings (15 minutes)
+- Slack/Teams updates on blockers</p>
+<p><strong>Weekly:</strong>
+- Sprint planning and retrospectives
+- Demo of completed work</p>
+<p><strong>Monthly:</strong>
+- Project status report
+- Roadmap review and adjustment</p>
+<h3 id="102-external-stakeholder-updates">10.2. External Stakeholder Updates</h3>
+<p><strong>UnB Administration:</strong>
+- Bi-weekly status updates
+- Demo before each MVP launch
+- Quarterly impact reports</p>
+<p><strong>Cooperative Partners:</strong>
+- Monthly meetings
+- Training sessions before MVP2 launch
+- Co-creation workshops for content</p>
+<p><strong>Users:</strong>
+- Launch announcements (email, social media)
+- Feature updates via in-app notifications
+- Monthly newsletter with impact metrics</p>
+<hr />
+<h2 id="11-success-definition">11. Success Definition</h2>
+<h3 id="111-mvp1-success-criteria">11.1. MVP1 Success Criteria</h3>
+<p><strong>Adoption Success:</strong>
+- ✅ 200+ registered users in first 30 days
+- ✅ 300+ donations registered
+- ✅ 50+ weekly active users
+- ✅ &gt;50% of EcoPoints with at least one donation</p>
+<p><strong>Technical Success:</strong>
+- ✅ &gt;99% uptime
+- ✅ &lt;1% error rate
+- ✅ Performance targets met
+- ✅ Zero critical security incidents</p>
+<p><strong>User Satisfaction:</strong>
+- ✅ System Usability Scale (SUS) &gt;70
+- ✅ Net Promoter Score (NPS) &gt;30
+- ✅ Task success rate &gt;70%</p>
+<h3 id="112-mvp2-success-criteria">11.2. MVP2 Success Criteria</h3>
+<p><strong>Engagement Success:</strong>
+- ✅ 50% increase in donation frequency vs. MVP1
+- ✅ 20+ credit requests submitted
+- ✅ 60% of users visit educational content
+- ✅ 25% increase in user retention</p>
+<p><strong>Gamification Impact:</strong>
+- ✅ &gt;90% of active users earning points
+- ✅ 300+ badges unlocked
+- ✅ Leaderboard viewed by &gt;50% of users weekly</p>
+<p><strong>Content Success:</strong>
+- ✅ 20+ articles published
+- ✅ Average content rating &gt;4.0/5.0
+- ✅ Measurable reduction in invalid donations among content consumers</p>
+<hr />
+<h2 id="12-conclusion">12. Conclusion</h2>
+<p>The Ecolink MVP strategy balances <strong>rapid delivery</strong> with <strong>quality and user value</strong>. MVP1 establishes the foundational platform for recycling operations, while MVP2 introduces engagement mechanisms to drive behavior change and sustainability education.</p>
+<p><strong>Key Success Factors:</strong>
+1. <strong>User-Centric Design:</strong> Continuous feedback and iteration
+2. <strong>Technical Excellence:</strong> Performance, security, and scalability
+3. <strong>Strategic Partnerships:</strong> UnB, cooperatives, environmental organizations
+4. <strong>Data-Driven Decisions:</strong> Analytics and metrics guiding roadmap
+5. <strong>Sustainable Growth:</strong> Incremental value delivery and validated learning</p>
+<p>By following this MVP release plan, the Ecolink team will deliver a product that not only meets user needs but also creates measurable environmental impact in the Federal District and beyond.</p>
+<hr />
+<h2 id="13-revision-history">13. Revision History</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Version</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10-07</td>
+<td>1.0</td>
+<td><a href="https://github.com/matix0">Mateus Vieira</a></td>
+<td>Initial MVP release planning document with detailed scope for MVP1 and MVP2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../overview/">← Back to Product</a> | <a href="../../../">← Back to Main Page</a></p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ErasmusEgalitarian/ecolink-docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://instagram.com/ecolink_project" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "toc.integrate", "toc.collapse", "navigation.expand", "navigation.instant", "navigation.top", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
