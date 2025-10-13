@@ -67,14 +67,13 @@ Nothing in this document is final; please suggest corrections or improvements.
 
 > **Themes** group major system areas under broad topics.
 
-| #     | Theme              | Description                                                                                                                                         |
-| ----- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TM-01 | Content Management | Includes creating, editing, organizing, and publishing pages, posts, and media content, ensuring they are accessible and well-structured for users. |
-
-| TM-02 | Access Control | Manage user roles and permissions |
-| TM-03 | EcoPoint Discovery | Enable users to find and view EcoPoint locations on a map. |
-| TM-04 | Admin Management | Enable system admins to manage and maintain EcoPoints. |
-| TM-05 | Auth | This theme is related to login and logout to/from the system. |
+| #     | Theme              | Description                                                                                                                                                          |
+| ----- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TM-01 | Content Management | Includes creating, editing, organizing, and publishing pages, posts, and media content, ensuring they are accessible and well-structured for users.                  |
+| TM-02 | Access Control     | Manage user roles and permissions                                                                                                                                    |
+| TM-03 | EcoPoint Discovery | Enable users to find and view EcoPoint locations on a map.                                                                                                           |
+| TM-04 | Admin Management   | Enable system admins to manage and maintain EcoPoints.                                                                                                               |
+| TM-05 | Auth               | This theme is related to login and logout to/from the system.                                                                                                        |
 | TM-06 | Social Interaction | Allows users to share photos, videos, and text about recycling, interact with others' posts (e.g., like, comment), and track their personal recycling contributions. |
 
 ---
