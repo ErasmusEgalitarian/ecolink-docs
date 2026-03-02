@@ -1,0 +1,79 @@
+name: "🐛 Bug Report"
+description: Reportar um comportamento inesperado ou erro no sistema
+title: "[BUG][BE/FE] Descrição curta do problema"
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: "Área afetada"
+      options:
+        - BE — Backend (API / Banco de dados)
+        - FE — Frontend (UI / React)
+        - BE+FE — Ambos
+    validations:
+      required: true
+
+  - type: input
+    id: us_relacionada
+    attributes:
+      label: "User Story relacionada (se aplicável)"
+      placeholder: "US-XXX"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição do Bug"
+      description: "Descreva o que está acontecendo"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Passos para Reproduzir"
+      placeholder: |
+        1. Chamar POST /api/auth/login com payload válido
+        2. Observar a resposta
+        3. O token retornado está com formato inválido
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Comportamento Esperado"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Comportamento Atual"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs / Stack Trace"
+      description: "Cole aqui o erro do terminal, console do browser ou resposta da API"
+      render: shell
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severidade"
+      options:
+        - "🔴 Crítico — Sistema inoperante / dados corrompidos"
+        - "🟠 Alto — Funcionalidade principal quebrada"
+        - "🟡 Médio — Funcionalidade degradada, workaround existe"
+        - "🟢 Baixo — Cosmético / minor"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Ambiente"
+      placeholder: "dev local / staging / Node 20 / MongoDB 7 / Chrome 122"

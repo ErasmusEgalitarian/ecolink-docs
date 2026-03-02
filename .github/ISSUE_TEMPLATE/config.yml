@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📊 Backlog MVP1 (Kanban)
+    url: https://github.com/ErasmusEgalitarian/ecolink-docs/blob/main/docs/project/product/mvp1-backlog.md
+    about: Consulte o backlog completo antes de criar uma issue
+  - name: 🗺️ Roadmap
+    url: https://github.com/ErasmusEgalitarian/ecolink-docs/blob/main/docs/project/management/roadmap.md
+    about: Visão do semestre e sprints planejados

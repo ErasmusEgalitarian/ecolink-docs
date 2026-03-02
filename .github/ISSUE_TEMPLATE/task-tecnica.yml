@@ -1,0 +1,74 @@
+name: "🔧 Task Técnica"
+description: Tarefa de infraestrutura, refatoração, configuração ou DevOps (sem US direta)
+title: "[TASK][BE/FE/INFRA] Título curto"
+labels: ["task"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: "Tipo de Task"
+      options:
+        - "🏗️ Refatoração"
+        - "⚙️ Configuração / Setup"
+        - "🔒 Segurança"
+        - "📦 Dependência / Upgrade"
+        - "🚀 CI/CD / DevOps"
+        - "📝 Documentação"
+        - "🧪 Testes"
+        - "🗄️ Banco de Dados / Migration"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: epic
+    attributes:
+      label: "Épico relacionado (se aplicável)"
+      options:
+        - "EP-001 — User Authentication & Profile Management"
+        - "EP-002 — User Interface & Experience Design"
+        - "EP-003 — EcoPoint Location & Discovery"
+        - "EP-004 — QR Code Access & Kiosk Integration"
+        - "EP-005 — Donation Registration & Validation"
+        - "EP-010 — Backend Services & API"
+        - "EP-011 — Frontend Architecture & State Management"
+        - "EP-012 — Security & Data Protection"
+        - "N/A — Sem épico relacionado"
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: "Objetivo"
+      description: "O que precisa ser feito e por quê?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "Subtasks"
+      placeholder: |
+        - [ ] Instalar express-rate-limit
+        - [ ] Configurar limite de 100 req/15min por IP
+        - [ ] Aplicar middleware nas rotas de auth
+        - [ ] Testar com k6 ou curl
+    validations:
+      required: true
+
+  - type: input
+    id: story_points
+    attributes:
+      label: "Estimativa (horas ou SP)"
+      placeholder: "3h ou 2 SP"
+
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: "Sprint"
+      options:
+        - "Sprint 1"
+        - "Sprint 2"
+        - "Sprint 3"
+        - "Sprint 4"
+        - "Sprint 5"
+        - "Sprint 6"
+        - "Backlog (sem sprint)"

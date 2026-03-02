@@ -1,0 +1,144 @@
+name: "📋 User Story"
+description: Implementação de uma User Story do MVP1 Backlog
+title: "[US-XXX][BE/FE] Título curto da User Story"
+labels: ["user-story"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Preencha os campos abaixo com base no backlog em `docs/project/product/mvp1-backlog.md`.
+        > Consulte também a planilha `EcoLink_Kanban.xlsx` para referência de sprint e story points.
+
+  - type: input
+    id: us_id
+    attributes:
+      label: "ID da User Story"
+      description: "Identificador no formato US-XXX (ex: US-045)"
+      placeholder: "US-XXX"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: "Tipo"
+      description: "Backend, Frontend ou ambos?"
+      options:
+        - BE — Backend
+        - FE — Frontend
+        - BE+FE — Full Stack
+    validations:
+      required: true
+
+  - type: dropdown
+    id: epic
+    attributes:
+      label: "Épico"
+      options:
+        - "EP-001 — User Authentication & Profile Management"
+        - "EP-002 — User Interface & Experience Design"
+        - "EP-003 — EcoPoint Location & Discovery"
+        - "EP-004 — QR Code Access & Kiosk Integration"
+        - "EP-005 — Donation Registration & Validation"
+        - "EP-010 — Backend Services & API"
+        - "EP-011 — Frontend Architecture & State Management"
+        - "EP-012 — Security & Data Protection"
+    validations:
+      required: true
+
+  - type: input
+    id: feature
+    attributes:
+      label: "Feature"
+      description: "Identificador da feature (ex: F-014)"
+      placeholder: "F-XXX"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: "User Story"
+      description: "No formato: Como [persona], quero [ação] para [benefício]"
+      placeholder: "Como usuário no EcoPoint, quero registrar minha doação no sistema para que seja contabilizada"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Critérios de Aceitação"
+      description: "Liste os critérios no formato Gherkin (Given/When/Then) ou como checklist"
+      placeholder: |
+        - [ ] Dado que o usuário está autenticado, quando submete o formulário, então a doação é salva no banco
+        - [ ] A resposta retorna HTTP 201 com o objeto criado
+        - [ ] Campos obrigatórios validados (material, quantidade)
+        - [ ] Mensagem de erro exibida se a validação falhar
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Prioridade (MoSCoW)"
+      options:
+        - "🔴 Critical — Must Have"
+        - "🟠 High — Should Have"
+        - "🟡 Medium — Could Have"
+        - "🟢 Low — Won't Have this cycle"
+    validations:
+      required: true
+
+  - type: input
+    id: story_points
+    attributes:
+      label: "Story Points"
+      description: "Estimativa de esforço (1, 2, 3, 5 ou 8)"
+      placeholder: "3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: "Sprint Planejado"
+      options:
+        - "Sprint 1"
+        - "Sprint 2"
+        - "Sprint 3"
+        - "Sprint 4"
+        - "Sprint 5"
+        - "Sprint 6"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: "Notas Técnicas"
+      description: "Endpoints envolvidos, modelos, componentes, dependências de outras US"
+      placeholder: |
+        - Endpoint: POST /api/donation
+        - Model: Pickup.js (Mongoose)
+        - Depende de: US-046 BE (enum materialType)
+        - Validação: Zod schema em donationSchemas.js
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: "Definition of Done"
+      description: "O que precisa estar feito para considerar essa US concluída?"
+      value: |
+        - [ ] Código implementado e revisado (PR aprovado)
+        - [ ] Testes unitários escritos (cobertura mínima da feature)
+        - [ ] Documentação atualizada (Swagger / README)
+        - [ ] Sem erros de lint
+        - [ ] Testado em ambiente de desenvolvimento
+        - [ ] Kanban atualizado (`generate_kanban.py` re-executado se necessário)
+
+  - type: input
+    id: assignee_hint
+    attributes:
+      label: "Assignee sugerido"
+      description: "Membro da equipe responsável (pode ser alterado após criação)"
+      placeholder: "@username"
