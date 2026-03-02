@@ -1,55 +1,55 @@
 name: "🐛 Bug Report"
-description: Reportar um comportamento inesperado ou erro no sistema
-title: "[BUG][BE/FE] Descrição curta do problema"
+description: Report unexpected behavior or an error in the system
+title: "[BUG][BE/FE] Short description of the problem"
 labels: ["bug"]
 body:
   - type: dropdown
     id: tipo
     attributes:
-      label: "Área afetada"
+      label: "Affected Area"
       options:
-        - BE — Backend (API / Banco de dados)
+        - BE — Backend (API / Database)
         - FE — Frontend (UI / React)
-        - BE+FE — Ambos
+        - BE+FE — Both
     validations:
       required: true
 
   - type: input
     id: us_relacionada
     attributes:
-      label: "User Story relacionada (se aplicável)"
+      label: "Related User Story (if applicable)"
       placeholder: "US-XXX"
 
   - type: textarea
     id: description
     attributes:
-      label: "Descrição do Bug"
-      description: "Descreva o que está acontecendo"
+      label: "Bug Description"
+      description: "Describe what is happening"
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: "Passos para Reproduzir"
+      label: "Steps to Reproduce"
       placeholder: |
-        1. Chamar POST /api/auth/login com payload válido
-        2. Observar a resposta
-        3. O token retornado está com formato inválido
+        1. Call POST /api/auth/login with a valid payload
+        2. Observe the response
+        3. The returned token has an invalid format
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: "Comportamento Esperado"
+      label: "Expected Behavior"
     validations:
       required: true
 
   - type: textarea
     id: actual
     attributes:
-      label: "Comportamento Atual"
+      label: "Actual Behavior"
     validations:
       required: true
 
@@ -57,23 +57,23 @@ body:
     id: logs
     attributes:
       label: "Logs / Stack Trace"
-      description: "Cole aqui o erro do terminal, console do browser ou resposta da API"
+      description: "Paste the terminal error, browser console output or API response here"
       render: shell
 
   - type: dropdown
     id: severity
     attributes:
-      label: "Severidade"
+      label: "Severity"
       options:
-        - "🔴 Crítico — Sistema inoperante / dados corrompidos"
-        - "🟠 Alto — Funcionalidade principal quebrada"
-        - "🟡 Médio — Funcionalidade degradada, workaround existe"
-        - "🟢 Baixo — Cosmético / minor"
+        - "🔴 Critical — System inoperable / data corrupted"
+        - "🟠 High — Main functionality broken"
+        - "🟡 Medium — Degraded functionality, workaround exists"
+        - "🟢 Low — Cosmetic / minor"
     validations:
       required: true
 
   - type: input
     id: environment
     attributes:
-      label: "Ambiente"
-      placeholder: "dev local / staging / Node 20 / MongoDB 7 / Chrome 122"
+      label: "Environment"
+      placeholder: "local dev / staging / Node 20 / MongoDB 7 / Chrome 122"

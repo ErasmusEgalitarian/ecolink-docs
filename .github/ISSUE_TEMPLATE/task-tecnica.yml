@@ -1,28 +1,28 @@
-name: "🔧 Task Técnica"
-description: Tarefa de infraestrutura, refatoração, configuração ou DevOps (sem US direta)
-title: "[TASK][BE/FE/INFRA] Título curto"
+name: "🔧 Technical Task"
+description: Infrastructure, refactoring, configuration or DevOps task (no direct User Story)
+title: "[TASK][BE/FE/INFRA] Short title"
 labels: ["task"]
 body:
   - type: dropdown
     id: tipo
     attributes:
-      label: "Tipo de Task"
+      label: "Task Type"
       options:
-        - "🏗️ Refatoração"
-        - "⚙️ Configuração / Setup"
-        - "🔒 Segurança"
-        - "📦 Dependência / Upgrade"
+        - "🏗️ Refactoring"
+        - "⚙️ Configuration / Setup"
+        - "🔒 Security"
+        - "📦 Dependency / Upgrade"
         - "🚀 CI/CD / DevOps"
-        - "📝 Documentação"
-        - "🧪 Testes"
-        - "🗄️ Banco de Dados / Migration"
+        - "📝 Documentation"
+        - "🧪 Testing"
+        - "🗄️ Database / Migration"
     validations:
       required: true
 
   - type: dropdown
     id: epic
     attributes:
-      label: "Épico relacionado (se aplicável)"
+      label: "Related Epic (if applicable)"
       options:
         - "EP-001 — User Authentication & Profile Management"
         - "EP-002 — User Interface & Experience Design"
@@ -32,13 +32,13 @@ body:
         - "EP-010 — Backend Services & API"
         - "EP-011 — Frontend Architecture & State Management"
         - "EP-012 — Security & Data Protection"
-        - "N/A — Sem épico relacionado"
+        - "N/A — No related epic"
 
   - type: textarea
     id: objective
     attributes:
-      label: "Objetivo"
-      description: "O que precisa ser feito e por quê?"
+      label: "Objective"
+      description: "What needs to be done and why?"
     validations:
       required: true
 
@@ -47,18 +47,18 @@ body:
     attributes:
       label: "Subtasks"
       placeholder: |
-        - [ ] Instalar express-rate-limit
-        - [ ] Configurar limite de 100 req/15min por IP
-        - [ ] Aplicar middleware nas rotas de auth
-        - [ ] Testar com k6 ou curl
+        - [ ] Install express-rate-limit
+        - [ ] Configure limit of 100 req/15min per IP
+        - [ ] Apply middleware to auth routes
+        - [ ] Test with k6 or curl
     validations:
       required: true
 
   - type: input
     id: story_points
     attributes:
-      label: "Estimativa (horas ou SP)"
-      placeholder: "3h ou 2 SP"
+      label: "Estimate (hours or SP)"
+      placeholder: "3h or 2 SP"
 
   - type: dropdown
     id: sprint
@@ -71,4 +71,4 @@ body:
         - "Sprint 4"
         - "Sprint 5"
         - "Sprint 6"
-        - "Backlog (sem sprint)"
+        - "Backlog (no sprint)"

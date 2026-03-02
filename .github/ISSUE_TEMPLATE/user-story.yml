@@ -1,19 +1,19 @@
 name: "📋 User Story"
-description: Implementação de uma User Story do MVP1 Backlog
-title: "[US-XXX][BE/FE] Título curto da User Story"
+description: Implementation of a User Story from the MVP1 Backlog
+title: "[US-XXX][BE/FE] Short title of the User Story"
 labels: ["user-story"]
 body:
   - type: markdown
     attributes:
       value: |
-        > Preencha os campos abaixo com base no backlog em `docs/project/product/mvp1-backlog.md`.
-        > Consulte também a planilha `EcoLink_Kanban.xlsx` para referência de sprint e story points.
+        > Fill in the fields below based on the backlog at `docs/project/product/mvp1-backlog.md`.
+        > Also check the `EcoLink_Kanban.xlsx` spreadsheet for sprint and story point references.
 
   - type: input
     id: us_id
     attributes:
-      label: "ID da User Story"
-      description: "Identificador no formato US-XXX (ex: US-045)"
+      label: "User Story ID"
+      description: "Identifier in the format US-XXX (e.g. US-045)"
       placeholder: "US-XXX"
     validations:
       required: true
@@ -21,8 +21,8 @@ body:
   - type: dropdown
     id: tipo
     attributes:
-      label: "Tipo"
-      description: "Backend, Frontend ou ambos?"
+      label: "Type"
+      description: "Backend, Frontend or both?"
       options:
         - BE — Backend
         - FE — Frontend
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: epic
     attributes:
-      label: "Épico"
+      label: "Epic"
       options:
         - "EP-001 — User Authentication & Profile Management"
         - "EP-002 — User Interface & Experience Design"
@@ -50,7 +50,7 @@ body:
     id: feature
     attributes:
       label: "Feature"
-      description: "Identificador da feature (ex: F-014)"
+      description: "Feature identifier (e.g. F-014)"
       placeholder: "F-XXX"
     validations:
       required: true
@@ -59,28 +59,28 @@ body:
     id: user_story
     attributes:
       label: "User Story"
-      description: "No formato: Como [persona], quero [ação] para [benefício]"
-      placeholder: "Como usuário no EcoPoint, quero registrar minha doação no sistema para que seja contabilizada"
+      description: "Format: As a [persona], I want [action] so that [benefit]"
+      placeholder: "As a user at the EcoPoint, I want to register my donation in the system so that it is recorded"
     validations:
       required: true
 
   - type: textarea
     id: acceptance_criteria
     attributes:
-      label: "Critérios de Aceitação"
-      description: "Liste os critérios no formato Gherkin (Given/When/Then) ou como checklist"
+      label: "Acceptance Criteria"
+      description: "List criteria in Gherkin format (Given/When/Then) or as a checklist"
       placeholder: |
-        - [ ] Dado que o usuário está autenticado, quando submete o formulário, então a doação é salva no banco
-        - [ ] A resposta retorna HTTP 201 com o objeto criado
-        - [ ] Campos obrigatórios validados (material, quantidade)
-        - [ ] Mensagem de erro exibida se a validação falhar
+        - [ ] Given the user is authenticated, when they submit the form, then the donation is saved to the database
+        - [ ] Response returns HTTP 201 with the created object
+        - [ ] Required fields validated (material, quantity)
+        - [ ] Error message displayed if validation fails
     validations:
       required: true
 
   - type: dropdown
     id: priority
     attributes:
-      label: "Prioridade (MoSCoW)"
+      label: "Priority (MoSCoW)"
       options:
         - "🔴 Critical — Must Have"
         - "🟠 High — Should Have"
@@ -93,7 +93,7 @@ body:
     id: story_points
     attributes:
       label: "Story Points"
-      description: "Estimativa de esforço (1, 2, 3, 5 ou 8)"
+      description: "Effort estimate (1, 2, 3, 5 or 8)"
       placeholder: "3"
     validations:
       required: true
@@ -101,7 +101,7 @@ body:
   - type: dropdown
     id: sprint
     attributes:
-      label: "Sprint Planejado"
+      label: "Planned Sprint"
       options:
         - "Sprint 1"
         - "Sprint 2"
@@ -115,30 +115,30 @@ body:
   - type: textarea
     id: technical_notes
     attributes:
-      label: "Notas Técnicas"
-      description: "Endpoints envolvidos, modelos, componentes, dependências de outras US"
+      label: "Technical Notes"
+      description: "Endpoints involved, models, components, dependencies on other USs"
       placeholder: |
         - Endpoint: POST /api/donation
         - Model: Pickup.js (Mongoose)
-        - Depende de: US-046 BE (enum materialType)
-        - Validação: Zod schema em donationSchemas.js
+        - Depends on: US-046 BE (materialType enum)
+        - Validation: Zod schema in donationSchemas.js
 
   - type: textarea
     id: definition_of_done
     attributes:
       label: "Definition of Done"
-      description: "O que precisa estar feito para considerar essa US concluída?"
+      description: "What needs to be done to consider this US complete?"
       value: |
-        - [ ] Código implementado e revisado (PR aprovado)
-        - [ ] Testes unitários escritos (cobertura mínima da feature)
-        - [ ] Documentação atualizada (Swagger / README)
-        - [ ] Sem erros de lint
-        - [ ] Testado em ambiente de desenvolvimento
-        - [ ] Kanban atualizado (`generate_kanban.py` re-executado se necessário)
+        - [ ] Code implemented and reviewed (PR approved)
+        - [ ] Unit tests written (minimum feature coverage)
+        - [ ] Documentation updated (Swagger / README)
+        - [ ] No lint errors
+        - [ ] Tested in development environment
+        - [ ] Kanban updated (`generate_kanban.py` re-run if needed)
 
   - type: input
     id: assignee_hint
     attributes:
-      label: "Assignee sugerido"
-      description: "Membro da equipe responsável (pode ser alterado após criação)"
+      label: "Suggested Assignee"
+      description: "Team member responsible (can be changed after creation)"
       placeholder: "@username"
