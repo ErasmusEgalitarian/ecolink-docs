@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express-rate-limit": "^8.3.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "globals": "^17.4.0"
+  }
+}
